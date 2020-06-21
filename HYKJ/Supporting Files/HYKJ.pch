@@ -1,0 +1,27 @@
+//
+//  HYKJ.pch
+//  HYKJ
+//
+//  Created by information on 2020/6/17.
+//  Copyright © 2020 hongyan. All rights reserved.
+//
+
+#ifndef HYKJ_pch
+#define HYKJ_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//里面的所有内容只能用到.m文件中或者.mm
+#ifdef __OBJC__
+/************__OBJC__BEGIN**********/
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "Headers.h"
+/************__OBJC__END************/
+#endif
+
+//
+
+#endif /* HYKJ_pch */

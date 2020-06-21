@@ -3,32 +3,70 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01EB766E268C79E528565D2F /* Pods_HYKJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */; };
+		D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A942A249F81E800DF546C /* KJLoginViewController.m */; };
+		D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A942E249F82DD00DF546C /* KJLoginHeaderView.m */; };
+		D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A9431249F8F9200DF546C /* KJLoginFooterView.m */; };
+		D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A9434249F978400DF546C /* KJPasswordLoginView.m */; };
+		D63A9438249F986200DF546C /* KJLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A9437249F986200DF546C /* KJLoginParam.m */; };
+		D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D654F7312498DF7C002F66A3 /* KJHttpTool.m */; };
 		D65C454B2498860A0042E42E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C454A2498860A0042E42E /* AppDelegate.m */; };
-		D65C454E2498860A0042E42E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C454D2498860A0042E42E /* SceneDelegate.m */; };
 		D65C45512498860A0042E42E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C45502498860A0042E42E /* ViewController.m */; };
 		D65C45542498860A0042E42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C45522498860A0042E42E /* Main.storyboard */; };
-		D65C45562498860C0042E42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65C45552498860C0042E42E /* Assets.xcassets */; };
+		D65C45562498860C0042E42E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65C45552498860C0042E42E /* Images.xcassets */; };
 		D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C45572498860C0042E42E /* LaunchScreen.storyboard */; };
 		D65C455C2498860C0042E42E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C455B2498860C0042E42E /* main.m */; };
+		D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F582499B75900AF10F5 /* KJTabBarController.m */; };
+		D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F612499D8CC00AF10F5 /* KJNavigationController.m */; };
+		D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F642499E22500AF10F5 /* ATAppUpdater.m */; };
+		D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */; };
+		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A05D32D7CFB1AA5513F8E227 /* Pods-HYKJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYKJ.debug.xcconfig"; path = "Target Support Files/Pods-HYKJ/Pods-HYKJ.debug.xcconfig"; sourceTree = "<group>"; };
+		D63A9429249F81E800DF546C /* KJLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginViewController.h; sourceTree = "<group>"; };
+		D63A942A249F81E800DF546C /* KJLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginViewController.m; sourceTree = "<group>"; };
+		D63A942D249F82DD00DF546C /* KJLoginHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginHeaderView.h; sourceTree = "<group>"; };
+		D63A942E249F82DD00DF546C /* KJLoginHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginHeaderView.m; sourceTree = "<group>"; };
+		D63A9430249F8F9200DF546C /* KJLoginFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginFooterView.h; sourceTree = "<group>"; };
+		D63A9431249F8F9200DF546C /* KJLoginFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginFooterView.m; sourceTree = "<group>"; };
+		D63A9433249F978400DF546C /* KJPasswordLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJPasswordLoginView.h; sourceTree = "<group>"; };
+		D63A9434249F978400DF546C /* KJPasswordLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJPasswordLoginView.m; sourceTree = "<group>"; };
+		D63A9436249F986200DF546C /* KJLoginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginParam.h; sourceTree = "<group>"; };
+		D63A9437249F986200DF546C /* KJLoginParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginParam.m; sourceTree = "<group>"; };
+		D654F7302498DF7C002F66A3 /* KJHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHttpTool.h; sourceTree = "<group>"; };
+		D654F7312498DF7C002F66A3 /* KJHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJHttpTool.m; sourceTree = "<group>"; };
+		D654F7332498E085002F66A3 /* KJCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCommon.h; sourceTree = "<group>"; };
 		D65C45462498860A0042E42E /* HYKJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYKJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65C45492498860A0042E42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65C454A2498860A0042E42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D65C454C2498860A0042E42E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		D65C454D2498860A0042E42E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D65C454F2498860A0042E42E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D65C45502498860A0042E42E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D65C45532498860A0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D65C45552498860C0042E42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65C45552498860C0042E42E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D65C45582498860C0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65C455A2498860C0042E42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65C455B2498860C0042E42E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D66A3F572499B75900AF10F5 /* KJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJTabBarController.h; sourceTree = "<group>"; };
+		D66A3F582499B75900AF10F5 /* KJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJTabBarController.m; sourceTree = "<group>"; };
+		D66A3F5A2499B93900AF10F5 /* HYKJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYKJ.pch; sourceTree = "<group>"; };
+		D66A3F5D2499C38E00AF10F5 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		D66A3F5F2499C53E00AF10F5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		D66A3F602499D8CC00AF10F5 /* KJNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJNavigationController.h; sourceTree = "<group>"; };
+		D66A3F612499D8CC00AF10F5 /* KJNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJNavigationController.m; sourceTree = "<group>"; };
+		D66A3F642499E22500AF10F5 /* ATAppUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAppUpdater.m; sourceTree = "<group>"; };
+		D66A3F652499E22500AF10F5 /* ATAppUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAppUpdater.h; sourceTree = "<group>"; };
+		D66A3F6A2499E61400AF10F5 /* KJLoginResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginResult.h; sourceTree = "<group>"; };
+		D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginResult.m; sourceTree = "<group>"; };
+		D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAccountTool.h; sourceTree = "<group>"; };
+		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
+		F3C2B7926F4DBEB57613E06B /* Pods-HYKJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYKJ.release.xcconfig"; path = "Target Support Files/Pods-HYKJ/Pods-HYKJ.release.xcconfig"; sourceTree = "<group>"; };
+		F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYKJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +74,121 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EB766E268C79E528565D2F /* Pods_HYKJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2AF166DB00C4120EF97D8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A05D32D7CFB1AA5513F8E227 /* Pods-HYKJ.debug.xcconfig */,
+				F3C2B7926F4DBEB57613E06B /* Pods-HYKJ.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D63A9428249F81AD00DF546C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D63A9429249F81E800DF546C /* KJLoginViewController.h */,
+				D63A942A249F81E800DF546C /* KJLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D63A942C249F82B500DF546C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D63A942D249F82DD00DF546C /* KJLoginHeaderView.h */,
+				D63A942E249F82DD00DF546C /* KJLoginHeaderView.m */,
+				D63A9430249F8F9200DF546C /* KJLoginFooterView.h */,
+				D63A9431249F8F9200DF546C /* KJLoginFooterView.m */,
+				D63A9433249F978400DF546C /* KJPasswordLoginView.h */,
+				D63A9434249F978400DF546C /* KJPasswordLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D654F7292498DE29002F66A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F552499B69D00AF10F5 /* Main(主要) */,
+				D654F72A2498DE96002F66A3 /* Home(首页) */,
+				D654F72B2498DE96002F66A3 /* Category(分类) */,
+				D654F72D2498DE97002F66A3 /* Cart(购物车) */,
+				D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */,
+				D66A3F5B2499C2F400AF10F5 /* Expand(拓展) */,
+				D654F72E2498DEDD002F66A3 /* Other(其它) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D654F72A2498DE96002F66A3 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				D65C454F2498860A0042E42E /* ViewController.h */,
+				D65C45502498860A0042E42E /* ViewController.m */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		D654F72B2498DE96002F66A3 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		D654F72D2498DE97002F66A3 /* Cart(购物车) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cart(购物车)";
+			sourceTree = "<group>";
+		};
+		D654F72E2498DEDD002F66A3 /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				D654F72F2498DF3C002F66A3 /* Tool */,
+				D65C455B2498860C0042E42E /* main.m */,
+				D65C45492498860A0042E42E /* AppDelegate.h */,
+				D65C454A2498860A0042E42E /* AppDelegate.m */,
+				D654F7332498E085002F66A3 /* KJCommon.h */,
+			);
+			path = "Other(其它)";
+			sourceTree = "<group>";
+		};
+		D654F72F2498DF3C002F66A3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D654F7302498DF7C002F66A3 /* KJHttpTool.h */,
+				D654F7312498DF7C002F66A3 /* KJHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D654F7362498E0EA002F66A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D65C45522498860A0042E42E /* Main.storyboard */,
+				D65C45552498860C0042E42E /* Images.xcassets */,
+				D65C45572498860C0042E42E /* LaunchScreen.storyboard */,
+				D65C455A2498860C0042E42E /* Info.plist */,
+				D66A3F5A2499B93900AF10F5 /* HYKJ.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D65C453D2498860A0042E42E = {
 			isa = PBXGroup;
 			children = (
 				D65C45482498860A0042E42E /* HYKJ */,
 				D65C45472498860A0042E42E /* Products */,
+				2C2AF166DB00C4120EF97D8E /* Pods */,
+				FFE593C9DE5567C6DF685808 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +203,111 @@
 		D65C45482498860A0042E42E /* HYKJ */ = {
 			isa = PBXGroup;
 			children = (
-				D65C45492498860A0042E42E /* AppDelegate.h */,
-				D65C454A2498860A0042E42E /* AppDelegate.m */,
-				D65C454C2498860A0042E42E /* SceneDelegate.h */,
-				D65C454D2498860A0042E42E /* SceneDelegate.m */,
-				D65C454F2498860A0042E42E /* ViewController.h */,
-				D65C45502498860A0042E42E /* ViewController.m */,
-				D65C45522498860A0042E42E /* Main.storyboard */,
-				D65C45552498860C0042E42E /* Assets.xcassets */,
-				D65C45572498860C0042E42E /* LaunchScreen.storyboard */,
-				D65C455A2498860C0042E42E /* Info.plist */,
-				D65C455B2498860C0042E42E /* main.m */,
+				D654F7292498DE29002F66A3 /* Classes */,
+				D654F7362498E0EA002F66A3 /* Supporting Files */,
 			);
 			path = HYKJ;
+			sourceTree = "<group>";
+		};
+		D66A3F552499B69D00AF10F5 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F562499B6C800AF10F5 /* Controller */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		D66A3F562499B6C800AF10F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F572499B75900AF10F5 /* KJTabBarController.h */,
+				D66A3F582499B75900AF10F5 /* KJTabBarController.m */,
+				D66A3F602499D8CC00AF10F5 /* KJNavigationController.h */,
+				D66A3F612499D8CC00AF10F5 /* KJNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D66A3F5B2499C2F400AF10F5 /* Expand(拓展) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F632499E21200AF10F5 /* ATAppUpdater(更新) */,
+				D66A3F5C2499C33100AF10F5 /* Headers(头文件) */,
+				D66A3F5E2499C51400AF10F5 /* Macros(宏) */,
+			);
+			path = "Expand(拓展)";
+			sourceTree = "<group>";
+		};
+		D66A3F5C2499C33100AF10F5 /* Headers(头文件) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F5D2499C38E00AF10F5 /* Headers.h */,
+			);
+			path = "Headers(头文件)";
+			sourceTree = "<group>";
+		};
+		D66A3F5E2499C51400AF10F5 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F5F2499C53E00AF10F5 /* Macros.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		D66A3F632499E21200AF10F5 /* ATAppUpdater(更新) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F652499E22500AF10F5 /* ATAppUpdater.h */,
+				D66A3F642499E22500AF10F5 /* ATAppUpdater.m */,
+			);
+			path = "ATAppUpdater(更新)";
+			sourceTree = "<group>";
+		};
+		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F682499E4E200AF10F5 /* Login(登录) */,
+			);
+			path = "PersonalCenter(个人中心)";
+			sourceTree = "<group>";
+		};
+		D66A3F682499E4E200AF10F5 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F692499E51200AF10F5 /* Model */,
+				D66A3F6D2499E8F400AF10F5 /* Tool */,
+				D63A942C249F82B500DF546C /* View */,
+				D63A9428249F81AD00DF546C /* Controller */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		D66A3F692499E51200AF10F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F6A2499E61400AF10F5 /* KJLoginResult.h */,
+				D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */,
+				D63A9436249F986200DF546C /* KJLoginParam.h */,
+				D63A9437249F986200DF546C /* KJLoginParam.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D66A3F6D2499E8F400AF10F5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */,
+				D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		FFE593C9DE5567C6DF685808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D65C455F2498860C0042E42E /* Build configuration list for PBXNativeTarget "HYKJ" */;
 			buildPhases = (
+				B9BF8CBDC49B69B054E59969 /* [CP] Check Pods Manifest.lock */,
 				D65C45422498860A0042E42E /* Sources */,
 				D65C45432498860A0042E42E /* Frameworks */,
 				D65C45442498860A0042E42E /* Resources */,
+				94DA2A11435E7C3B0BD508BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +338,7 @@
 		D65C453E2498860A0042E42E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KJ;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = hongyan;
 				TargetAttributes = {
@@ -134,22 +371,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */,
-				D65C45562498860C0042E42E /* Assets.xcassets in Resources */,
+				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94DA2A11435E7C3B0BD508BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYKJ/Pods-HYKJ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYKJ/Pods-HYKJ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HYKJ/Pods-HYKJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BF8CBDC49B69B054E59969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HYKJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D65C45422498860A0042E42E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
 				D65C45512498860A0042E42E /* ViewController.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
+				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
+				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
+				D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */,
+				D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
-				D65C454E2498860A0042E42E /* SceneDelegate.m in Sources */,
+				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
+				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
+				D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */,
+				D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */,
+				D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */,
+				D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +576,14 @@
 		};
 		D65C45602498860C0042E42E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05D32D7CFB1AA5513F8E227 /* Pods-HYKJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
-				INFOPLIST_FILE = HYKJ/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +596,14 @@
 		};
 		D65C45612498860C0042E42E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C2B7926F4DBEB57613E06B /* Pods-HYKJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
-				INFOPLIST_FILE = HYKJ/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
