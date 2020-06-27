@@ -163,6 +163,7 @@
 - (KJLoginParam *)loginParam {
     if (!_loginParam) {
         _loginParam = [[KJLoginParam alloc] init];
+        _loginParam.loginid = @"admin";
     }
     return _loginParam;
 }

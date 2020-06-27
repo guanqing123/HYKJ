@@ -14,18 +14,15 @@
 
 @implementation KJAccountTool
 
-+ (KJLoginResult *)loginResult
++ (void)saveLoginResult:(KJLoginResult *)loginResult {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:loginResult.data forKey:@"token"];
+}
+
++ (NSString *)loginResult
 {
-    if (@available(iOS 12.0, *)) {
-        NSData *data = [[NSFileManager defaultManager] contentsAtPath:KJLoginResultFile];
-        KJLoginResult *loginResult = [NSKeyedUnarchiver unarchivedObjectOfClass:KJLoginResult.class fromData:data error:NULL];
-        NSLog(@"filePath = %@",KJLoginResultFile);
-        return loginResult;
-    } else {
-        KJLoginResult *loginResult = [NSKeyedUnarchiver unarchiveObjectWithFile:KJLoginResultFile];
-        NSLog(@"filePath = %@",KJLoginResultFile);
-        return loginResult;
-    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults stringForKey:@"token"];
 }
 
 @end

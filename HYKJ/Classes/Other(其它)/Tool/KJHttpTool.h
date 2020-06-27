@@ -22,6 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void(^)(id json))success failure:(void(^)(NSError *error))failure;
 
+
+/// 发送一个 POST json 请求
+/// @param url 请求路径
+/// @param params 请求参数
+/// @param success 成功回调
+/// @param failure 失败回调
++ (void)postJsonWithURL:(NSString *)url params:(NSDictionary *)params success:(void(^)(id json))success failure:(void(^)(NSError *error))failure;
+
 /**
  发送一个POST请求(上传文件数据)
 

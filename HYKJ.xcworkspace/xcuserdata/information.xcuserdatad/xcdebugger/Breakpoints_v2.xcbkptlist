@@ -14,8 +14,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Login(&#x767b;&#x5f55;)/Tool/KJAccountTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "+loginResult"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,16 +23,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "35FBA938-C80D-4DA0-96BA-3BFC091B824A"
+            uuid = "5F725345-E786-405C-8314-B6FC6B62C9E2"
             shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Login(&#x767b;&#x5f55;)/Tool/KJLoginTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "+loginWithAccountAndPassword:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F13DB97-CDA5-4E9B-A2E3-9397B042EDDE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Login(&#x767b;&#x5f55;)/Tool/KJLoginTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "+loginWithAccountAndPassword:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D946247-5AC5-4591-8D52-FF22BACA1DEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFFC661C-9E1F-47B9-B962-92001ED6CB1A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Login(&#x767b;&#x5f55;)/Tool/KJAccountTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "+loginResult"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "+saveLoginResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4E1D552-107D-40C9-9816-AF15A0B640B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Main(&#x4e3b;&#x8981;)/Controller/KJTabBarController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-addKJChildViewController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

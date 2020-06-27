@@ -23,6 +23,21 @@
     }];
 }
 
++ (void)postJsonWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    // 1.创建请求管理对象
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    
+    // 2.设置请求格式
+    mgr.requestSerializer = [AFJSONRequestSerializer serializer];
+    [mgr.requestSerializer requestWithMethod:@"POST" URLString:url parameters:params error:nil];
+    [mgr POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure(error);
+    }];
+    
+}
+
 + (void)postWithURL:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(id))success failure:(void (^)(NSError *))failure {
     // 1.初始化 请求
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {

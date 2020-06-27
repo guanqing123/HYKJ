@@ -15,7 +15,6 @@
 		D63A9438249F986200DF546C /* KJLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A9437249F986200DF546C /* KJLoginParam.m */; };
 		D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D654F7312498DF7C002F66A3 /* KJHttpTool.m */; };
 		D65C454B2498860A0042E42E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C454A2498860A0042E42E /* AppDelegate.m */; };
-		D65C45512498860A0042E42E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C45502498860A0042E42E /* ViewController.m */; };
 		D65C45542498860A0042E42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C45522498860A0042E42E /* Main.storyboard */; };
 		D65C45562498860C0042E42E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65C45552498860C0042E42E /* Images.xcassets */; };
 		D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C45572498860C0042E42E /* LaunchScreen.storyboard */; };
@@ -25,6 +24,11 @@
 		D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F642499E22500AF10F5 /* ATAppUpdater.m */; };
 		D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */; };
 		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
+		D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF51F24A763C8004B24AA /* KJLoginTool.m */; };
+		D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52224A78119004B24AA /* KJHYTool.m */; };
+		D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52524A78570004B24AA /* KJIndexViewController.m */; };
+		D6BAF52C24A78620004B24AA /* KJMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52B24A78620004B24AA /* KJMeViewController.m */; };
+		D6BAF52F24A79977004B24AA /* KJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52E24A79977004B24AA /* KJTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +49,6 @@
 		D65C45462498860A0042E42E /* HYKJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYKJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65C45492498860A0042E42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65C454A2498860A0042E42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D65C454F2498860A0042E42E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D65C45502498860A0042E42E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D65C45532498860A0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D65C45552498860C0042E42E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D65C45582498860C0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,16 @@
 		D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginResult.m; sourceTree = "<group>"; };
 		D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAccountTool.h; sourceTree = "<group>"; };
 		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
+		D6BAF51E24A763C8004B24AA /* KJLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginTool.h; sourceTree = "<group>"; };
+		D6BAF51F24A763C8004B24AA /* KJLoginTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginTool.m; sourceTree = "<group>"; };
+		D6BAF52124A78119004B24AA /* KJHYTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHYTool.h; sourceTree = "<group>"; };
+		D6BAF52224A78119004B24AA /* KJHYTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJHYTool.m; sourceTree = "<group>"; };
+		D6BAF52424A78570004B24AA /* KJIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJIndexViewController.h; sourceTree = "<group>"; };
+		D6BAF52524A78570004B24AA /* KJIndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJIndexViewController.m; sourceTree = "<group>"; };
+		D6BAF52A24A78620004B24AA /* KJMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJMeViewController.h; sourceTree = "<group>"; };
+		D6BAF52B24A78620004B24AA /* KJMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJMeViewController.m; sourceTree = "<group>"; };
+		D6BAF52D24A79977004B24AA /* KJTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJTool.h; sourceTree = "<group>"; };
+		D6BAF52E24A79977004B24AA /* KJTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJTool.m; sourceTree = "<group>"; };
 		F3C2B7926F4DBEB57613E06B /* Pods-HYKJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYKJ.release.xcconfig"; path = "Target Support Files/Pods-HYKJ/Pods-HYKJ.release.xcconfig"; sourceTree = "<group>"; };
 		F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYKJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,8 +141,8 @@
 		D654F72A2498DE96002F66A3 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				D65C454F2498860A0042E42E /* ViewController.h */,
-				D65C45502498860A0042E42E /* ViewController.m */,
+				D6BAF52424A78570004B24AA /* KJIndexViewController.h */,
+				D6BAF52524A78570004B24AA /* KJIndexViewController.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -164,8 +176,12 @@
 		D654F72F2498DF3C002F66A3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				D6BAF52124A78119004B24AA /* KJHYTool.h */,
+				D6BAF52224A78119004B24AA /* KJHYTool.m */,
 				D654F7302498DF7C002F66A3 /* KJHttpTool.h */,
 				D654F7312498DF7C002F66A3 /* KJHttpTool.m */,
+				D6BAF52D24A79977004B24AA /* KJTool.h */,
+				D6BAF52E24A79977004B24AA /* KJTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -267,6 +283,9 @@
 			isa = PBXGroup;
 			children = (
 				D66A3F682499E4E200AF10F5 /* Login(登录) */,
+				D6BAF52824A785F8004B24AA /* Model */,
+				D6BAF52924A785F8004B24AA /* Tool */,
+				D6BAF52724A785F8004B24AA /* Controller */,
 			);
 			path = "PersonalCenter(个人中心)";
 			sourceTree = "<group>";
@@ -298,6 +317,31 @@
 			children = (
 				D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */,
 				D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */,
+				D6BAF51E24A763C8004B24AA /* KJLoginTool.h */,
+				D6BAF51F24A763C8004B24AA /* KJLoginTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D6BAF52724A785F8004B24AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6BAF52A24A78620004B24AA /* KJMeViewController.h */,
+				D6BAF52B24A78620004B24AA /* KJMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6BAF52824A785F8004B24AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6BAF52924A785F8004B24AA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -426,7 +470,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
-				D65C45512498860A0042E42E /* ViewController.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
 				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
@@ -434,11 +477,16 @@
 				D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
+				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
+				D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */,
 				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
 				D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */,
 				D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */,
 				D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */,
+				D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */,
+				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
 				D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */,
+				D6BAF52C24A78620004B24AA /* KJMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

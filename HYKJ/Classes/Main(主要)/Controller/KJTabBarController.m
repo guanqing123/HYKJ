@@ -24,37 +24,29 @@
     
     // 1.添加子控制器
     [self addKJChildViewController];
+    
+    // 2.默认选中第二个
+    self.selectedIndex = 1;
 }
 
 // 0.设置底部工具栏
 - (void)setUpTabBar {
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(168, 168, 168),NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(20, 200, 197),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(0, 157, 133),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
 }
 
 // 1.添加子控制器
 - (void)addKJChildViewController {
     NSArray *childArray = @[
                             @{MallClassKey  : @"KJIndexViewController",
-                              MallTitleKey  : @"首页",
+                              MallTitleKey  : @"商城",
                               MallImgKey    : @"tabr_1_up",
                               MallSelImgKey : @"tabr_1_down"},
                             
-                            @{MallClassKey  : @"KJCategoryViewController",
-                              MallTitleKey  : @"积分商城",
-                              MallImgKey    : @"tabr_2_up",
-                              MallSelImgKey : @"tabr_2_down"},
-                            
-                            @{MallClassKey  : @"KJCartViewController",
-                              MallTitleKey  : @"购物车",
-                              MallImgKey    : @"tabr_3_up",
-                              MallSelImgKey : @"tabr_3_down"},
-                            
                             @{MallClassKey  : @"KJMeViewController",
                               MallTitleKey  : @"我的",
-                              MallImgKey    : @"tabr_4_up",
-                              MallSelImgKey : @"tabr_4_down"}
-
+                              MallImgKey    : @"tabr_2_up",
+                              MallSelImgKey : @"tabr_2_down"}
                             ];
     [childArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [NSClassFromString(dict[MallClassKey]) new];
@@ -71,9 +63,9 @@
 }
 
 #pragma mark - 禁止屏幕旋转
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
-}
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+//    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+//}
 
 - (BOOL)shouldAutorotate {
     return NO;

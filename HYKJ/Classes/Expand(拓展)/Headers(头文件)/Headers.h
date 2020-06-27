@@ -9,6 +9,7 @@
 #ifndef Headers_h
 #define Headers_h
 
+#import "KJTool.h"
 //#import "SPConsts.h" // 常量
 #import "Macros.h" // 宏
 //
@@ -17,6 +18,7 @@
 //#import "UIView+SPExtension.h" // UIView分类
 
 #import "SVProgressHUD.h"
+
 //#import "UIBarButtonItem+SPBarButtonItem.h" //UIBarButtonItem 分类
 
 #import <Masonry.h>

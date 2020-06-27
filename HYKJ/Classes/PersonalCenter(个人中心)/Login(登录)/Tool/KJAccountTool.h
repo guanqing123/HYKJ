@@ -13,12 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KJAccountTool : NSObject
 
+/// 存储登录之后的信息
+/// @param loginResult 需要保存的登录信息
++ (void)saveLoginResult:(KJLoginResult *)loginResult;
+
 /**
  返回存储的登录信息
 
  @return loginResult
  */
-+ (KJLoginResult *)loginResult;
++ (NSString *)loginResult;
 
 @end
 

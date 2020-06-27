@@ -12,6 +12,10 @@
 #import "KJLoginFooterView.h"
 #import "KJPasswordLoginView.h"
 
+// tool
+#import "KJAccountTool.h"
+#import "KJLoginTool.h"
+
 @interface KJLoginViewController () <UIScrollViewDelegate,KJPasswordLoginViewDelegate>
 
 @property (nonatomic, strong) KJLoginHeaderView  *headerView;
@@ -161,7 +165,17 @@
 
 #pragma mark - KJPasswordLoginViewDelegate
 - (void)passwordLoginViewDidLogin:(KJPasswordLoginView *)loginView {
-   
+    [SVProgressHUD show];
+    [KJLoginTool loginWithAccountAndPassword:loginView.loginParam success:^(KJLoginResult * _Nonnull loginResult) {
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        // 1.存储模型数据
+        [KJAccountTool saveLoginResult:loginResult];
+        
+    } failure:^(NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showErrorWithStatus:@"账号或密码错误"];
+    }];
 }
 /*
 #pragma mark - Navigation

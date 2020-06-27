@@ -14,7 +14,8 @@
 /** 屏幕宽度 */
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 /** 状态栏高度 */
-#define KJStatusBarH [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KJStatusBarH [KJTool getStatusBarHeight]
+//#define KJStatusBarH [[UIApplication sharedApplication] statusBarFrame].size.height
 /** 导航栏高度 */
 #define KJNaviH 44.0
 /** 顶部Nav高度+指示器 */
@@ -43,7 +44,7 @@
 
 //全局背景色
 #define KJBGColor RGB(245,245,245)
-#define KJColor RGB(46,208,183)
+#define KJColor RGB(0,157,133)
 
 #define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
 
@@ -74,7 +75,7 @@
 //常见问题
 #define HYXK00006 @"HYXK00006"
 //鸿雁安家
-#define SPURL @"http://www.sge.cn/erp/app/api"
+#define KJURL @"http://127.0.0.1:9666"
 //首页滚动条
 #define slider @"HYXK00019"
 //获取手机验证码

@@ -8,13 +8,17 @@
 
 #import "AppDelegate.h"
 
-#import "KJAccountTool.h"
-#import "KJLoginResult.h"
-
-#import "KJNavigationController.h"
-#import "KJLoginViewController.h"
 //检测版本更新
 #import "ATAppUpdater.h"
+
+// tool
+#import "KJAccountTool.h"
+#import "KJLoginResult.h"
+#import "KJHYTool.h"
+
+// controller
+#import "KJNavigationController.h"
+#import "KJLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -31,10 +35,9 @@
     [self.window makeKeyAndVisible];
     
     // 先判断有无存储账号信息
-    KJLoginResult *result = [KJAccountTool loginResult];
-    if (result) {  //之前登录成功
-        
-        
+    NSString *token = [KJAccountTool loginResult];
+    if (token) {  //之前登录成功
+        [KJHYTool chooseRootController];
     } else {  //之前没有登录成功
         self.window.rootViewController = [[KJNavigationController alloc] initWithRootViewController:[[KJLoginViewController alloc] init]];
     }
