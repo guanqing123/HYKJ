@@ -10,13 +10,22 @@
 
 // controller
 #import "KJTabBarController.h"
+
+// webview/js bridge
 #import <WebKit/WebKit.h>
+#import "WebViewJavascriptBridge.h"
+
+// tool
+#import "KJAccountTool.h"
+#import "KJHYTool.h"
 
 @interface KJIndexViewController () <WKUIDelegate, WKNavigationDelegate>
 // webView
 @property (nonatomic, weak) WKWebView  *webView;
 /** UI */
 @property (nonatomic, strong) UIProgressView *myProgressView;
+// js bridge
+@property (nonatomic, strong)  WebViewJavascriptBridge *bridge;
 @end
 
 @implementation KJIndexViewController
@@ -61,9 +70,39 @@
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     _webView = webView;
+                            //http://dev.sge.cn/hykj/ghome/ghome.html
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/ghome/ghome.html"]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
+    
+    [WebViewJavascriptBridge enableLogging];
+    _bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
+    [_bridge setWebViewDelegate:self];
+    
+    // 1.获取token
+    [_bridge registerHandler:@"getToken" handler:^(id data, WVJBResponseCallback responseCallback) {
+        NSString *token = [KJAccountTool loginResult];
+        if (!token) {
+            [KJHYTool showAlertVc];
+        }else{
+            responseCallback(token);
+        }
+    }];
+    
+    // 2.token 过期
+    [_bridge registerHandler:@"goLogin" handler:^(id data, WVJBResponseCallback responseCallback) {
+        [KJHYTool showAlertVc];
+    }];
+}
+
+#pragma mark - alertView
+- (void)createAlert {
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"提醒" message:@"token无效,请重新登录" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [KJHYTool clearTokenGoToLoginVc];
+    }];
+    [alertVc addAction:sureAction];
+    [self presentViewController:alertVc animated:YES completion:nil];
 }
 
 #pragma mark - getter and setter

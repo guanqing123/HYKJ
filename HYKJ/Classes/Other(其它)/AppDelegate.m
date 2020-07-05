@@ -15,6 +15,7 @@
 #import "KJAccountTool.h"
 #import "KJLoginResult.h"
 #import "KJHYTool.h"
+#import "KJLoginTool.h"
 
 // controller
 #import "KJNavigationController.h"
@@ -37,6 +38,12 @@
     // 先判断有无存储账号信息
     NSString *token = [KJAccountTool loginResult];
     if (token) {  //之前登录成功
+        [KJLoginTool loginWidthToken:token success:^(KJLoginResult * _Nonnull loginResult) {
+            // 1.存储模型数据
+            [KJAccountTool saveLoginResult:loginResult];
+        } failure:^(NSError * _Nonnull error) {
+            [KJHYTool showAlertVc];
+        }];
         [KJHYTool chooseRootController];
     } else {  //之前没有登录成功
         self.window.rootViewController = [[KJNavigationController alloc] initWithRootViewController:[[KJLoginViewController alloc] init]];
@@ -44,6 +51,5 @@
     
     return YES;
 }
-
 
 @end

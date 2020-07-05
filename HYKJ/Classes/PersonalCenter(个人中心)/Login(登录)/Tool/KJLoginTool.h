@@ -20,6 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failure 失败回调
 + (void)loginWithAccountAndPassword:(KJLoginParam *)loginParam success:(void(^)(KJLoginResult *loginResult))success failure:(void(^)(NSError *error))failure;
 
+
+/// token 换 token
+/// @param token 老token
+/// @param success 成功回调
+/// @param failure 失败回调
++ (void)loginWidthToken:(NSString *)token success:(void(^)(KJLoginResult *loginResult))success failure:(void(^)(NSError *error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END

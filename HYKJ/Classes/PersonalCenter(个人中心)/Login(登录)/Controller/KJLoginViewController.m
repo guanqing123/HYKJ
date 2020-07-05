@@ -15,6 +15,7 @@
 // tool
 #import "KJAccountTool.h"
 #import "KJLoginTool.h"
+#import "KJHYTool.h"
 
 @interface KJLoginViewController () <UIScrollViewDelegate,KJPasswordLoginViewDelegate>
 
@@ -171,6 +172,9 @@
         [SVProgressHUD showSuccessWithStatus:@"登录成功"];
         // 1.存储模型数据
         [KJAccountTool saveLoginResult:loginResult];
+        
+        // 2.新特性\去首页
+        [KJHYTool chooseRootController];
         
     } failure:^(NSError * _Nonnull error) {
         [SVProgressHUD dismiss];

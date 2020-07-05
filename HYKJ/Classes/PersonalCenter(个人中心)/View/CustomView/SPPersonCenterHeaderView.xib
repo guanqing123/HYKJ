@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPPersonCenterHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe2-AQ-Xut" userLabel="headImageBtn">
+                    <rect key="frame" x="25" y="88" width="54" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="Coh-XX-7N4"/>
+                        <constraint firstAttribute="height" constant="54" id="u9B-gT-lry"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="icon"/>
+                    <connections>
+                        <action selector="headImageClick" destination="iN0-l3-epB" eventType="touchUpInside" id="lyl-zi-XqE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-sL-HsX" userLabel="telephoneLabel">
+                    <rect key="frame" x="99" y="88" width="177" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="fGY-dl-MBS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Xe2-AQ-Xut" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="1kF-eS-miz"/>
+                <constraint firstItem="KPw-sL-HsX" firstAttribute="top" secondItem="Xe2-AQ-Xut" secondAttribute="top" id="8LK-qx-KOl"/>
+                <constraint firstItem="KPw-sL-HsX" firstAttribute="leading" secondItem="Xe2-AQ-Xut" secondAttribute="trailing" constant="20" id="Eh4-2o-qrV"/>
+                <constraint firstItem="Xe2-AQ-Xut" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="VWH-4H-chZ"/>
+                <constraint firstAttribute="trailing" secondItem="KPw-sL-HsX" secondAttribute="trailing" constant="20" id="h2B-8G-Z9F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headImageBtn" destination="Xe2-AQ-Xut" id="xMP-Pt-0eJ"/>
+                <outlet property="telephoneLabel" destination="KPw-sL-HsX" id="J49-Tj-Y9d"/>
+            </connections>
+            <point key="canvasLocation" x="-657" y="-197"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="55" height="55"/>
+    </resources>
+</document>

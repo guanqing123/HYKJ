@@ -10,6 +10,7 @@
 
 // controller
 #import "KJTabBarController.h"
+#import "KJLoginViewController.h"
 
 @implementation KJHYTool
 
@@ -33,7 +34,49 @@
         [defaults setObject:currentVersion forKey:key];
         [defaults synchronize];
     }
+}
+
++ (void)clearTokenGoToLoginVc {
+    //清空沙盒中的token
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:Token];
+    [defaults synchronize];
     
+    //跳转登录页
+    [[UIApplication sharedApplication] delegate].window.rootViewController = [[KJLoginViewController alloc] init];
+}
+
++ (UIViewController *)getCurrentVC {
+    UIViewController *result = nil;
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal)
+    {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for(UIWindow * tempWindow in windows)
+        {
+            if (tempWindow.windowLevel == UIWindowLevelNormal)
+            {
+                window = tempWindow;
+                break;
+            }
+        }
+    }
+    UIView *frontView = [[window subviews] objectAtIndex:0];
+    id nextResponder = [frontView nextResponder];
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+        result = nextResponder;
+    else
+        result = window.rootViewController;
+    return result;
+}
+
++ (void)showAlertVc {
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"提醒" message:@"token无效,请重新登录" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [KJHYTool clearTokenGoToLoginVc];
+    }];
+    [alertVc addAction:sureAction];
+    [[KJHYTool getCurrentVC] presentViewController:alertVc animated:YES completion:nil];
 }
 
 @end

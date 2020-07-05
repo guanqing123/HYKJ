@@ -15,6 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 选择跟控制器
 + (void)chooseRootController;
 
+// 清空token,跳转登录
++ (void)clearTokenGoToLoginVc;
+
+// 获取当前Vc
++ (UIViewController *)getCurrentVC;
+
+// show Alert
++ (void)showAlertVc;
+
 @end
 
 NS_ASSUME_NONNULL_END

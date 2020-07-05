@@ -75,7 +75,7 @@
 //常见问题
 #define HYXK00006 @"HYXK00006"
 //鸿雁安家
-#define KJURL @"http://127.0.0.1:9666"
+#define KJURL @"http://dev.sge.cn/rest"
 //首页滚动条
 #define slider @"HYXK00019"
 //获取手机验证码

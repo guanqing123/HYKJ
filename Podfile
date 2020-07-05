@@ -10,16 +10,31 @@ target 'HYKJ' do
   #对象/json
   pod 'MJExtension', '~> 3.2.1'
   
+  #图片处理
+  pod 'SDWebImage', '~> 5.8.3'
+  
   #loading
   pod 'SVProgressHUD', '~>2.2.5'
   
   #网络请求
   pod 'AFNetworking', '~> 3.2.1'
   
+  #相册
+  pod 'TZImagePickerController', '~> 3.3.2'
+  
   #布局/约束
   pod 'Masonry', '~> 1.1.0'
   
   #键盘
   pod 'IQKeyboardManager', '~> 6.5.5'
+  
+  #js bridge
+  pod 'WebViewJavascriptBridge', '~> 6.0.3'
+  
+  #扫一扫
+  pod 'LBXScan/LBXNative','~> 2.3'
+  pod 'LBXScan/LBXZXing','~> 2.3'
+  pod 'LBXScan/LBXZBar','~> 2.3'
+  pod 'LBXScan/UI','~> 2.3'
   
 end

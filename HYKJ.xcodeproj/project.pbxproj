@@ -19,11 +19,49 @@
 		D65C45562498860C0042E42E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65C45552498860C0042E42E /* Images.xcassets */; };
 		D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C45572498860C0042E42E /* LaunchScreen.storyboard */; };
 		D65C455C2498860C0042E42E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C455B2498860C0042E42E /* main.m */; };
+		D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7B324B1C15400AE36BB /* KJCenterTopToolView.m */; };
+		D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7B924B1C7E600AE36BB /* KJScanViewController.m */; };
+		D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7BC24B1CA3F00AE36BB /* LBXAlertAction.m */; };
+		D668D7CA24B1CA4000AE36BB /* KJScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7BD24B1CA3F00AE36BB /* KJScanResultViewController.m */; };
+		D668D7CB24B1CA4000AE36BB /* UIWindow+LBXHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C324B1CA3F00AE36BB /* UIWindow+LBXHierarchy.m */; };
+		D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C424B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.m */; };
+		D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C524B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.m */; };
+		D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C624B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.m */; };
+		D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D024B1D00300AE36BB /* KJStyleDIY.m */; };
+		D668D7E224B1D42900AE36BB /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D724B1D42800AE36BB /* SPSettingViewController.m */; };
+		D668D7E324B1D42900AE36BB /* SPSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */; };
+		D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */; };
+		D668D7E524B1D42900AE36BB /* SPSettingTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7DD24B1D42900AE36BB /* SPSettingTopView.m */; };
+		D668D7E624B1D42900AE36BB /* SPUpDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7DF24B1D42900AE36BB /* SPUpDownButton.m */; };
+		D668D7E724B1D42900AE36BB /* SPSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D7E024B1D42900AE36BB /* SPSettingTableViewCell.xib */; };
+		D668D7EB24B1D53C00AE36BB /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7EA24B1D53C00AE36BB /* UIView+SPExtension.m */; };
+		D668D7F024B1D6DC00AE36BB /* SPAboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7ED24B1D6DC00AE36BB /* SPAboutMeViewController.m */; };
+		D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D7EF24B1D6DC00AE36BB /* SPAboutMeViewController.xib */; };
+		D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7F324B1D7C000AE36BB /* SPSpeedy.m */; };
+		D668D7FC24B1D9B300AE36BB /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7FB24B1D9B300AE36BB /* LxGridViewFlowLayout.m */; };
+		D668D7FF24B1E1C100AE36BB /* TZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7FD24B1E1C100AE36BB /* TZTestCell.m */; };
+		D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D80024B1F3F500AE36BB /* SPPersonCenterHeaderView.xib */; };
+		D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D80124B1F3F500AE36BB /* SPPersonCenterHeaderView.m */; };
+		D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D81324B1F8B800AE36BB /* DCStateItem.m */; };
+		D668D81824B1F98600AE36BB /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D668D81724B1F98600AE36BB /* MyCenterFlow.plist */; };
+		D668D82C24B1FEE600AE36BB /* DCTitleRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82A24B1FEE600AE36BB /* DCTitleRolling.m */; };
+		D668D82D24B1FEE600AE36BB /* UIView+DCRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82B24B1FEE600AE36BB /* UIView+DCRolling.m */; };
+		D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82E24B1FF2100AE36BB /* UIColor+DCColorChange.m */; };
+		D668D83224B201DD00AE36BB /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D668D83124B201DD00AE36BB /* MyServiceFlow.plist */; };
+		D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D85724B2073B00AE36BB /* DCStateItemCell.xib */; };
+		D668D85D24B2073D00AE36BB /* DCStateItemFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D85824B2073C00AE36BB /* DCStateItemFooterView.m */; };
+		D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D85924B2073C00AE36BB /* DCCenterItemCell.m */; };
+		D668D85F24B2073D00AE36BB /* DCStateItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D85A24B2073D00AE36BB /* DCStateItemCell.m */; };
+		D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D86224B207CC00AE36BB /* DCCenterServiceCell.m */; };
+		D668D86824B207CE00AE36BB /* DCGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D86424B207CD00AE36BB /* DCGridItem.m */; };
+		D668D86924B207CE00AE36BB /* DCGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D86524B207CD00AE36BB /* DCGoodsGridCell.m */; };
+		D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D86624B207CE00AE36BB /* DCCenterServiceCell.xib */; };
 		D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F582499B75900AF10F5 /* KJTabBarController.m */; };
 		D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F612499D8CC00AF10F5 /* KJNavigationController.m */; };
 		D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F642499E22500AF10F5 /* ATAppUpdater.m */; };
 		D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */; };
 		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
+		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
 		D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF51F24A763C8004B24AA /* KJLoginTool.m */; };
 		D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52224A78119004B24AA /* KJHYTool.m */; };
 		D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52524A78570004B24AA /* KJIndexViewController.m */; };
@@ -54,6 +92,72 @@
 		D65C45582498860C0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65C455A2498860C0042E42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65C455B2498860C0042E42E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D668D7B224B1C15400AE36BB /* KJCenterTopToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCenterTopToolView.h; sourceTree = "<group>"; };
+		D668D7B324B1C15400AE36BB /* KJCenterTopToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCenterTopToolView.m; sourceTree = "<group>"; };
+		D668D7B824B1C7E600AE36BB /* KJScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJScanViewController.h; sourceTree = "<group>"; };
+		D668D7B924B1C7E600AE36BB /* KJScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJScanViewController.m; sourceTree = "<group>"; };
+		D668D7BC24B1CA3F00AE36BB /* LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXAlertAction.m; sourceTree = "<group>"; };
+		D668D7BD24B1CA3F00AE36BB /* KJScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJScanResultViewController.m; sourceTree = "<group>"; };
+		D668D7BE24B1CA3F00AE36BB /* LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXAlertAction.h; sourceTree = "<group>"; };
+		D668D7C024B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+LBXAlertAction.h"; sourceTree = "<group>"; };
+		D668D7C124B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+supportedInterfaceOrientations.h"; sourceTree = "<group>"; };
+		D668D7C224B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+LBXAlertAction.h"; sourceTree = "<group>"; };
+		D668D7C324B1CA3F00AE36BB /* UIWindow+LBXHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LBXHierarchy.m"; sourceTree = "<group>"; };
+		D668D7C424B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+LBXAlertAction.m"; sourceTree = "<group>"; };
+		D668D7C524B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+LBXAlertAction.m"; sourceTree = "<group>"; };
+		D668D7C624B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+supportedInterfaceOrientations.m"; sourceTree = "<group>"; };
+		D668D7C724B1CA3F00AE36BB /* UIWindow+LBXHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LBXHierarchy.h"; sourceTree = "<group>"; };
+		D668D7C824B1CA3F00AE36BB /* KJScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJScanResultViewController.h; sourceTree = "<group>"; };
+		D668D7CF24B1D00300AE36BB /* KJStyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJStyleDIY.h; sourceTree = "<group>"; };
+		D668D7D024B1D00300AE36BB /* KJStyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJStyleDIY.m; sourceTree = "<group>"; };
+		D668D7D524B1D42800AE36BB /* SPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingViewController.h; sourceTree = "<group>"; };
+		D668D7D724B1D42800AE36BB /* SPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingViewController.m; sourceTree = "<group>"; };
+		D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingTableViewCell.m; sourceTree = "<group>"; };
+		D668D7DA24B1D42900AE36BB /* SPSettingTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingTopView.h; sourceTree = "<group>"; };
+		D668D7DB24B1D42900AE36BB /* SPUpDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUpDownButton.h; sourceTree = "<group>"; };
+		D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPSettingTopView.xib; sourceTree = "<group>"; };
+		D668D7DD24B1D42900AE36BB /* SPSettingTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingTopView.m; sourceTree = "<group>"; };
+		D668D7DE24B1D42900AE36BB /* SPSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingTableViewCell.h; sourceTree = "<group>"; };
+		D668D7DF24B1D42900AE36BB /* SPUpDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUpDownButton.m; sourceTree = "<group>"; };
+		D668D7E024B1D42900AE36BB /* SPSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPSettingTableViewCell.xib; sourceTree = "<group>"; };
+		D668D7E924B1D53C00AE36BB /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
+		D668D7EA24B1D53C00AE36BB /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
+		D668D7ED24B1D6DC00AE36BB /* SPAboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAboutMeViewController.m; sourceTree = "<group>"; };
+		D668D7EE24B1D6DC00AE36BB /* SPAboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAboutMeViewController.h; sourceTree = "<group>"; };
+		D668D7EF24B1D6DC00AE36BB /* SPAboutMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPAboutMeViewController.xib; sourceTree = "<group>"; };
+		D668D7F324B1D7C000AE36BB /* SPSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSpeedy.m; sourceTree = "<group>"; };
+		D668D7F424B1D7C000AE36BB /* SPSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSpeedy.h; sourceTree = "<group>"; };
+		D668D7FA24B1D9B300AE36BB /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
+		D668D7FB24B1D9B300AE36BB /* LxGridViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxGridViewFlowLayout.m; sourceTree = "<group>"; };
+		D668D7FD24B1E1C100AE36BB /* TZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTestCell.m; sourceTree = "<group>"; };
+		D668D7FE24B1E1C100AE36BB /* TZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTestCell.h; sourceTree = "<group>"; };
+		D668D80024B1F3F500AE36BB /* SPPersonCenterHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPPersonCenterHeaderView.xib; sourceTree = "<group>"; };
+		D668D80124B1F3F500AE36BB /* SPPersonCenterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPersonCenterHeaderView.m; sourceTree = "<group>"; };
+		D668D80224B1F3F600AE36BB /* SPPersonCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPersonCenterHeaderView.h; sourceTree = "<group>"; };
+		D668D81224B1F8B700AE36BB /* DCStateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStateItem.h; sourceTree = "<group>"; };
+		D668D81324B1F8B800AE36BB /* DCStateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStateItem.m; sourceTree = "<group>"; };
+		D668D81724B1F98600AE36BB /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
+		D668D82824B1FEE600AE36BB /* UIView+DCRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCRolling.h"; sourceTree = "<group>"; };
+		D668D82924B1FEE600AE36BB /* DCTitleRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTitleRolling.h; sourceTree = "<group>"; };
+		D668D82A24B1FEE600AE36BB /* DCTitleRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTitleRolling.m; sourceTree = "<group>"; };
+		D668D82B24B1FEE600AE36BB /* UIView+DCRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCRolling.m"; sourceTree = "<group>"; };
+		D668D82E24B1FF2100AE36BB /* UIColor+DCColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCColorChange.m"; sourceTree = "<group>"; };
+		D668D82F24B1FF2200AE36BB /* UIColor+DCColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCColorChange.h"; sourceTree = "<group>"; };
+		D668D83124B201DD00AE36BB /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
+		D668D85524B2073B00AE36BB /* DCStateItemFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStateItemFooterView.h; sourceTree = "<group>"; };
+		D668D85624B2073B00AE36BB /* DCCenterItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCenterItemCell.h; sourceTree = "<group>"; };
+		D668D85724B2073B00AE36BB /* DCStateItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCStateItemCell.xib; sourceTree = "<group>"; };
+		D668D85824B2073C00AE36BB /* DCStateItemFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStateItemFooterView.m; sourceTree = "<group>"; };
+		D668D85924B2073C00AE36BB /* DCCenterItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCenterItemCell.m; sourceTree = "<group>"; };
+		D668D85A24B2073D00AE36BB /* DCStateItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStateItemCell.m; sourceTree = "<group>"; };
+		D668D85B24B2073D00AE36BB /* DCStateItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStateItemCell.h; sourceTree = "<group>"; };
+		D668D86024B207CB00AE36BB /* DCCenterServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCenterServiceCell.h; sourceTree = "<group>"; };
+		D668D86124B207CC00AE36BB /* DCGridItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGridItem.h; sourceTree = "<group>"; };
+		D668D86224B207CC00AE36BB /* DCCenterServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCenterServiceCell.m; sourceTree = "<group>"; };
+		D668D86324B207CD00AE36BB /* DCGoodsGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGoodsGridCell.h; sourceTree = "<group>"; };
+		D668D86424B207CD00AE36BB /* DCGridItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGridItem.m; sourceTree = "<group>"; };
+		D668D86524B207CD00AE36BB /* DCGoodsGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGoodsGridCell.m; sourceTree = "<group>"; };
+		D668D86624B207CE00AE36BB /* DCCenterServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCCenterServiceCell.xib; sourceTree = "<group>"; };
 		D66A3F572499B75900AF10F5 /* KJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJTabBarController.h; sourceTree = "<group>"; };
 		D66A3F582499B75900AF10F5 /* KJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJTabBarController.m; sourceTree = "<group>"; };
 		D66A3F5A2499B93900AF10F5 /* HYKJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYKJ.pch; sourceTree = "<group>"; };
@@ -67,6 +171,8 @@
 		D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginResult.m; sourceTree = "<group>"; };
 		D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAccountTool.h; sourceTree = "<group>"; };
 		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
+		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
+		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
 		D6BAF51E24A763C8004B24AA /* KJLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginTool.h; sourceTree = "<group>"; };
 		D6BAF51F24A763C8004B24AA /* KJLoginTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginTool.m; sourceTree = "<group>"; };
 		D6BAF52124A78119004B24AA /* KJHYTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHYTool.h; sourceTree = "<group>"; };
@@ -134,6 +240,7 @@
 				D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */,
 				D66A3F5B2499C2F400AF10F5 /* Expand(拓展) */,
 				D654F72E2498DEDD002F66A3 /* Other(其它) */,
+				D668D81524B1F95400AE36BB /* Resource */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -225,6 +332,228 @@
 			path = HYKJ;
 			sourceTree = "<group>";
 		};
+		D668D7AD24B1BD1A00AE36BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7AE24B1BD3D00AE36BB /* CustomView */,
+				D668D80524B1F81C00AE36BB /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D668D7AE24B1BD3D00AE36BB /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7B224B1C15400AE36BB /* KJCenterTopToolView.h */,
+				D668D7B324B1C15400AE36BB /* KJCenterTopToolView.m */,
+				D668D80224B1F3F600AE36BB /* SPPersonCenterHeaderView.h */,
+				D668D80124B1F3F500AE36BB /* SPPersonCenterHeaderView.m */,
+				D668D80024B1F3F500AE36BB /* SPPersonCenterHeaderView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		D668D7B524B1C7A200AE36BB /* Scan(扫码) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7B624B1C7C200AE36BB /* Model */,
+				D668D7B724B1C7C200AE36BB /* Controller */,
+			);
+			path = "Scan(扫码)";
+			sourceTree = "<group>";
+		};
+		D668D7B624B1C7C200AE36BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7CF24B1D00300AE36BB /* KJStyleDIY.h */,
+				D668D7D024B1D00300AE36BB /* KJStyleDIY.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D668D7B724B1C7C200AE36BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7B824B1C7E600AE36BB /* KJScanViewController.h */,
+				D668D7B924B1C7E600AE36BB /* KJScanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D668D7BB24B1CA3F00AE36BB /* LBXAlertAction */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7BE24B1CA3F00AE36BB /* LBXAlertAction.h */,
+				D668D7BC24B1CA3F00AE36BB /* LBXAlertAction.m */,
+				D668D7C824B1CA3F00AE36BB /* KJScanResultViewController.h */,
+				D668D7BD24B1CA3F00AE36BB /* KJScanResultViewController.m */,
+				D668D7BF24B1CA3F00AE36BB /* Class */,
+			);
+			path = LBXAlertAction;
+			sourceTree = "<group>";
+		};
+		D668D7BF24B1CA3F00AE36BB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7C024B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.h */,
+				D668D7C124B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.h */,
+				D668D7C224B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.h */,
+				D668D7C324B1CA3F00AE36BB /* UIWindow+LBXHierarchy.m */,
+				D668D7C424B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.m */,
+				D668D7C524B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.m */,
+				D668D7C624B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.m */,
+				D668D7C724B1CA3F00AE36BB /* UIWindow+LBXHierarchy.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D668D7D224B1D42800AE36BB /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7D324B1D42800AE36BB /* Controller */,
+				D668D7D824B1D42800AE36BB /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		D668D7D324B1D42800AE36BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7D524B1D42800AE36BB /* SPSettingViewController.h */,
+				D668D7D724B1D42800AE36BB /* SPSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D668D7D824B1D42800AE36BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */,
+				D668D7DA24B1D42900AE36BB /* SPSettingTopView.h */,
+				D668D7DB24B1D42900AE36BB /* SPUpDownButton.h */,
+				D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */,
+				D668D7DD24B1D42900AE36BB /* SPSettingTopView.m */,
+				D668D7DE24B1D42900AE36BB /* SPSettingTableViewCell.h */,
+				D668D7DF24B1D42900AE36BB /* SPUpDownButton.m */,
+				D668D7E024B1D42900AE36BB /* SPSettingTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D668D7E824B1D53000AE36BB /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7E924B1D53C00AE36BB /* UIView+SPExtension.h */,
+				D668D7EA24B1D53C00AE36BB /* UIView+SPExtension.m */,
+				D668D82F24B1FF2200AE36BB /* UIColor+DCColorChange.h */,
+				D668D82E24B1FF2100AE36BB /* UIColor+DCColorChange.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		D668D7EC24B1D6DC00AE36BB /* AboutMe(关于我们) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7ED24B1D6DC00AE36BB /* SPAboutMeViewController.m */,
+				D668D7EE24B1D6DC00AE36BB /* SPAboutMeViewController.h */,
+				D668D7EF24B1D6DC00AE36BB /* SPAboutMeViewController.xib */,
+			);
+			path = "AboutMe(关于我们)";
+			sourceTree = "<group>";
+		};
+		D668D7F224B1D7C000AE36BB /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7F324B1D7C000AE36BB /* SPSpeedy.m */,
+				D668D7F424B1D7C000AE36BB /* SPSpeedy.h */,
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		D668D7F624B1D98800AE36BB /* View(公用View) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D7FE24B1E1C100AE36BB /* TZTestCell.h */,
+				D668D7FD24B1E1C100AE36BB /* TZTestCell.m */,
+				D668D7FA24B1D9B300AE36BB /* LxGridViewFlowLayout.h */,
+				D668D7FB24B1D9B300AE36BB /* LxGridViewFlowLayout.m */,
+			);
+			path = "View(公用View)";
+			sourceTree = "<group>";
+		};
+		D668D80524B1F81C00AE36BB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D668D85424B2071A00AE36BB /* FirstSection */,
+				D668D81924B1FD6200AE36BB /* SecondSection */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D668D81524B1F95400AE36BB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D668D81624B1F96D00AE36BB /* Plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D668D81624B1F96D00AE36BB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				D668D81724B1F98600AE36BB /* MyCenterFlow.plist */,
+				D668D83124B201DD00AE36BB /* MyServiceFlow.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		D668D81924B1FD6200AE36BB /* SecondSection */ = {
+			isa = PBXGroup;
+			children = (
+				D668D86024B207CB00AE36BB /* DCCenterServiceCell.h */,
+				D668D86224B207CC00AE36BB /* DCCenterServiceCell.m */,
+				D668D86624B207CE00AE36BB /* DCCenterServiceCell.xib */,
+				D668D86324B207CD00AE36BB /* DCGoodsGridCell.h */,
+				D668D86524B207CD00AE36BB /* DCGoodsGridCell.m */,
+				D668D86124B207CC00AE36BB /* DCGridItem.h */,
+				D668D86424B207CD00AE36BB /* DCGridItem.m */,
+			);
+			path = SecondSection;
+			sourceTree = "<group>";
+		};
+		D668D82524B1FECE00AE36BB /* Vendors(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				D668D82724B1FEE600AE36BB /* CDDTitleRolling */,
+			);
+			path = "Vendors(第三方)";
+			sourceTree = "<group>";
+		};
+		D668D82724B1FEE600AE36BB /* CDDTitleRolling */ = {
+			isa = PBXGroup;
+			children = (
+				D668D82824B1FEE600AE36BB /* UIView+DCRolling.h */,
+				D668D82B24B1FEE600AE36BB /* UIView+DCRolling.m */,
+				D668D82924B1FEE600AE36BB /* DCTitleRolling.h */,
+				D668D82A24B1FEE600AE36BB /* DCTitleRolling.m */,
+			);
+			path = CDDTitleRolling;
+			sourceTree = "<group>";
+		};
+		D668D85424B2071A00AE36BB /* FirstSection */ = {
+			isa = PBXGroup;
+			children = (
+				D668D85624B2073B00AE36BB /* DCCenterItemCell.h */,
+				D668D85924B2073C00AE36BB /* DCCenterItemCell.m */,
+				D668D85B24B2073D00AE36BB /* DCStateItemCell.h */,
+				D668D85A24B2073D00AE36BB /* DCStateItemCell.m */,
+				D668D85724B2073B00AE36BB /* DCStateItemCell.xib */,
+				D668D85524B2073B00AE36BB /* DCStateItemFooterView.h */,
+				D668D85824B2073C00AE36BB /* DCStateItemFooterView.m */,
+			);
+			path = FirstSection;
+			sourceTree = "<group>";
+		};
 		D66A3F552499B69D00AF10F5 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,9 +576,14 @@
 		D66A3F5B2499C2F400AF10F5 /* Expand(拓展) */ = {
 			isa = PBXGroup;
 			children = (
+				D668D7F624B1D98800AE36BB /* View(公用View) */,
+				D668D7E824B1D53000AE36BB /* Category(分类) */,
+				D679D85F24AAF6AB004F1463 /* Consts(常量) */,
 				D66A3F632499E21200AF10F5 /* ATAppUpdater(更新) */,
 				D66A3F5C2499C33100AF10F5 /* Headers(头文件) */,
 				D66A3F5E2499C51400AF10F5 /* Macros(宏) */,
+				D668D7F224B1D7C000AE36BB /* Tools(工具) */,
+				D668D82524B1FECE00AE36BB /* Vendors(第三方) */,
 			);
 			path = "Expand(拓展)";
 			sourceTree = "<group>";
@@ -282,9 +616,14 @@
 		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				D668D7EC24B1D6DC00AE36BB /* AboutMe(关于我们) */,
+				D668D7D224B1D42800AE36BB /* Setting(设置) */,
+				D668D7BB24B1CA3F00AE36BB /* LBXAlertAction */,
+				D668D7B524B1C7A200AE36BB /* Scan(扫码) */,
 				D66A3F682499E4E200AF10F5 /* Login(登录) */,
 				D6BAF52824A785F8004B24AA /* Model */,
 				D6BAF52924A785F8004B24AA /* Tool */,
+				D668D7AD24B1BD1A00AE36BB /* View */,
 				D6BAF52724A785F8004B24AA /* Controller */,
 			);
 			path = "PersonalCenter(个人中心)";
@@ -323,6 +662,15 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D679D85F24AAF6AB004F1463 /* Consts(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				D679D86024AAF6D5004F1463 /* KJConsts.h */,
+				D679D86124AAF6D5004F1463 /* KJConsts.m */,
+			);
+			path = "Consts(常量)";
+			sourceTree = "<group>";
+		};
 		D6BAF52724A785F8004B24AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +683,8 @@
 		D6BAF52824A785F8004B24AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D668D81224B1F8B700AE36BB /* DCStateItem.h */,
+				D668D81324B1F8B800AE36BB /* DCStateItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,9 +764,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
+				D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */,
+				D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */,
 				D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */,
+				D668D83224B201DD00AE36BB /* MyServiceFlow.plist in Resources */,
+				D668D81824B1F98600AE36BB /* MyCenterFlow.plist in Resources */,
 				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
+				D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */,
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
+				D668D7E724B1D42900AE36BB /* SPSettingTableViewCell.xib in Resources */,
+				D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,22 +829,52 @@
 			files = (
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
+				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
 				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
 				D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */,
 				D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */,
+				D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */,
+				D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
+				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
 				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
+				D668D7FC24B1D9B300AE36BB /* LxGridViewFlowLayout.m in Sources */,
+				D668D85D24B2073D00AE36BB /* DCStateItemFooterView.m in Sources */,
+				D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */,
 				D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */,
+				D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */,
 				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
+				D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */,
 				D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */,
+				D668D86924B207CE00AE36BB /* DCGoodsGridCell.m in Sources */,
 				D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */,
+				D668D7E324B1D42900AE36BB /* SPSettingTableViewCell.m in Sources */,
+				D668D7CB24B1CA4000AE36BB /* UIWindow+LBXHierarchy.m in Sources */,
 				D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */,
+				D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */,
+				D668D7FF24B1E1C100AE36BB /* TZTestCell.m in Sources */,
+				D668D7EB24B1D53C00AE36BB /* UIView+SPExtension.m in Sources */,
 				D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */,
+				D668D7F024B1D6DC00AE36BB /* SPAboutMeViewController.m in Sources */,
+				D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */,
 				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
+				D668D85F24B2073D00AE36BB /* DCStateItemCell.m in Sources */,
+				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
+				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
+				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
+				D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */,
+				D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */,
+				D668D82D24B1FEE600AE36BB /* UIView+DCRolling.m in Sources */,
+				D668D82C24B1FEE600AE36BB /* DCTitleRolling.m in Sources */,
 				D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */,
+				D668D86824B207CE00AE36BB /* DCGridItem.m in Sources */,
+				D668D7E524B1D42900AE36BB /* SPSettingTopView.m in Sources */,
 				D6BAF52C24A78620004B24AA /* KJMeViewController.m in Sources */,
+				D668D7E224B1D42900AE36BB /* SPSettingViewController.m in Sources */,
+				D668D7E624B1D42900AE36BB /* SPUpDownButton.m in Sources */,
+				D668D7CA24B1CA4000AE36BB /* KJScanResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +1020,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +1041,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

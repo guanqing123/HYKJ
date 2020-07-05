@@ -16,13 +16,13 @@
 
 + (void)saveLoginResult:(KJLoginResult *)loginResult {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:loginResult.data forKey:@"token"];
+    [defaults setObject:loginResult.data forKey:Token];
 }
 
 + (NSString *)loginResult
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults stringForKey:@"token"];
+    return [defaults stringForKey:Token];
 }
 
 @end
