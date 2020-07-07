@@ -166,7 +166,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
 #pragma mark - setUpData
 - (void)setUpData {
-    _serviceItem = [DCGridItem mj_objectArrayWithFilename:@"MyServiceFlow.plist"];
+    _serviceItem = [DCGridItem mj_objectArrayWithFilename:@"service.plist"];//MyServiceFlow.plist
 }
 
 #pragma mark - initialize
@@ -209,7 +209,8 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return 180;
+//        return 180;
+        return 90;
     } else if (indexPath.section == 1) {
         return 215;
     }

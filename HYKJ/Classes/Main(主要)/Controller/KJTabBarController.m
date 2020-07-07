@@ -26,7 +26,7 @@
     [self addKJChildViewController];
     
     // 2.默认选中第二个
-    self.selectedIndex = 1;
+    self.selectedIndex = 0;
 }
 
 // 0.设置底部工具栏
@@ -43,10 +43,21 @@
                               MallImgKey    : @"tabr_1_up",
                               MallSelImgKey : @"tabr_1_down"},
                             
+                            @{MallClassKey  : @"KJCategroyViewController",
+                              MallTitleKey  : @"分类",
+                              MallImgKey    : @"tabr_2_up",
+                              MallSelImgKey : @"tabr_2_down"},
+                            
+                            @{MallClassKey  : @"KJCartViewController",
+                              MallTitleKey  : @"购物车",
+                              MallImgKey    : @"tabr_3_up",
+                              MallSelImgKey : @"tabr_3_down"},
+                            
+                            
                             @{MallClassKey  : @"KJMeViewController",
                               MallTitleKey  : @"我的",
-                              MallImgKey    : @"tabr_2_up",
-                              MallSelImgKey : @"tabr_2_down"}
+                              MallImgKey    : @"tabr_4_up",
+                              MallSelImgKey : @"tabr_4_down"}
                             ];
     [childArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [NSClassFromString(dict[MallClassKey]) new];

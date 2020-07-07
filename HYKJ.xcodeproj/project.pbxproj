@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		01EB766E268C79E528565D2F /* Pods_HYKJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */; };
+		D637693224B3F91A00A23672 /* KJCategroyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D637693124B3F91A00A23672 /* KJCategroyViewController.m */; };
+		D637693524B3F92F00A23672 /* KJCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D637693424B3F92F00A23672 /* KJCartViewController.m */; };
+		D637693724B478BC00A23672 /* order.plist in Resources */ = {isa = PBXBuildFile; fileRef = D637693624B478BB00A23672 /* order.plist */; };
+		D637693924B47AC300A23672 /* service.plist in Resources */ = {isa = PBXBuildFile; fileRef = D637693824B47AC300A23672 /* service.plist */; };
 		D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A942A249F81E800DF546C /* KJLoginViewController.m */; };
 		D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A942E249F82DD00DF546C /* KJLoginHeaderView.m */; };
 		D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A9431249F8F9200DF546C /* KJLoginFooterView.m */; };
@@ -43,11 +47,9 @@
 		D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D80024B1F3F500AE36BB /* SPPersonCenterHeaderView.xib */; };
 		D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D80124B1F3F500AE36BB /* SPPersonCenterHeaderView.m */; };
 		D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D81324B1F8B800AE36BB /* DCStateItem.m */; };
-		D668D81824B1F98600AE36BB /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D668D81724B1F98600AE36BB /* MyCenterFlow.plist */; };
 		D668D82C24B1FEE600AE36BB /* DCTitleRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82A24B1FEE600AE36BB /* DCTitleRolling.m */; };
 		D668D82D24B1FEE600AE36BB /* UIView+DCRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82B24B1FEE600AE36BB /* UIView+DCRolling.m */; };
 		D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D82E24B1FF2100AE36BB /* UIColor+DCColorChange.m */; };
-		D668D83224B201DD00AE36BB /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D668D83124B201DD00AE36BB /* MyServiceFlow.plist */; };
 		D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D85724B2073B00AE36BB /* DCStateItemCell.xib */; };
 		D668D85D24B2073D00AE36BB /* DCStateItemFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D85824B2073C00AE36BB /* DCStateItemFooterView.m */; };
 		D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D85924B2073C00AE36BB /* DCCenterItemCell.m */; };
@@ -61,6 +63,8 @@
 		D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F642499E22500AF10F5 /* ATAppUpdater.m */; };
 		D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */; };
 		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
+		D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */; };
+		D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */; };
 		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
 		D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF51F24A763C8004B24AA /* KJLoginTool.m */; };
 		D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52224A78119004B24AA /* KJHYTool.m */; };
@@ -71,6 +75,12 @@
 
 /* Begin PBXFileReference section */
 		A05D32D7CFB1AA5513F8E227 /* Pods-HYKJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYKJ.debug.xcconfig"; path = "Target Support Files/Pods-HYKJ/Pods-HYKJ.debug.xcconfig"; sourceTree = "<group>"; };
+		D637693024B3F91A00A23672 /* KJCategroyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCategroyViewController.h; sourceTree = "<group>"; };
+		D637693124B3F91A00A23672 /* KJCategroyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCategroyViewController.m; sourceTree = "<group>"; };
+		D637693324B3F92F00A23672 /* KJCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCartViewController.h; sourceTree = "<group>"; };
+		D637693424B3F92F00A23672 /* KJCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCartViewController.m; sourceTree = "<group>"; };
+		D637693624B478BB00A23672 /* order.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = order.plist; sourceTree = "<group>"; };
+		D637693824B47AC300A23672 /* service.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = service.plist; sourceTree = "<group>"; };
 		D63A9429249F81E800DF546C /* KJLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginViewController.h; sourceTree = "<group>"; };
 		D63A942A249F81E800DF546C /* KJLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginViewController.m; sourceTree = "<group>"; };
 		D63A942D249F82DD00DF546C /* KJLoginHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginHeaderView.h; sourceTree = "<group>"; };
@@ -136,14 +146,12 @@
 		D668D80224B1F3F600AE36BB /* SPPersonCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPersonCenterHeaderView.h; sourceTree = "<group>"; };
 		D668D81224B1F8B700AE36BB /* DCStateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStateItem.h; sourceTree = "<group>"; };
 		D668D81324B1F8B800AE36BB /* DCStateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStateItem.m; sourceTree = "<group>"; };
-		D668D81724B1F98600AE36BB /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
 		D668D82824B1FEE600AE36BB /* UIView+DCRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCRolling.h"; sourceTree = "<group>"; };
 		D668D82924B1FEE600AE36BB /* DCTitleRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTitleRolling.h; sourceTree = "<group>"; };
 		D668D82A24B1FEE600AE36BB /* DCTitleRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTitleRolling.m; sourceTree = "<group>"; };
 		D668D82B24B1FEE600AE36BB /* UIView+DCRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCRolling.m"; sourceTree = "<group>"; };
 		D668D82E24B1FF2100AE36BB /* UIColor+DCColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DCColorChange.m"; sourceTree = "<group>"; };
 		D668D82F24B1FF2200AE36BB /* UIColor+DCColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DCColorChange.h"; sourceTree = "<group>"; };
-		D668D83124B201DD00AE36BB /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
 		D668D85524B2073B00AE36BB /* DCStateItemFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStateItemFooterView.h; sourceTree = "<group>"; };
 		D668D85624B2073B00AE36BB /* DCCenterItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCenterItemCell.h; sourceTree = "<group>"; };
 		D668D85724B2073B00AE36BB /* DCStateItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCStateItemCell.xib; sourceTree = "<group>"; };
@@ -171,6 +179,8 @@
 		D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginResult.m; sourceTree = "<group>"; };
 		D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAccountTool.h; sourceTree = "<group>"; };
 		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
+		D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
+		D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
 		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
 		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
 		D6BAF51E24A763C8004B24AA /* KJLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginTool.h; sourceTree = "<group>"; };
@@ -239,8 +249,8 @@
 				D654F72D2498DE97002F66A3 /* Cart(购物车) */,
 				D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */,
 				D66A3F5B2499C2F400AF10F5 /* Expand(拓展) */,
+				D66CCB2C24B2F4A70038CCE7 /* Resource(资源) */,
 				D654F72E2498DEDD002F66A3 /* Other(其它) */,
-				D668D81524B1F95400AE36BB /* Resource */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 		D654F72B2498DE96002F66A3 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				D637693024B3F91A00A23672 /* KJCategroyViewController.h */,
+				D637693124B3F91A00A23672 /* KJCategroyViewController.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -264,6 +276,8 @@
 		D654F72D2498DE97002F66A3 /* Cart(购物车) */ = {
 			isa = PBXGroup;
 			children = (
+				D637693324B3F92F00A23672 /* KJCartViewController.h */,
+				D637693424B3F92F00A23672 /* KJCartViewController.m */,
 			);
 			path = "Cart(购物车)";
 			sourceTree = "<group>";
@@ -490,23 +504,6 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		D668D81524B1F95400AE36BB /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				D668D81624B1F96D00AE36BB /* Plist */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		D668D81624B1F96D00AE36BB /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				D668D81724B1F98600AE36BB /* MyCenterFlow.plist */,
-				D668D83124B201DD00AE36BB /* MyServiceFlow.plist */,
-			);
-			path = Plist;
-			sourceTree = "<group>";
-		};
 		D668D81924B1FD6200AE36BB /* SecondSection */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +659,25 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D66CCB2C24B2F4A70038CCE7 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+				D66CCB2D24B2F4A70038CCE7 /* Plist */,
+			);
+			path = "Resource(资源)";
+			sourceTree = "<group>";
+		};
+		D66CCB2D24B2F4A70038CCE7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				D637693824B47AC300A23672 /* service.plist */,
+				D637693624B478BB00A23672 /* order.plist */,
+				D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */,
+				D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		D679D85F24AAF6AB004F1463 /* Consts(常量) */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,15 +780,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D637693924B47AC300A23672 /* service.plist in Resources */,
 				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
 				D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */,
 				D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */,
+				D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */,
 				D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */,
-				D668D83224B201DD00AE36BB /* MyServiceFlow.plist in Resources */,
-				D668D81824B1F98600AE36BB /* MyCenterFlow.plist in Resources */,
+				D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */,
 				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
 				D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */,
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
+				D637693724B478BC00A23672 /* order.plist in Resources */,
 				D668D7E724B1D42900AE36BB /* SPSettingTableViewCell.xib in Resources */,
 				D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */,
 			);
@@ -832,6 +850,7 @@
 				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
 				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
+				D637693224B3F91A00A23672 /* KJCategroyViewController.m in Sources */,
 				D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */,
 				D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */,
 				D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */,
@@ -861,6 +880,7 @@
 				D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */,
 				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
 				D668D85F24B2073D00AE36BB /* DCStateItemCell.m in Sources */,
+				D637693524B3F92F00A23672 /* KJCartViewController.m in Sources */,
 				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
@@ -1015,6 +1035,7 @@
 			baseConfigurationReference = A05D32D7CFB1AA5513F8E227 /* Pods-HYKJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1027,6 +1048,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1036,6 +1058,7 @@
 			baseConfigurationReference = F3C2B7926F4DBEB57613E06B /* Pods-HYKJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1048,6 +1071,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

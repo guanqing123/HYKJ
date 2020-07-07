@@ -18,6 +18,9 @@ UIKIT_EXTERN CGFloat const KJMargin;
 /** token形参 */
 UIKIT_EXTERN NSString *const Token;
 
+/** 刷新购物车*/
+UIKIT_EXTERN NSString *const refreshCart;
+
 @end
 
 NS_ASSUME_NONNULL_END

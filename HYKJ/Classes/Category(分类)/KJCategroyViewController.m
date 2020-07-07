@@ -1,15 +1,12 @@
 //
-//  KJIndexViewController.m
+//  KJCategroyViewController.m
 //  HYKJ
 //
-//  Created by information on 2020/6/27.
+//  Created by information on 2020/7/7.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
-#import "KJIndexViewController.h"
-
-// controller
-#import "KJTabBarController.h"
+#import "KJCategroyViewController.h"
 
 // webview/js bridge
 #import <WebKit/WebKit.h>
@@ -19,7 +16,7 @@
 #import "KJAccountTool.h"
 #import "KJHYTool.h"
 
-@interface KJIndexViewController () <WKUIDelegate, WKNavigationDelegate>
+@interface KJCategroyViewController ()<WKUIDelegate, WKNavigationDelegate>
 // webView
 @property (nonatomic, weak) WKWebView  *webView;
 /** UI */
@@ -28,9 +25,8 @@
 @property (nonatomic, strong)  WebViewJavascriptBridge *bridge;
 @end
 
-@implementation KJIndexViewController
+@implementation KJCategroyViewController
 
-#pragma mark - lifeCicle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -41,7 +37,6 @@
     [self setWebView];
 }
 
-#pragma mark - init
 - (void)setupView {
     // 1.背景色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -53,17 +48,16 @@
     [self.webView reload];
 }
 
-#pragma mark - webView
 - (void)setWebView {
     WKWebView *webView = [[WKWebView alloc] init];
-    webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
+    webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     _webView = webView;
                             //http://dev.sge.cn/hykj/ghome/ghome.html
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/ghome/ghome.html"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/gcat/gcat.html"]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
     
@@ -177,11 +171,13 @@
             [self setupNavItem];
         }
         self.tabBarController.tabBar.hidden = YES;
+        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     }else{
         if (self.navigationItem.leftBarButtonItem) {
             self.navigationItem.leftBarButtonItem = nil;
         }
         self.tabBarController.tabBar.hidden = NO;
+        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
     }
 }
 

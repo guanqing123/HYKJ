@@ -80,7 +80,7 @@ static NSString *const DCStateItemFooterViewID = @"DCStateItemFooterView";
 {
     self.backgroundColor = [UIColor whiteColor];
     self.collectionView.backgroundColor = KJBGColor;
-    _stateItem = [DCStateItem mj_objectArrayWithFilename:@"MyCenterFlow.plist"];
+    _stateItem = [DCStateItem mj_objectArrayWithFilename:@"order.plist"];  //MyCenterFlow.plist
 }
 
 - (void)layoutSubviews

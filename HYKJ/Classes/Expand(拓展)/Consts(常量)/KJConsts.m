@@ -16,4 +16,7 @@ CGFloat const KJMargin = 10;
 /** token key */
 NSString *const Token = @"kjToken";
 
+/** 刷新 购物车*/
+NSString *const refreshCart = @"refreshCart";
+
 @end
