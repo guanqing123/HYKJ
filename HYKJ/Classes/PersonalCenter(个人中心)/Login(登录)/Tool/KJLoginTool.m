@@ -27,15 +27,15 @@
     
 }
 
-+ (void)loginWidthToken:(NSString *)token success:(void (^)(KJLoginResult * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
++ (void)loginWidthToken:(NSString *)token success:(void (^)(NSString * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     
     NSString *requestURL = [KJURL stringByAppendingString:@"/tokenLogin"];
     
     NSDictionary *param = @{@"token": token};
     
     [KJHttpTool postWithURL:requestURL params:param success:^(id  _Nonnull json) {
-        KJLoginResult *result = [KJLoginResult mj_objectWithKeyValues:json];
-        success(result);
+        NSString *newToken = json[@"data"];
+        success(newToken);
     } failure:^(NSError * _Nonnull error) {
         failure(error);
     }];

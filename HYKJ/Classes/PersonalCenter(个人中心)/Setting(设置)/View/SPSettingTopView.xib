@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +17,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="376" height="80"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSD-1A-hEr" userLabel="headImage">
-                            <rect key="frame" x="15" y="17.5" width="46" height="46"/>
+                            <rect key="frame" x="15" y="17" width="46" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="46" id="3NE-MT-ZQg"/>
                                 <constraint firstAttribute="height" constant="46" id="oWm-sf-khd"/>
@@ -43,7 +40,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S7-Rk-chv">
-                            <rect key="frame" x="345" y="30" width="21" height="21"/>
+                            <rect key="frame" x="345" y="29.5" width="21" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Emd-hD-DZh"/>
                                 <constraint firstAttribute="width" constant="21" id="M51-BD-ptp"/>
@@ -87,7 +84,7 @@
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-Hn-9WA" customClass="SPUpDownButton">
                     <rect key="frame" x="188" y="81" width="188" height="121"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="邀请水电工" image="icon_sdg">
+                    <state key="normal" title="邀请用户" image="icon_sdg">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
@@ -129,7 +126,7 @@
                 <outlet property="headerView" destination="eyX-H3-tjt" id="nlj-aw-Hwx"/>
                 <outlet property="telLabel" destination="2bd-ac-aT5" id="jzx-02-BFX"/>
             </connections>
-            <point key="canvasLocation" x="-1179" y="-1078"/>
+            <point key="canvasLocation" x="-1218" y="-1070"/>
         </view>
     </objects>
     <resources>

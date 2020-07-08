@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger code;
 
-@property (nonatomic, copy) NSString *data;
+@property (nonatomic, copy) NSDictionary *data;
 
 @property (nonatomic, copy) NSString *message;
 

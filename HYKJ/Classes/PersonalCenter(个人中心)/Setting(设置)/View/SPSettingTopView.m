@@ -52,8 +52,8 @@
         [self.headImage setImage:[UIImage imageNamed:@"icon"] forState:UIControlStateNormal];
     }
     
-    self.telLabel.text = @"xxx";
-    self.detailLabel.text = [NSString stringWithFormat:@"我的推荐码：%@",[KJAccountTool loginResult]];
+    self.telLabel.text = [KJAccountTool getUserCode];
+    self.detailLabel.text = [NSString stringWithFormat:@"我的推荐码：%@",[KJAccountTool getUserCode]];
 }
 
 - (IBAction)rightClick {

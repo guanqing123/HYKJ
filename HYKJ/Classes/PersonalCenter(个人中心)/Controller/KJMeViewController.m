@@ -27,8 +27,9 @@
 //我的服务
 #import "DCGridItem.h"
 #import <MJExtension.h>
+#import "KJBrowseViewController.h"
 
-@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate>
+@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate>
 
 @property (nonatomic, strong)  SPPersonCenterHeaderView *headerView;
 /** 头部背景图片 */
@@ -197,6 +198,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
     
     if (indexPath.section == 0) {
         DCCenterItemCell *cell = [tableView dequeueReusableCellWithIdentifier:DCCenterItemCellID forIndexPath:indexPath];
+        cell.delegate = self;
         cusCell = cell;
     } else if (indexPath.section == 1) {
         DCCenterServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:DCCenterServiceCellID forIndexPath:indexPath];
@@ -215,6 +217,31 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
         return 215;
     }
     return 0;
+}
+
+#pragma mark - DCCenterItemCellDelegate
+- (void)centerItemCell:(DCCenterItemCell *)itemCell didClickCollectionViewItem:(DCStateItem *)stateItem {
+    switch (stateItem.orderType) {
+        case OrderWaitSubmit:
+            [self browseHTML:[H5URL stringByAppendingString:WaitSubmit]];
+            break;
+        case OrderWaitDelivery:
+            [self browseHTML:[H5URL stringByAppendingString:WaitDelivery]];
+            break;
+        case OrderSdeliveryd:
+            [self browseHTML:[H5URL stringByAppendingString:Sdeliveryd]];
+            break;
+        case OrderWaitSinvoince:
+            [self browseHTML:[H5URL stringByAppendingString:WaitSinvoince]];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)browseHTML:(NSString *)desUrl {
+    KJBrowseViewController *browseVc = [[KJBrowseViewController alloc] initWithDesUrl:desUrl];
+    [self.navigationController pushViewController:browseVc animated:YES];
 }
 
 #pragma mark -  滚动tableview 完毕之后

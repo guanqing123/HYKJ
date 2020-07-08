@@ -65,6 +65,7 @@
 		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
 		D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */; };
 		D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */; };
+		D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */; };
 		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
 		D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF51F24A763C8004B24AA /* KJLoginTool.m */; };
 		D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52224A78119004B24AA /* KJHYTool.m */; };
@@ -94,7 +95,7 @@
 		D654F7302498DF7C002F66A3 /* KJHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHttpTool.h; sourceTree = "<group>"; };
 		D654F7312498DF7C002F66A3 /* KJHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJHttpTool.m; sourceTree = "<group>"; };
 		D654F7332498E085002F66A3 /* KJCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCommon.h; sourceTree = "<group>"; };
-		D65C45462498860A0042E42E /* HYKJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYKJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C45462498860A0042E42E /* 鸿雁客+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "鸿雁客+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65C45492498860A0042E42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65C454A2498860A0042E42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D65C45532498860A0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +182,8 @@
 		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
 		D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
 		D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
+		D66D847E24B5CC3300B34335 /* KJBrowseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBrowseViewController.h; sourceTree = "<group>"; };
+		D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBrowseViewController.m; sourceTree = "<group>"; };
 		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
 		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
 		D6BAF51E24A763C8004B24AA /* KJLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginTool.h; sourceTree = "<group>"; };
@@ -332,7 +335,7 @@
 		D65C45472498860A0042E42E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D65C45462498860A0042E42E /* HYKJ.app */,
+				D65C45462498860A0042E42E /* 鸿雁客+.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,13 +445,13 @@
 		D668D7D824B1D42800AE36BB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */,
 				D668D7DA24B1D42900AE36BB /* SPSettingTopView.h */,
-				D668D7DB24B1D42900AE36BB /* SPUpDownButton.h */,
-				D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */,
 				D668D7DD24B1D42900AE36BB /* SPSettingTopView.m */,
-				D668D7DE24B1D42900AE36BB /* SPSettingTableViewCell.h */,
+				D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */,
+				D668D7DB24B1D42900AE36BB /* SPUpDownButton.h */,
 				D668D7DF24B1D42900AE36BB /* SPUpDownButton.m */,
+				D668D7DE24B1D42900AE36BB /* SPSettingTableViewCell.h */,
+				D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */,
 				D668D7E024B1D42900AE36BB /* SPSettingTableViewCell.xib */,
 			);
 			path = View;
@@ -613,6 +616,7 @@
 		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				D66D847B24B5CBF800B34335 /* WebView(网页) */,
 				D668D7EC24B1D6DC00AE36BB /* AboutMe(关于我们) */,
 				D668D7D224B1D42800AE36BB /* Setting(设置) */,
 				D668D7BB24B1CA3F00AE36BB /* LBXAlertAction */,
@@ -678,6 +682,31 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		D66D847B24B5CBF800B34335 /* WebView(网页) */ = {
+			isa = PBXGroup;
+			children = (
+				D66D847D24B5CBF900B34335 /* View */,
+				D66D847C24B5CBF800B34335 /* Controller */,
+			);
+			path = "WebView(网页)";
+			sourceTree = "<group>";
+		};
+		D66D847C24B5CBF800B34335 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D66D847E24B5CC3300B34335 /* KJBrowseViewController.h */,
+				D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D66D847D24B5CBF900B34335 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D679D85F24AAF6AB004F1463 /* Consts(常量) */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,7 +768,7 @@
 			);
 			name = HYKJ;
 			productName = HYKJ;
-			productReference = D65C45462498860A0042E42E /* HYKJ.app */;
+			productReference = D65C45462498860A0042E42E /* 鸿雁客+.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -848,6 +877,7 @@
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
 				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
+				D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */,
 				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
 				D637693224B3F91A00A23672 /* KJCategroyViewController.m in Sources */,
@@ -1046,10 +1076,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "鸿雁客+";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1069,10 +1100,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "鸿雁客+";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -39,7 +39,9 @@
 + (void)clearTokenGoToLoginVc {
     //清空沙盒中的token
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults removeObjectForKey:Token];
+    [defaults removeObjectForKey:token];
+    [defaults removeObjectForKey:userCode];
+    [defaults removeObjectForKey:fullName];
     [defaults synchronize];
     
     //跳转登录页

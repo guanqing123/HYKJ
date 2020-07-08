@@ -14,9 +14,9 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Login(&#x767b;&#x5f55;)/Tool/KJAccountTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "+loginResult"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+getToken"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -110,8 +110,8 @@
             filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-setWebView"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,8 +270,8 @@
             filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -321,6 +321,70 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09059C4E-3AC6-40D3-8FE4-1EE80C208021"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/View/CustomView/SPPersonCenterHeaderView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "SPPersonCenterHeaderView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE8144E7-7ED8-4C69-8141-0CDE06C64C73"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/View/TableViewCell/FirstSection/DCCenterItemCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C93488C-A962-4DF2-939D-ADC68B85F576"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Controller/KJMeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "-centerItemCell:didClickCollectionViewItem:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3912BBE-45BD-4876-B3E8-12B176D513A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/View/TableViewCell/FirstSection/DCCenterItemCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -72,23 +72,17 @@
 
 //鸿雁销客
 #define XKURL @"http://218.75.78.166:9101/app/api"
-//常见问题
-#define HYXK00006 @"HYXK00006"
-//鸿雁安家
+//鸿雁客家
 #define KJURL @"http://dev.sge.cn/rest"
-//首页滚动条
-#define slider @"HYXK00019"
-//获取手机验证码
-#define APP00000 @"APP00000"
-//用户注册
-#define APP00001 @"APP00001"
-//密码修改
-#define APP00003 @"APP00003"
-//手机号码+手机验证码或密码；用户ID+token
-#define APP00005 @"APP00005"
-//每日签到
-#define APP00007 @"APP00007"
-//用户积分信息
-#define APP00008 @"APP00008"
+
+#define H5URL @"http://dev.sge.cn/hykj"
+//待审核
+#define WaitSubmit @"/gdshorder/gdshorder.html"
+//待发货
+#define WaitDelivery @"/glackorder/glackorder.html"
+//已发货
+#define Sdeliveryd @"/gdshorder/gdshorder.html"
+//待开票
+#define WaitSinvoince @"/gdkporder/gdkporder.html"
 
 #endif /* Macros_h */

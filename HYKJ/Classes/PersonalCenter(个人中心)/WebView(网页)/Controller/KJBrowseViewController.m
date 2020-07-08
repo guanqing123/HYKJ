@@ -1,12 +1,12 @@
 //
-//  KJCategroyViewController.m
+//  KJBrowseViewController.m
 //  HYKJ
 //
-//  Created by information on 2020/7/7.
+//  Created by information on 2020/7/8.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
-#import "KJCategroyViewController.h"
+#import "KJBrowseViewController.h"
 
 // webview/js bridge
 #import <WebKit/WebKit.h>
@@ -16,17 +16,29 @@
 #import "KJAccountTool.h"
 #import "KJHYTool.h"
 
-@interface KJCategroyViewController ()<WKUIDelegate, WKNavigationDelegate>
+@interface KJBrowseViewController () <WKUIDelegate, WKNavigationDelegate>
+
+// 目标路径
+@property (nonatomic, copy) NSString *desUrl;
 // webView
 @property (nonatomic, weak) WKWebView  *webView;
 /** UI */
 @property (nonatomic, strong) UIProgressView *myProgressView;
 // js bridge
 @property (nonatomic, strong)  WebViewJavascriptBridge *bridge;
+
 @end
 
-@implementation KJCategroyViewController
+@implementation KJBrowseViewController
 
+- (instancetype)initWithDesUrl:(NSString *)desUrl {
+    if (self = [super init]) {
+        _desUrl = desUrl;
+    }
+    return self;
+}
+
+#pragma mark - lifeCicle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -37,6 +49,7 @@
     [self setWebView];
 }
 
+#pragma mark - init
 - (void)setupView {
     // 1.背景色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -48,17 +61,17 @@
     [self.webView reload];
 }
 
+#pragma mark - webView
 - (void)setWebView {
     WKWebView *webView = [[WKWebView alloc] init];
     webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
-//    webView.frame = self.view.bounds;
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     _webView = webView;
                             //http://dev.sge.cn/hykj/ghome/ghome.html
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/gcat/gcat.html"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_desUrl]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
     
@@ -92,16 +105,6 @@
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:@"refreshCart" forKey:refreshCart];
     }];
-}
-
-#pragma mark - alertView
-- (void)createAlert {
-    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"提醒" message:@"token无效,请重新登录" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [KJHYTool clearTokenGoToLoginVc];
-    }];
-    [alertVc addAction:sureAction];
-    [self presentViewController:alertVc animated:YES completion:nil];
 }
 
 #pragma mark - getter and setter
@@ -155,14 +158,10 @@
         if (!self.navigationItem.leftBarButtonItem) {
             [self setupNavItem];
         }
-        self.tabBarController.tabBar.hidden = YES;
-        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     }else{
         if (self.navigationItem.leftBarButtonItem) {
             self.navigationItem.leftBarButtonItem = nil;
         }
-        self.tabBarController.tabBar.hidden = NO;
-        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
     }
 }
 
@@ -171,14 +170,10 @@
         if (!self.navigationItem.leftBarButtonItem) {
             [self setupNavItem];
         }
-        self.tabBarController.tabBar.hidden = YES;
-        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     }else{
         if (self.navigationItem.leftBarButtonItem) {
             self.navigationItem.leftBarButtonItem = nil;
         }
-        self.tabBarController.tabBar.hidden = NO;
-        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
     }
 }
 

@@ -8,9 +8,6 @@
 
 #import "KJIndexViewController.h"
 
-// controller
-#import "KJTabBarController.h"
-
 // webview/js bridge
 #import <WebKit/WebKit.h>
 #import "WebViewJavascriptBridge.h"
@@ -79,7 +76,7 @@
     
     // 1.获取token
     [_bridge registerHandler:@"getToken" handler:^(id data, WVJBResponseCallback responseCallback) {
-        NSString *token = [KJAccountTool loginResult];
+        NSString *token = [KJAccountTool getToken];
         if (!token) {
             [KJHYTool showAlertVc];
         }else{

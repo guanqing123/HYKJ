@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,29 +25,40 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-sL-HsX" userLabel="telephoneLabel">
-                    <rect key="frame" x="99" y="88" width="177" height="32"/>
+                    <rect key="frame" x="99" y="88" width="177" height="24"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="32" id="fGY-dl-MBS"/>
+                        <constraint firstAttribute="height" constant="24" id="fGY-dl-MBS"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-7y-xX4">
+                    <rect key="frame" x="99" y="112" width="177" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Xe2-AQ-Xut" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="1kF-eS-miz"/>
+                <constraint firstItem="5Cl-7y-xX4" firstAttribute="leading" secondItem="KPw-sL-HsX" secondAttribute="leading" id="7Zp-O3-bAC"/>
                 <constraint firstItem="KPw-sL-HsX" firstAttribute="top" secondItem="Xe2-AQ-Xut" secondAttribute="top" id="8LK-qx-KOl"/>
+                <constraint firstItem="5Cl-7y-xX4" firstAttribute="top" secondItem="KPw-sL-HsX" secondAttribute="bottom" id="EKH-gu-rm2"/>
                 <constraint firstItem="KPw-sL-HsX" firstAttribute="leading" secondItem="Xe2-AQ-Xut" secondAttribute="trailing" constant="20" id="Eh4-2o-qrV"/>
                 <constraint firstItem="Xe2-AQ-Xut" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="VWH-4H-chZ"/>
                 <constraint firstAttribute="trailing" secondItem="KPw-sL-HsX" secondAttribute="trailing" constant="20" id="h2B-8G-Z9F"/>
+                <constraint firstItem="5Cl-7y-xX4" firstAttribute="bottom" secondItem="Xe2-AQ-Xut" secondAttribute="bottom" id="ttF-Z9-2yT"/>
+                <constraint firstItem="5Cl-7y-xX4" firstAttribute="trailing" secondItem="KPw-sL-HsX" secondAttribute="trailing" id="wus-MN-oJ7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="fullNameLabel" destination="5Cl-7y-xX4" id="rr7-0M-ZUR"/>
                 <outlet property="headImageBtn" destination="Xe2-AQ-Xut" id="xMP-Pt-0eJ"/>
-                <outlet property="telephoneLabel" destination="KPw-sL-HsX" id="J49-Tj-Y9d"/>
+                <outlet property="userCodeLabel" destination="KPw-sL-HsX" id="ab7-gX-Hh2"/>
             </connections>
-            <point key="canvasLocation" x="-657" y="-197"/>
+            <point key="canvasLocation" x="-494" y="-302"/>
         </view>
     </objects>
     <resources>

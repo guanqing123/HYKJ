@@ -16,9 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 UIKIT_EXTERN CGFloat const KJMargin;
 
 /** token形参 */
-UIKIT_EXTERN NSString *const Token;
+UIKIT_EXTERN NSString *const token;
 
-/** 刷新购物车*/
+/** userCode */
+UIKIT_EXTERN NSString *const userCode;
+
+/** fullName */
+UIKIT_EXTERN NSString *const fullName;
+
+/** 刷新购物车 */
 UIKIT_EXTERN NSString *const refreshCart;
 
 @end

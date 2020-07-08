@@ -16,13 +16,32 @@
 
 + (void)saveLoginResult:(KJLoginResult *)loginResult {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:loginResult.data forKey:Token];
+    [defaults setObject:loginResult.data[token] forKey:token];
+    [defaults setObject:loginResult.data[userCode] forKey:userCode];
+    [defaults setObject:loginResult.data[fullName] forKey:fullName];
+    [defaults synchronize];
 }
 
-+ (NSString *)loginResult
++ (void)replaceToken:(NSString *)newToken {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:newToken forKey:token];
+    [defaults synchronize];
+}
+
++ (NSString *)getToken
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults stringForKey:Token];
+    return [defaults stringForKey:token];
+}
+
++ (NSString *)getUserCode {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults stringForKey:userCode];
+}
+
++ (NSString *)getFullName {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults stringForKey:fullName];
 }
 
 @end

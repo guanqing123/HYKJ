@@ -8,9 +8,13 @@
 
 #import "SPPersonCenterHeaderView.h"
 
+// tool
+#import "KJAccountTool.h"
+
 @interface SPPersonCenterHeaderView()
 @property (weak, nonatomic) IBOutlet UIButton *headImageBtn;
-@property (weak, nonatomic) IBOutlet UILabel *telephoneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userCodeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fullNameLabel;
 
 - (IBAction)headImageClick;
 
@@ -35,7 +39,8 @@
     }else{
         [self.headImageBtn setImage:[UIImage imageNamed:@"icon"] forState:UIControlStateNormal];
     }
-    self.telephoneLabel.text = @"xxxxx";
+    self.userCodeLabel.text = [KJAccountTool getUserCode];
+    self.fullNameLabel.text = [KJAccountTool getFullName];
 }
 
 - (IBAction)headImageClick {

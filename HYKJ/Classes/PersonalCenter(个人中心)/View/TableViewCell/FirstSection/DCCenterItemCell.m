@@ -11,8 +11,7 @@
 
 // Controllers
 
-// Models
-#import "DCStateItem.h"
+
 // Views
 #import "DCStateItemCell.h"
 #import "DCStateItemFooterView.h"
@@ -118,6 +117,13 @@ static NSString *const DCStateItemFooterViewID = @"DCStateItemFooterView";
         reusableView = footer;
     }
     return reusableView;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DCStateItem *item = _stateItem[indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(centerItemCell:didClickCollectionViewItem:)]) {
+        [self.delegate centerItemCell:self didClickCollectionViewItem:item];
+    }
 }
 
 #pragma mark - <UICollectionViewDelegateFlowLayout>

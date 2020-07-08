@@ -7,6 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef enum {
+    OrderWaitSubmit,    // 待审核
+    OrderWaitDelivery,  // 待收货
+    OrderSdeliveryd,    // 已发货
+    OrderWaitSinvoince  // 待开票
+} OrderType;
 
 @interface DCStateItem : NSObject
 
@@ -21,5 +27,8 @@
 
 /* 背景色 */
 @property (nonatomic, assign) BOOL bgColor;
+
+/** 订单类型 */
+@property (nonatomic, assign) OrderType orderType;
 
 @end

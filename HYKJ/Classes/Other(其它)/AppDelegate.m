@@ -36,11 +36,11 @@
     [self.window makeKeyAndVisible];
     
     // 先判断有无存储账号信息
-    NSString *token = [KJAccountTool loginResult];
+    NSString *token = [KJAccountTool getToken];
     if (token) {  //之前登录成功
-        [KJLoginTool loginWidthToken:token success:^(KJLoginResult * _Nonnull loginResult) {
+        [KJLoginTool loginWidthToken:token success:^(NSString * _Nonnull newToken) {
             // 1.存储模型数据
-            [KJAccountTool saveLoginResult:loginResult];
+            [KJAccountTool replaceToken:newToken];
         } failure:^(NSError * _Nonnull error) {
             [KJHYTool showAlertVc];
         }];
