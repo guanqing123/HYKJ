@@ -87,5 +87,7 @@
 #define WaitSinvoince @"/gdkporder/gdkporder.html"
 //全部订单
 #define Order @"/gorder/gorder.html"
+//客服地址
+#define Kefu @"https://hzhydqyxgs.qiyukf.com/client?k=85cdffbd3ba211a68e2896899167ee3c&wp=1"
 
 #endif /* Macros_h */

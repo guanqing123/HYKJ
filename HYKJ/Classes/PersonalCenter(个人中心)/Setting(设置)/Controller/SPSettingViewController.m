@@ -72,6 +72,11 @@ static NSString *const SPSettingTableViewCellID = @"SPSettingTableViewCellID";
     self.tableView.backgroundColor = self.view.backgroundColor;
     self.title = @"设置中心";
     self.dataArray = @[@"关于我们"];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+}
+
+- (void)back {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - 头部View

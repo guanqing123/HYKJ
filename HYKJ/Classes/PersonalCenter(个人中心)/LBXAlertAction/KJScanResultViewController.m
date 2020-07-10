@@ -8,13 +8,13 @@
 
 #import <WebKit/WebKit.h>
 #import "KJScanResultViewController.h"
-#import "WebViewJavascriptBridge.h"
+#import "WKWebViewJavascriptBridge.h"
 
 @interface KJScanResultViewController () <WKUIDelegate,WKNavigationDelegate>
 
 @property (nonatomic, weak) WKWebView  *webView;
 
-@property (nonatomic, strong)  WebViewJavascriptBridge *bridge;
+@property (nonatomic, strong)  WKWebViewJavascriptBridge *bridge;
 
 @end
 
@@ -31,6 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"扫码结果";
+    // nav
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+    
     WKWebView *webView = [[WKWebView alloc] init];
     webView.frame = self.view.bounds;
     webView.UIDelegate = self;
@@ -39,7 +42,7 @@
     [self.view addSubview:webView];
     
     // JavascriptBridge
-    self.bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
+    self.bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
     
     WEAKSELF
     [self.bridge registerHandler:@"openCamera" handler:^(id data, WVJBResponseCallback responseCallback) {
@@ -47,6 +50,10 @@
     }];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
+}
+
+- (void)back {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)pop {

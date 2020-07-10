@@ -95,7 +95,7 @@
 		D654F7302498DF7C002F66A3 /* KJHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHttpTool.h; sourceTree = "<group>"; };
 		D654F7312498DF7C002F66A3 /* KJHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJHttpTool.m; sourceTree = "<group>"; };
 		D654F7332498E085002F66A3 /* KJCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCommon.h; sourceTree = "<group>"; };
-		D65C45462498860A0042E42E /* 鸿雁客+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "鸿雁客+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C45462498860A0042E42E /* 鸿雁客家.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "鸿雁客家.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65C45492498860A0042E42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65C454A2498860A0042E42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D65C45532498860A0042E42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -335,7 +335,7 @@
 		D65C45472498860A0042E42E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D65C45462498860A0042E42E /* 鸿雁客+.app */,
+				D65C45462498860A0042E42E /* 鸿雁客家.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,8 +471,8 @@
 		D668D7EC24B1D6DC00AE36BB /* AboutMe(关于我们) */ = {
 			isa = PBXGroup;
 			children = (
-				D668D7ED24B1D6DC00AE36BB /* SPAboutMeViewController.m */,
 				D668D7EE24B1D6DC00AE36BB /* SPAboutMeViewController.h */,
+				D668D7ED24B1D6DC00AE36BB /* SPAboutMeViewController.m */,
 				D668D7EF24B1D6DC00AE36BB /* SPAboutMeViewController.xib */,
 			);
 			path = "AboutMe(关于我们)";
@@ -768,7 +768,7 @@
 			);
 			name = HYKJ;
 			productName = HYKJ;
-			productReference = D65C45462498860A0042E42E /* 鸿雁客+.app */;
+			productReference = D65C45462498860A0042E42E /* 鸿雁客家.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1000,7 +1000,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1052,7 +1052,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1066,21 +1066,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
-				PRODUCT_NAME = "鸿雁客+";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "鸿雁客家";
+				PROVISIONING_PROFILE_SPECIFIER = hykj;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1091,21 +1091,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
-				PRODUCT_NAME = "鸿雁客+";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "鸿雁客家";
+				PROVISIONING_PROFILE_SPECIFIER = hykj;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

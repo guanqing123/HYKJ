@@ -10,7 +10,7 @@
 
 // webview/js bridge
 #import <WebKit/WebKit.h>
-#import "WebViewJavascriptBridge.h"
+#import "WKWebViewJavascriptBridge.h"
 
 // tool
 #import "KJAccountTool.h"
@@ -22,7 +22,7 @@
 /** UI */
 @property (nonatomic, strong) UIProgressView *myProgressView;
 // js bridge
-@property (nonatomic, strong)  WebViewJavascriptBridge *bridge;
+@property (nonatomic, strong)  WKWebViewJavascriptBridge *bridge;
 @end
 
 @implementation KJIndexViewController
@@ -64,8 +64,8 @@
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
     
-    [WebViewJavascriptBridge enableLogging];
-    _bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
+    [WKWebViewJavascriptBridge enableLogging];
+    _bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
     [_bridge setWebViewDelegate:self];
     
     if (@available(iOS 11.0, *)){

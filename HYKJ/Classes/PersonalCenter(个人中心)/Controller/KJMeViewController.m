@@ -29,7 +29,7 @@
 #import <MJExtension.h>
 #import "KJBrowseViewController.h"
 
-@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate>
+@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate,DCCenterServiceCellDelegate>
 
 @property (nonatomic, strong)  SPPersonCenterHeaderView *headerView;
 /** 头部背景图片 */
@@ -146,11 +146,13 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
     settingVc.settingVcBlock = ^{
         [weakSelf.headerView setData];
     };
+    settingVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:settingVc animated:YES];
 }
 
 - (void)openScanVcWithStyle:(LBXScanViewStyle *)style {
     self.scanVc.style = style;
+    self.scanVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:self.scanVc animated:YES];
 }
 
@@ -202,6 +204,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
     } else if (indexPath.section == 1) {
         DCCenterServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:DCCenterServiceCellID forIndexPath:indexPath];
         cell.serviceItemArray = [NSMutableArray arrayWithArray:_serviceItem];
+        cell.delegate = self;
         cusCell = cell;
     }
     
@@ -216,6 +219,17 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
         return 215;
     }
     return 0;
+}
+
+#pragma mark - DCCenterServiceCellDelegate
+- (void)centerServiceCell:(DCCenterServiceCell *)serviceCell didClickCollectionViewItem:(DCGridItem *)gridItem {
+    switch (gridItem.serviceType) {
+        case ServiceAfterSale:
+            [self browseHTML:Kefu];
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - DCCenterItemCellDelegate

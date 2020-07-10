@@ -24,6 +24,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"二维码扫描";
+    // nav
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+}
+
+- (void)back {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

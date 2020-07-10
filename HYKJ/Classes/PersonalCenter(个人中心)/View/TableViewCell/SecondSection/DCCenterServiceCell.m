@@ -88,6 +88,13 @@ static NSString *const DCGoodsGridCellID = @"DCGoodsGridCell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DCGridItem *item = _serviceItemArray[indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(centerServiceCell:didClickCollectionViewItem:)]) {
+        [self.delegate centerServiceCell:self didClickCollectionViewItem:item];
+    }
+}
+
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {

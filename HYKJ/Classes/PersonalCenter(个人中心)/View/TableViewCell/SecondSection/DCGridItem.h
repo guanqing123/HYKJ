@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    ServiceAfterSale // 售后服务
+} ServiceType;
+
 @interface DCGridItem : NSObject
 
 /** 图片  */
@@ -18,5 +22,7 @@
 @property (nonatomic, copy ,readonly) NSString *gridTag;
 /** tag颜色  */
 @property (nonatomic, copy ,readonly) NSString *gridColor;
+/** 服务类型 */
+@property (nonatomic, assign) ServiceType serviceType;
 
 @end

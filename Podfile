@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '8.0'
+ platform :ios, '9.0'
 
 target 'HYKJ' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -17,7 +17,7 @@ target 'HYKJ' do
   pod 'SVProgressHUD', '~>2.2.5'
   
   #网络请求
-  pod 'AFNetworking', '~> 3.2.1'
+  pod 'AFNetworking','~> 4.0'
   
   #相册
   pod 'TZImagePickerController', '~> 3.3.2'
@@ -32,9 +32,9 @@ target 'HYKJ' do
   pod 'WebViewJavascriptBridge', '~> 6.0.3'
   
   #扫一扫
-  pod 'LBXScan/LBXNative','~> 2.3'
-  pod 'LBXScan/LBXZXing','~> 2.3'
-  pod 'LBXScan/LBXZBar','~> 2.3'
-  pod 'LBXScan/UI','~> 2.3'
+  pod 'LBXScan/LBXNative'
+  #pod 'LBXScan/LBXZXing','~> 2.3'
+  #pod 'LBXScan/LBXZBar','~> 2.3'
+  pod 'LBXScan/UI'
   
 end
