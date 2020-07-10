@@ -49,12 +49,33 @@
     [self setWebView];
 }
 
+//#pragma mark - setupNav
+//- (void)setupNavItem {
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+//}
+//
+//- (void)back {
+//    if ([self.webView canGoBack]) {
+//        [self.webView goBack];
+//    }
+//}
+
 #pragma mark - init
 - (void)setupView {
     // 1.背景色
     self.view.backgroundColor = [UIColor whiteColor];
+    // 2.左
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
     // 3.右
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh"] style:UIBarButtonItemStyleDone target:self action:@selector(refresh)];
+}
+
+- (void)back {
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)refresh {
@@ -150,41 +171,6 @@
 {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
     [self.webView removeObserver:self forKeyPath:@"title"];
-}
-
-#pragma mark - delegate
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    if ([webView canGoBack]) {
-        if (!self.navigationItem.leftBarButtonItem) {
-            [self setupNavItem];
-        }
-    }else{
-        if (self.navigationItem.leftBarButtonItem) {
-            self.navigationItem.leftBarButtonItem = nil;
-        }
-    }
-}
-
-- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
-    if ([webView canGoBack]) {
-        if (!self.navigationItem.leftBarButtonItem) {
-            [self setupNavItem];
-        }
-    }else{
-        if (self.navigationItem.leftBarButtonItem) {
-            self.navigationItem.leftBarButtonItem = nil;
-        }
-    }
-}
-
-- (void)setupNavItem {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"30"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
-}
-
-- (void)back {
-    if ([self.webView canGoBack]) {
-        [self.webView goBack];
-    }
 }
 
 #pragma mark - 屏幕横竖屏设置

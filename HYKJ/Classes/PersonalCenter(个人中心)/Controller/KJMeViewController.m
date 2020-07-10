@@ -47,7 +47,6 @@
 
 @end
 
-
 static NSString *const DCCenterItemCellID = @"DCCenterItemCell";
 static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
@@ -234,6 +233,9 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
         case OrderWaitSinvoince:
             [self browseHTML:[H5URL stringByAppendingString:WaitSinvoince]];
             break;
+        case OrderAll:
+            [self browseHTML:[H5URL stringByAppendingString:Order]];
+            break;
         default:
             break;
     }
@@ -241,6 +243,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
 - (void)browseHTML:(NSString *)desUrl {
     KJBrowseViewController *browseVc = [[KJBrowseViewController alloc] initWithDesUrl:desUrl];
+    browseVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:browseVc animated:YES];
 }
 

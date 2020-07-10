@@ -75,14 +75,17 @@
 //鸿雁客家
 #define KJURL @"http://dev.sge.cn/rest"
 
+//H5基础路径
 #define H5URL @"http://dev.sge.cn/hykj"
 //待审核
 #define WaitSubmit @"/gdshorder/gdshorder.html"
 //待发货
 #define WaitDelivery @"/glackorder/glackorder.html"
 //已发货
-#define Sdeliveryd @"/gdshorder/gdshorder.html"
+#define Sdeliveryd @"/gsdelivery/gsdelivery.html"
 //待开票
 #define WaitSinvoince @"/gdkporder/gdkporder.html"
+//全部订单
+#define Order @"/gorder/gorder.html"
 
 #endif /* Macros_h */
