@@ -59,17 +59,15 @@ static NSString *const DCGoodsGridCellID = @"DCGoodsGridCell";
     self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews{
     [super layoutSubviews];
     
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self);
         make.right.mas_equalTo(self);
-        [make.bottom.mas_equalTo(self)setOffset:-KJMargin];
+        [make.bottom.mas_equalTo(self)setOffset:-10];
         make.top.mas_equalTo(_topTitleView.mas_bottom);
     }];
-    
 }
 
 #pragma mark - <UICollectionViewDataSource>
@@ -84,6 +82,7 @@ static NSString *const DCGoodsGridCellID = @"DCGoodsGridCell";
     DCGoodsGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DCGoodsGridCellID forIndexPath:indexPath];
     
     cell.gridItem = _serviceItemArray[indexPath.row];
+    
     
     return cell;
 }

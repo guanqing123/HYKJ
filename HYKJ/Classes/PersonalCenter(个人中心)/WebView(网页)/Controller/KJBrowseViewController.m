@@ -22,6 +22,7 @@
 @property (nonatomic, copy) NSString *desUrl;
 // webView
 @property (nonatomic, weak) WKWebView  *webView;
+@property (nonatomic, strong)  WKWebView *telWebView;
 /** UI */
 @property (nonatomic, strong) UIProgressView *myProgressView;
 // js bridge
@@ -84,7 +85,19 @@
 
 #pragma mark - webView
 - (void)setWebView {
-    WKWebView *webView = [[WKWebView alloc] init];
+    // 初始化配置对象
+    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+    // 默认是NO，这个值决定了用内嵌HTML5播放视频还是用本地的全屏控制
+    configuration.allowsInlineMediaPlayback = YES;
+    // 自动播放, 不需要用户采取任何手势开启播放
+    if (@available(iOS 10.0, *)) {
+        // WKAudiovisualMediaTypeNone 音视频的播放不需要用户手势触发, 即为自动播放
+        configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+    } else {
+        configuration.requiresUserActionForMediaPlayback = NO;
+    }
+    
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:configuration];
     webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
@@ -164,6 +177,37 @@
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
+}
+
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    NSURL *URL = navigationAction.request.URL;
+    NSString *scheme = [URL scheme];
+    if ([scheme isEqualToString:@"tel"]) {
+        NSString *resourceSpecifier = [URL resourceSpecifier];
+        NSString *callPhone = [NSString stringWithFormat:@"telprompt:%@", resourceSpecifier];
+        // 防止iOS 10及其之后,拨打电话系统弹出框延迟出现
+        dispatch_async(dispatch_get_main_queue(),^{
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
+        });
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
+    }
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
+    if (!navigationAction.targetFrame.isMainFrame) {
+        [webView loadRequest:navigationAction.request];
+    }
+    return nil;
+}
+
+- (WKWebView *)telWebView {
+    if (_telWebView == nil) {
+        _telWebView = [[WKWebView alloc] init];
+    }
+    return _telWebView;
 }
 
 #pragma mark 移除观察者

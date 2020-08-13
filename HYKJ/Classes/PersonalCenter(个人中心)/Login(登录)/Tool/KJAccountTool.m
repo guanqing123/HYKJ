@@ -19,6 +19,7 @@
     [defaults setObject:loginResult.data[token] forKey:token];
     [defaults setObject:loginResult.data[userCode] forKey:userCode];
     [defaults setObject:loginResult.data[fullName] forKey:fullName];
+    [defaults setObject:loginResult.data[phone] forKey:phone];
     [defaults synchronize];
 }
 
@@ -42,6 +43,11 @@
 + (NSString *)getFullName {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     return [defaults stringForKey:fullName];
+}
+
++ (NSString *)getPhone {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults stringForKey:phone];
 }
 
 @end

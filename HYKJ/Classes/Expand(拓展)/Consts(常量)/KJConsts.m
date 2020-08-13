@@ -22,6 +22,9 @@ NSString *const userCode = @"userCode";
 /** fullName */
 NSString *const fullName = @"fullName";
 
+/** phone */
+NSString *const phone = @"phone";
+
 /** 刷新 购物车*/
 NSString *const refreshCart = @"refreshCart";
 

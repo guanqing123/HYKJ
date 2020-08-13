@@ -12,7 +12,7 @@ typedef enum {
     OrderWaitDelivery,  // 待收货
     OrderSdeliveryd,    // 已发货
     OrderWaitSinvoince, // 待开票
-    OrderAll            // 全部订单
+    OrderAll           // 全部订单
 } OrderType;
 
 @interface DCStateItem : NSObject

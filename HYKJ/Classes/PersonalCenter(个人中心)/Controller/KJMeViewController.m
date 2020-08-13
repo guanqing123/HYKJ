@@ -23,13 +23,20 @@
 //四组Cell
 #import "DCCenterItemCell.h"
 #import "DCCenterServiceCell.h"
+#import "TDCenterServiceCell.h"
 
-//我的服务
+//我的数据
 #import "DCGridItem.h"
 #import <MJExtension.h>
 #import "KJBrowseViewController.h"
 
-@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate,DCCenterServiceCellDelegate>
+//商务
+#import "TDGridItem.h"
+
+//到款
+#import "KJDaoKuanViewController.h"
+
+@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate,DCCenterServiceCellDelegate,TDCenterServiceCellDelegate>
 
 @property (nonatomic, strong)  SPPersonCenterHeaderView *headerView;
 /** 头部背景图片 */
@@ -42,13 +49,16 @@
 /* 扫码 */
 @property (nonatomic, strong)  KJScanViewController *scanVc;
 
-/* 服务数据 */
+/* 我的数据 */
 @property (strong , nonatomic)NSMutableArray<DCGridItem *> *serviceItem;
+/* 商务 */
+@property (nonatomic, strong)  NSMutableArray<TDGridItem *> *tdServiceItem;
 
 @end
 
 static NSString *const DCCenterItemCellID = @"DCCenterItemCell";
 static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
+static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
 
 @implementation KJMeViewController
 
@@ -65,6 +75,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
         
         [_tableView registerClass:[DCCenterItemCell class] forCellReuseIdentifier:DCCenterItemCellID];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([DCCenterServiceCell class]) bundle:nil] forCellReuseIdentifier:DCCenterServiceCellID];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TDCenterServiceCell class]) bundle:nil] forCellReuseIdentifier:TDCenterServiceCellID];
     }
     return _tableView;
 }
@@ -169,6 +180,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 #pragma mark - setUpData
 - (void)setUpData {
     _serviceItem = [DCGridItem mj_objectArrayWithFilename:@"service.plist"];//MyServiceFlow.plist
+    _tdServiceItem = [TDGridItem mj_objectArrayWithFilename:@"business.plist"];
 }
 
 #pragma mark - initialize
@@ -187,7 +199,7 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -206,6 +218,11 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
         cell.serviceItemArray = [NSMutableArray arrayWithArray:_serviceItem];
         cell.delegate = self;
         cusCell = cell;
+    } else if (indexPath.section == 2) {
+        TDCenterServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:TDCenterServiceCellID forIndexPath:indexPath];
+        cell.serviceItemArray = [NSMutableArray arrayWithArray:_tdServiceItem];
+        cell.delegate = self;
+        cusCell = cell;
     }
     
     return cusCell;
@@ -213,19 +230,48 @@ static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-//        return 180;
         return 90;
     } else if (indexPath.section == 1) {
-        return 215;
+        return 130;
+    } else if (indexPath.section == 2) {
+        return 185;
     }
     return 0;
+}
+
+#pragma mark - TDCenterServiceCellDelegate
+- (void)tdcenterServiceCell:(TDCenterServiceCell *)serviceCell didClickCollectionViewItem:(TDGridItem *)gridItem {
+    switch (gridItem.serviceType) {
+        case TDDaokuanService:  // 到款
+            [self loadVc:@"KJDaoKuanViewController" title:@"到款查询"];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)loadVc:(NSString *)destVc title:(NSString *)title {
+    UIViewController *vc = [[NSClassFromString(destVc) alloc] init];
+    vc.title = title;
+    vc.view.backgroundColor = [UIColor whiteColor];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - DCCenterServiceCellDelegate
 - (void)centerServiceCell:(DCCenterServiceCell *)serviceCell didClickCollectionViewItem:(DCGridItem *)gridItem {
     switch (gridItem.serviceType) {
-        case ServiceAfterSale:
-            [self browseHTML:Kefu];
+        case TaskProgress:  // 任务进度
+            [self browseHTML:[H5URL stringByAppendingString:Progress]];
+            break;
+        case TejiaService:  // 特价
+            [self browseHTML:[H5URL stringByAppendingString:Tejia]];
+            break;
+        case CuxiaoService: // 促销
+            [self browseHTML:[H5URL stringByAppendingString:Cuxiao]];
+            break;
+        case FanliService:  // 返利
+            [self browseHTML:[H5URL stringByAppendingString:Fanli]];
             break;
         default:
             break;

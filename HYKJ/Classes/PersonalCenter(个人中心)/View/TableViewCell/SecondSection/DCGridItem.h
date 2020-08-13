@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    ServiceAfterSale // 售后服务
+    TaskProgress = 0,  // 任务进度
+    TejiaService = 1,  // 特价
+    CuxiaoService = 2, // 促销
+    FanliService = 3  // 返利
 } ServiceType;
 
 @interface DCGridItem : NSObject

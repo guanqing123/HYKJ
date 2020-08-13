@@ -13,6 +13,9 @@ target 'HYKJ' do
   #图片处理
   pod 'SDWebImage', '~> 5.8.3'
   
+  #表格刷新
+  pod 'MJRefresh', '~> 3.5.0'
+  
   #loading
   pod 'SVProgressHUD', '~>2.2.5'
   

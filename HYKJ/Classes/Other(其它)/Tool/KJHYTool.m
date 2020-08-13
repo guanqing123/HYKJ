@@ -42,6 +42,7 @@
     [defaults removeObjectForKey:token];
     [defaults removeObjectForKey:userCode];
     [defaults removeObjectForKey:fullName];
+    [defaults removeObjectForKey:phone];
     [defaults synchronize];
     
     //跳转登录页

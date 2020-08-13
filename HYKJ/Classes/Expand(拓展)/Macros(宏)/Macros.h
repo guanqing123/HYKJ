@@ -87,7 +87,18 @@
 #define WaitSinvoince @"/gdkporder/gdkporder.html"
 //全部订单
 #define Order @"/gorder/gorder.html"
+
+//我的数据
+//任务进度
+#define Progress @"/gecharts/gecharts.html"
+//特价
+#define Tejia @"/gtjorder/gtjorder.html"
+//促销
+#define Cuxiao @"/gcxorder/gcxorder.html"
+//返利
+#define Fanli @"/gflorder/gflorder.html"
 //客服地址
+#define KefuService @"/gcustom/gcustom.html"
 #define Kefu @"https://hzhydqyxgs.qiyukf.com/client?k=85cdffbd3ba211a68e2896899167ee3c&wp=1"
 
 #endif /* Macros_h */

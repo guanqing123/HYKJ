@@ -44,6 +44,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)getFullName;
 
+/**
+ phone
+ 
+ */
++ (NSString *)getPhone;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -24,6 +24,9 @@ UIKIT_EXTERN NSString *const userCode;
 /** fullName */
 UIKIT_EXTERN NSString *const fullName;
 
+/** phone */
+UIKIT_EXTERN NSString *const phone;
+
 /** 刷新购物车 */
 UIKIT_EXTERN NSString *const refreshCart;
 
