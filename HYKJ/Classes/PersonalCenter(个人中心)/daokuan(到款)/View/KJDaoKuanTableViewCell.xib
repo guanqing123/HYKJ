@@ -152,6 +152,14 @@
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="syhbbm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06M-fW-ZK0">
                         <rect key="frame" x="1130" y="0.0" width="150" height="112"/>
@@ -204,7 +212,7 @@
                     <constraint firstItem="Gf6-nZ-YwD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yCy-R9-f6C"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="389.85507246376812" y="60.267857142857139"/>
+            <point key="canvasLocation" x="-212" y="65"/>
         </tableViewCell>
     </objects>
 </document>

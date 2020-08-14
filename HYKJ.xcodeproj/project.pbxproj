@@ -72,6 +72,11 @@
 		D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */; };
 		D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */; };
 		D66E369C24E385D300EEE2C7 /* business.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66E369B24E385D300EEE2C7 /* business.plist */; };
+		D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */; };
+		D66EF57D24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */; };
+		D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */; };
+		D66EF59624E6899700E4CC3E /* KJDaoKuanSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF59524E6899700E4CC3E /* KJDaoKuanSearchView.xib */; };
+		D66EF59924E69BF800E4CC3E /* CALayer+SPCustomerCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59724E69BF700E4CC3E /* CALayer+SPCustomerCALayer.m */; };
 		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
 		D6A9A97824E56A040073E932 /* KJDaoKuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9A97624E56A040073E932 /* KJDaoKuanTableViewCell.m */; };
 		D6A9A97924E56A040073E932 /* KJDaoKuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A9A97724E56A040073E932 /* KJDaoKuanTableViewCell.xib */; };
@@ -203,6 +208,14 @@
 		D66D847E24B5CC3300B34335 /* KJBrowseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBrowseViewController.h; sourceTree = "<group>"; };
 		D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBrowseViewController.m; sourceTree = "<group>"; };
 		D66E369B24E385D300EEE2C7 /* business.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = business.plist; sourceTree = "<group>"; };
+		D66EF57924E669C800E4CC3E /* KJDaoKuanTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableHeaderView.h; sourceTree = "<group>"; };
+		D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaoKuanTableHeaderView.m; sourceTree = "<group>"; };
+		D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanTableHeaderView.xib; sourceTree = "<group>"; };
+		D66EF59224E6897300E4CC3E /* KJDaoKuanSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanSearchView.h; sourceTree = "<group>"; };
+		D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaoKuanSearchView.m; sourceTree = "<group>"; };
+		D66EF59524E6899700E4CC3E /* KJDaoKuanSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanSearchView.xib; sourceTree = "<group>"; };
+		D66EF59724E69BF700E4CC3E /* CALayer+SPCustomerCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SPCustomerCALayer.m"; sourceTree = "<group>"; };
+		D66EF59824E69BF800E4CC3E /* CALayer+SPCustomerCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SPCustomerCALayer.h"; sourceTree = "<group>"; };
 		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
 		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
 		D6A9A97524E56A040073E932 /* KJDaoKuanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableViewCell.h; sourceTree = "<group>"; };
@@ -293,6 +306,12 @@
 				D6A9A97724E56A040073E932 /* KJDaoKuanTableViewCell.xib */,
 				D6A9A97A24E5748F0073E932 /* KJLongTextScrollView.h */,
 				D6A9A97B24E5748F0073E932 /* KJLongTextScrollView.m */,
+				D66EF57924E669C800E4CC3E /* KJDaoKuanTableHeaderView.h */,
+				D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */,
+				D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */,
+				D66EF59224E6897300E4CC3E /* KJDaoKuanSearchView.h */,
+				D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */,
+				D66EF59524E6899700E4CC3E /* KJDaoKuanSearchView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,6 +547,8 @@
 		D668D7E824B1D53000AE36BB /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				D66EF59824E69BF800E4CC3E /* CALayer+SPCustomerCALayer.h */,
+				D66EF59724E69BF700E4CC3E /* CALayer+SPCustomerCALayer.m */,
 				D668D7E924B1D53C00AE36BB /* UIView+SPExtension.h */,
 				D668D7EA24B1D53C00AE36BB /* UIView+SPExtension.m */,
 				D668D82F24B1FF2200AE36BB /* UIColor+DCColorChange.h */,
@@ -885,6 +906,7 @@
 				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
 				D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */,
 				D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */,
+				D66EF59624E6899700E4CC3E /* KJDaoKuanSearchView.xib in Resources */,
 				D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */,
 				D6A9A97924E56A040073E932 /* KJDaoKuanTableViewCell.xib in Resources */,
 				D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */,
@@ -896,6 +918,7 @@
 				D668D7E724B1D42900AE36BB /* SPSettingTableViewCell.xib in Resources */,
 				D66E369C24E385D300EEE2C7 /* business.plist in Resources */,
 				D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */,
+				D66EF57D24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +987,7 @@
 				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
 				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
+				D66EF59924E69BF800E4CC3E /* CALayer+SPCustomerCALayer.m in Sources */,
 				D668D7FC24B1D9B300AE36BB /* LxGridViewFlowLayout.m in Sources */,
 				D65C542024E2C36A00001C9E /* TDGridItem.m in Sources */,
 				D668D85D24B2073D00AE36BB /* DCStateItemFooterView.m in Sources */,
@@ -979,6 +1003,7 @@
 				D668D7E324B1D42900AE36BB /* SPSettingTableViewCell.m in Sources */,
 				D668D7CB24B1CA4000AE36BB /* UIWindow+LBXHierarchy.m in Sources */,
 				D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */,
+				D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */,
 				D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */,
 				D668D7FF24B1E1C100AE36BB /* TZTestCell.m in Sources */,
 				D668D7EB24B1D53C00AE36BB /* UIView+SPExtension.m in Sources */,
@@ -987,6 +1012,7 @@
 				D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */,
 				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
 				D668D85F24B2073D00AE36BB /* DCStateItemCell.m in Sources */,
+				D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */,
 				D637693524B3F92F00A23672 /* KJCartViewController.m in Sources */,
 				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,

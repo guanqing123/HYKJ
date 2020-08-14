@@ -73,17 +73,17 @@
     }];
 }
 
-#pragma mark - 禁止屏幕旋转
-//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-//    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
-//}
-
+#pragma mark -屏幕旋转设置
 - (BOOL)shouldAutorotate {
-    return NO;
+    return self.selectedViewController.shouldAutorotate;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;//只支持这一个方向(正常的方向)
+    return [self.selectedViewController supportedInterfaceOrientations];
 }
 
 @end
