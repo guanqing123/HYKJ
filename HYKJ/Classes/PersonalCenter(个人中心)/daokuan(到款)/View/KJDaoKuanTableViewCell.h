@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KJDaokuan.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KJDaoKuanTableViewCell : UITableViewCell
+
+@property (nonatomic, strong)  KJDaokuan *daokuan;
 
 @end
 

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - FSCalendar (2.8.1)
   - IQKeyboardManager (6.5.5)
   - LBXScan/LBXNative (2.3):
     - LBXScan/Types (~> 2.2)
@@ -32,12 +33,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
+  - FSCalendar
   - IQKeyboardManager (~> 6.5.5)
   - LBXScan/LBXNative
   - LBXScan/UI
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.2.1)
-  - MJRefresh
+  - MJRefresh (~> 3.5.0)
   - SDWebImage (~> 5.8.3)
   - SVProgressHUD (~> 2.2.5)
   - TZImagePickerController (~> 3.3.2)
@@ -46,6 +48,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FSCalendar
     - IQKeyboardManager
     - LBXScan
     - Masonry
@@ -58,6 +61,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -68,6 +72,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: c18b4ad24b4a41b9eaf197191410d116233952c1
+PODFILE CHECKSUM: 1d8c1f0554fc344bc296b1b77c89e32ae398b156
 
 COCOAPODS: 1.9.3

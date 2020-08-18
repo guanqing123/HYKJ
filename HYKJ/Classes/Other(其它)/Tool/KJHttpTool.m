@@ -8,31 +8,65 @@
 
 #import "KJHttpTool.h"
 #import "AFNetworking.h"
+#import "KJHYTool.h"
 
 @implementation KJHttpTool
 
-+ (void)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure{
++ (void)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    
+    // 0.token
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *tokenStr = [defaults objectForKey:token];
+    if (tokenStr == nil) {
+        tokenStr = @"";
+    }
+    NSDictionary *headers = @{@"Authorization" : tokenStr};
+    
     // 1.创建请求管理对象
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     
     // 2.发送请求
-    [mgr POST:url parameters:params headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [mgr POST:url parameters:params headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+        //通讯协议状态码
+        NSInteger statusCode = response.statusCode;
+        
+        if (statusCode == 401) {
+            [KJHYTool showAlertVc];
+        }
+        
         failure(error);
     }];
 }
 
 + (void)postJsonWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    // 0.token
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *tokenStr = [defaults objectForKey:token];
+    if (tokenStr == nil) {
+        tokenStr = @"";
+    }
+    NSDictionary *headers = @{@"Authorization" : tokenStr};
+    
     // 1.创建请求管理对象
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     
     // 2.设置请求格式
     mgr.requestSerializer = [AFJSONRequestSerializer serializer];
     [mgr.requestSerializer requestWithMethod:@"POST" URLString:url parameters:params error:nil];
-    [mgr POST:url parameters:params headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [mgr POST:url parameters:params headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+        //通讯协议状态码
+        NSInteger statusCode = response.statusCode;
+        
+        if (statusCode == 401) {
+            [KJHYTool showAlertVc];
+        }
+        
         failure(error);
     }];
 }

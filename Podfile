@@ -40,4 +40,7 @@ target 'HYKJ' do
   #pod 'LBXScan/LBXZBar','~> 2.3'
   pod 'LBXScan/UI'
   
+  #日期
+  pod 'FSCalendar', '~> 2.8.1'
+  
 end

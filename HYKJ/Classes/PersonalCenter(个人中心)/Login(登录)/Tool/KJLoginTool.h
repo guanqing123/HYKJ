@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KJLoginParam.h"
 #import "KJLoginResult.h"
+#import "KJCyResult.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param success 成功回调
 /// @param failure 失败回调
 + (void)loginWidthToken:(NSString *)token success:(void(^)(NSString *newToken))success failure:(void(^)(NSError *error))failure;
+
+
+/// 获取产业列表
+/// @param success 成功回调
+/// @param failure 失败回调
++ (void)getCysuccess:(void(^)(NSArray *cys))success failure:(void(^)(NSError *error))failure;
 
 @end
 

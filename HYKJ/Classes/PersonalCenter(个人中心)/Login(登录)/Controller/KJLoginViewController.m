@@ -167,6 +167,7 @@
 #pragma mark - KJPasswordLoginViewDelegate
 - (void)passwordLoginViewDidLogin:(KJPasswordLoginView *)loginView {
     [SVProgressHUD show];
+    WEAKSELF
     [KJLoginTool loginWithAccountAndPassword:loginView.loginParam success:^(KJLoginResult * _Nonnull loginResult) {
         [SVProgressHUD dismiss];
         [SVProgressHUD showSuccessWithStatus:@"登录成功"];
@@ -176,10 +177,28 @@
         // 2.新特性\去首页
         [KJHYTool chooseRootController];
         
+        // 3.获取产业
+        [weakSelf getCys];
+        
     } failure:^(NSError * _Nonnull error) {
         [SVProgressHUD dismiss];
         [SVProgressHUD showErrorWithStatus:@"账号或密码错误"];
     }];
+}
+
+- (void)getCys {
+    [KJLoginTool getCysuccess:^(NSArray * _Nonnull cys) {
+        NSMutableArray *dms = [NSMutableArray array];
+        NSMutableArray *mcs = [NSMutableArray array];
+        for (KJCyResult *result in cys) {
+            [dms addObject:result.CYDM];
+            [mcs addObject:result.CYMC];
+        }
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:dms forKey:cydm];
+        [defaults setObject:mcs forKey:cymc];
+        [defaults synchronize];
+    } failure:^(NSError * _Nonnull error) {}];
 }
 
 #pragma mark - 屏幕横竖屏设置

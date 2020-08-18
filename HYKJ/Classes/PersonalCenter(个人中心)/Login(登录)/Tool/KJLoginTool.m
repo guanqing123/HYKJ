@@ -41,4 +41,17 @@
     }];
 }
 
++ (void)getCysuccess:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    
+    NSString *requestURL = [KJURL stringByAppendingString:@"/baseData/cys"];
+    
+    [KJHttpTool postWithURL:requestURL params:nil success:^(id  _Nonnull json) {
+        NSArray *cys = [KJCyResult mj_objectArrayWithKeyValuesArray:[json objectForKey:@"data"]];
+        success(cys);
+    } failure:^(NSError * _Nonnull error) {
+        failure(error);
+    }];
+    
+}
+
 @end

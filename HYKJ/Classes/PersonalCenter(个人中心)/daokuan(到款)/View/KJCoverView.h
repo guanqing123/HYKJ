@@ -1,8 +1,8 @@
 //
-//  KJDaoKuanViewController.h
+//  KJCoverView.h
 //  HYKJ
 //
-//  Created by information on 2020/8/13.
+//  Created by information on 2020/8/16.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
@@ -10,8 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KJDaoKuanViewController : UIViewController
+@interface KJCoverView : UIView
 
+- (instancetype)initCoverView;
+
+- (void)destory;
 
 @end
 

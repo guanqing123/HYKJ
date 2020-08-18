@@ -43,6 +43,8 @@
     [defaults removeObjectForKey:userCode];
     [defaults removeObjectForKey:fullName];
     [defaults removeObjectForKey:phone];
+    [defaults removeObjectForKey:cydm];
+    [defaults removeObjectForKey:cymc];
     [defaults synchronize];
     
     //跳转登录页

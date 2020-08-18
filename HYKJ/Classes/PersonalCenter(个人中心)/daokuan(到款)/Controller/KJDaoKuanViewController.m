@@ -8,15 +8,21 @@
 
 #import "KJDaoKuanViewController.h"
 
-#import "MJRefresh.h"
+// tool
+#import "KJDaokuanTool.h"
+
+// model
+#import "KJDaokuanParam.h"
 
 // table
+#import "MJRefresh.h"
 #import "KJDaoKuanTableViewCell.h"
 #import "KJDaoKuanTableHeaderView.h"
 
+// view
 #import "KJDaoKuanSearchView.h"
 
-@interface KJDaoKuanViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface KJDaoKuanViewController () <UITableViewDelegate,UITableViewDataSource, KJDaoKuanSearchViewDelegate>
 
 // tableView
 @property (nonatomic, weak) UITableView  *tableView;
@@ -30,6 +36,16 @@
 
 @property (assign, nonatomic) BOOL isAppeared;
 
+// 分页
+@property (nonatomic, assign) NSInteger pageNum;
+@property (nonatomic, assign) NSInteger pageSize;
+
+// condition
+@property (nonatomic, copy) NSString *startDat;
+@property (nonatomic, copy) NSString *endDat;
+@property (nonatomic, copy) NSString *dkdd;
+@property (nonatomic, copy) NSString *hzdd;
+
 @end
 
 @implementation KJDaoKuanViewController
@@ -42,6 +58,9 @@
     
     // 2.tableView
     [self setTableView];
+    
+    // 3. do shanxuan
+    [self shanxuan];
 }
 
 // 1.设置导航
@@ -56,6 +75,7 @@
 - (void)shanxuan {
     if (_searchView == nil) {
         _searchView = [KJDaoKuanSearchView searchView];
+        _searchView.delegate = self;
         _searchView.alpha = 0;
         [self.view addSubview:_searchView];
         [_searchView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -76,6 +96,16 @@
             weakSelf.searchView.alpha = 0;
         }];
     }
+}
+
+// KJDaoKuanSearchViewDelegate
+- (void)daokuanSearchView:(KJDaoKuanSearchView *)daokuanSearchView {
+    [self shanxuan];
+    self.startDat = daokuanSearchView.startDat;
+    self.endDat = daokuanSearchView.endDat;
+    self.dkdd = daokuanSearchView.dk;
+    self.hzdd = daokuanSearchView.hz;
+    [self.tableView.mj_header beginRefreshing];
 }
 
 // 2.tableView
@@ -107,6 +137,7 @@
     tableView.dataSource = self;
     tableView.delegate = self;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefreshing)];
     self.tableView = tableView;
     [self.baseView addSubview:tableView];
     
@@ -131,6 +162,70 @@
     [tableView registerNib:[UINib nibWithNibName:@"KJDaoKuanTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJDaoKuanTableViewCellID"];
 }
 
+- (void)headerRefreshing {
+    _pageNum = 1;
+    _pageSize = 20;
+    KJDaokuanParam *daokuanParam = [[KJDaokuanParam alloc] init];
+    daokuanParam.startDat = self.startDat;
+    daokuanParam.endDat = self.endDat;
+    daokuanParam.dkdd = self.dkdd;
+    daokuanParam.hzdd = self.hzdd;
+    daokuanParam.page = self.pageNum;
+    daokuanParam.limit = self.pageSize;
+    WEAKSELF
+    [KJDaokuanTool getDaokuanList:daokuanParam success:^(KJDaokuanResult * _Nonnull result) {
+        [self.dataArray removeAllObjects];
+        [self.dataArray addObjectsFromArray:result.data];
+        
+        NSInteger pages = ( result.count + weakSelf.pageSize - 1 ) / weakSelf.pageSize;
+        if (pages > 1) {
+            weakSelf.pageNum ++;
+            [weakSelf setupFooterRefreshing];
+        } else {
+            self.tableView.mj_footer = nil;
+        }
+        [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
+    } failure:^(NSError * _Nonnull error) {
+        [self.tableView.mj_header endRefreshing];
+    }];
+}
+
+- (NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+- (void)setupFooterRefreshing {
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRefreshing)];
+}
+
+- (void)footerRefreshing {
+    KJDaokuanParam *daokuanParam = [[KJDaokuanParam alloc] init];
+    daokuanParam.startDat = self.startDat;
+    daokuanParam.endDat = self.endDat;
+    daokuanParam.dkdd = self.dkdd;
+    daokuanParam.hzdd = self.hzdd;
+    daokuanParam.page = self.pageNum;
+    daokuanParam.limit = self.pageSize;
+    WEAKSELF
+    [KJDaokuanTool getDaokuanList:daokuanParam success:^(KJDaokuanResult * _Nonnull result) {
+        [self.dataArray addObjectsFromArray:result.data];
+        [self.tableView reloadData];
+        self->_pageNum ++;
+        NSInteger totalPage = ( result.count + weakSelf.pageSize - 1) / weakSelf.pageSize;
+        if (self->_pageNum > totalPage) {
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
+        } else {
+            [self.tableView.mj_footer endRefreshing];
+        }
+    } failure:^(NSError * _Nonnull error) {
+        [self.tableView.mj_footer endRefreshing];
+    }];
+}
+
 - (void)back {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -141,11 +236,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return _dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KJDaoKuanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJDaoKuanTableViewCellID" forIndexPath:indexPath];
+    
+    KJDaokuan *daokuan = self.dataArray[indexPath.row];
+    cell.daokuan = daokuan;
+    
     return cell;
 }
 

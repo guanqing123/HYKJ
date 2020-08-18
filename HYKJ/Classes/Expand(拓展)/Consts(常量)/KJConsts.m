@@ -28,4 +28,10 @@ NSString *const phone = @"phone";
 /** 刷新 购物车*/
 NSString *const refreshCart = @"refreshCart";
 
+/** 产业代码 */
+NSString *const cydm = @"cydm";
+
+/** 产业名称 */
+NSString *const cymc = @"cymc";
+
 @end

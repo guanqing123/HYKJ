@@ -30,6 +30,12 @@ UIKIT_EXTERN NSString *const phone;
 /** 刷新购物车 */
 UIKIT_EXTERN NSString *const refreshCart;
 
+/** 产业代码 */
+UIKIT_EXTERN NSString *const cydm;
+
+/** 产业名称 */
+UIKIT_EXTERN NSString *const cymc;
+
 @end
 
 NS_ASSUME_NONNULL_END
