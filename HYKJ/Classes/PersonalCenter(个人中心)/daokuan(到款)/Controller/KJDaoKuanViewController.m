@@ -27,6 +27,8 @@
 // tableView
 @property (nonatomic, weak) UITableView  *tableView;
 
+@property (nonatomic, weak) UILabel  *totalMoneyLabel;
+
 // 到款
 @property (nonatomic, strong)  NSMutableArray *dataArray;
 
@@ -129,7 +131,7 @@
         #endif
 
         [make top].equalTo(top);
-        [make bottom].equalTo(bottom);
+        [make bottom].equalTo(bottom).offset(-32);
     }];
     
     
@@ -144,7 +146,7 @@
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
         make.width.mas_equalTo(@(1280));
-        
+
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
 
@@ -156,10 +158,36 @@
         #endif
 
         [make top].equalTo(top);
-        [make bottom].equalTo(bottom);
+        [make bottom].equalTo(bottom).offset(-32);
     }];
     
     [tableView registerNib:[UINib nibWithNibName:@"KJDaoKuanTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJDaoKuanTableViewCellID"];
+    
+    
+    UIView *bottomView = [[UIView alloc] init];
+    bottomView.backgroundColor = RGB(0, 157, 133);
+    [self.view addSubview:bottomView];
+    
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make leading] trailing].equalTo([self view]);
+
+        MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
+
+        #ifdef __IPHONE_11_0    // 如果有这个宏，说明Xcode版本是9开始
+            if (@available(iOS 11.0, *)) {
+                bottom = [[self view] mas_safeAreaLayoutGuideBottom];
+            }
+        #endif
+        [make height].mas_equalTo(@(32));
+        [make bottom].equalTo(bottom);
+    }];
+    
+    UILabel *totalMoneyLabel = [[UILabel alloc] init];
+    totalMoneyLabel.frame = CGRectMake(10.0f, 6.0f, 200.0f, 20.0f);
+    totalMoneyLabel.font = [UIFont systemFontOfSize:14];
+    totalMoneyLabel.textColor = [UIColor whiteColor];
+    _totalMoneyLabel = totalMoneyLabel;
+    [bottomView addSubview:totalMoneyLabel];
 }
 
 - (void)headerRefreshing {
@@ -176,6 +204,7 @@
     [KJDaokuanTool getDaokuanList:daokuanParam success:^(KJDaokuanResult * _Nonnull result) {
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:result.data];
+        [self.totalMoneyLabel setText:[NSString stringWithFormat:@"到款总金额: %@", result.total]];
         
         NSInteger pages = ( result.count + weakSelf.pageSize - 1 ) / weakSelf.pageSize;
         if (pages > 1) {
