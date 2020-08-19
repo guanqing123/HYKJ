@@ -41,7 +41,7 @@
     }];
 }
 
-+ (void)getCysuccess:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
++ (void)getFcysuccess:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     
     NSString *requestURL = [KJURL stringByAppendingString:@"/baseData/cys"];
     

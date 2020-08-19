@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取产业列表
 /// @param success 成功回调
 /// @param failure 失败回调
-+ (void)getCysuccess:(void(^)(NSArray *cys))success failure:(void(^)(NSError *error))failure;
++ (void)getFcysuccess:(void(^)(NSArray *cys))success failure:(void(^)(NSError *error))failure;
 
 @end
 

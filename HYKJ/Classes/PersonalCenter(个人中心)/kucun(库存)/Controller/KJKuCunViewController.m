@@ -1,30 +1,30 @@
 //
-//  KJDaoKuanViewController.m
+//  KJKuCunViewController.m
 //  HYKJ
 //
-//  Created by information on 2020/8/13.
+//  Created by information on 2020/8/18.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
-#import "KJDaoKuanViewController.h"
+#import "KJKuCunViewController.h"
 
 // tool
-#import "KJDaokuanTool.h"
+#import "KJKuCunTool.h"
 
 // model
-#import "KJDaokuanParam.h"
+#import "KJKuCunParam.h"
 
 // table
 #import "MJRefresh.h"
-#import "KJDaoKuanTableViewCell.h"
-#import "KJDaoKuanTableHeaderView.h"
+#import "KJKuCunTableViewCell.h"
+#import "KJKuCunTableHeaderView.h"
 
 // view
-#import "KJDaoKuanSearchView.h"
+#import "KJKuCunSearchView.h"
 
-@interface KJDaoKuanViewController () <UITableViewDelegate,UITableViewDataSource, KJDaoKuanSearchViewDelegate>
+@interface KJKuCunViewController ()<UITableViewDataSource,UITableViewDelegate,KJKuCunSearchViewDelegate>
 
-@property (nonatomic, strong) KJDaoKuanSearchView  *searchView;
+@property (nonatomic, strong) KJKuCunSearchView  *searchView;
 
 // tableView
 @property (nonatomic, weak) UIScrollView  *baseView;
@@ -39,14 +39,14 @@
 @property (nonatomic, assign) NSInteger pageSize;
 
 // condition
-@property (nonatomic, copy) NSString *startDat;
-@property (nonatomic, copy) NSString *endDat;
-@property (nonatomic, copy) NSString *dkdd;
-@property (nonatomic, copy) NSString *hzdd;
+@property (nonatomic, copy) NSString *cpxh;
+@property (nonatomic, copy) NSString *cpdm;
+@property (nonatomic, copy) NSString *cpmc;
+@property (nonatomic, copy) NSString *tjgs;
 
 @end
 
-@implementation KJDaoKuanViewController
+@implementation KJKuCunViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -72,7 +72,8 @@
 
 - (void)shanxuan {
     if (_searchView == nil) {
-        _searchView = [KJDaoKuanSearchView searchView];
+        _searchView = [KJKuCunSearchView searchView];
+        [_searchView initData];
         _searchView.delegate = self;
         _searchView.alpha = 0;
         [self.view addSubview:_searchView];
@@ -96,13 +97,13 @@
     }
 }
 
-// KJDaoKuanSearchViewDelegate
-- (void)daokuanSearchView:(KJDaoKuanSearchView *)daokuanSearchView {
+// KJKuCunSearchViewDelegate
+- (void)kucunSearchView:(KJKuCunSearchView *)kucunSearchView {
     [self shanxuan];
-    self.startDat = daokuanSearchView.startDat;
-    self.endDat = daokuanSearchView.endDat;
-    self.dkdd = daokuanSearchView.dk;
-    self.hzdd = daokuanSearchView.hz;
+    self.cpxh = kucunSearchView.cpxh;
+    self.cpdm = kucunSearchView.cpdm;
+    self.cpmc = kucunSearchView.cpmc;
+    self.tjgs = kucunSearchView.tjgs;
     [self.tableView.mj_header beginRefreshing];
 }
 
@@ -110,7 +111,7 @@
 - (void)setTableView {
     // 1. baseView
     UIScrollView *baseView = [[UIScrollView alloc] init];
-    baseView.contentSize = CGSizeMake(1280.0f, 0.0f);
+    baseView.contentSize = CGSizeMake(840.0f, 0.0f);
     _baseView = baseView;
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -141,7 +142,7 @@
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
-        make.width.mas_equalTo(@(1280));
+        make.width.mas_equalTo(@(840));
 
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
@@ -157,7 +158,7 @@
         [make bottom].equalTo(bottom).offset(-32);
     }];
     
-    [tableView registerNib:[UINib nibWithNibName:@"KJDaoKuanTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJDaoKuanTableViewCellID"];
+    [tableView registerNib:[UINib nibWithNibName:@"KJKuCunTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJKuCunTableViewCellID"];
     
     // 3. bottomView
     UIView *bottomView = [[UIView alloc] init];
@@ -182,7 +183,7 @@
     totalLabel.frame = CGRectMake(10.0f, 6.0f, 200.0f, 20.0f);
     totalLabel.font = [UIFont systemFontOfSize:14];
     totalLabel.textColor = [UIColor whiteColor];
-    totalLabel.text = [NSString stringWithFormat:@"到款总金额: 0"];
+    totalLabel.text = [NSString stringWithFormat:@"库存总数: 0"];
     _totalLabel = totalLabel;
     [bottomView addSubview:totalLabel];
 }
@@ -190,26 +191,26 @@
 - (void)headerRefreshing {
     _pageNum = 1;
     _pageSize = 20;
-    KJDaokuanParam *daokuanParam = [[KJDaokuanParam alloc] init];
-    daokuanParam.startDat = self.startDat;
-    daokuanParam.endDat = self.endDat;
-    daokuanParam.dkdd = self.dkdd;
-    daokuanParam.hzdd = self.hzdd;
-    daokuanParam.page = self.pageNum;
-    daokuanParam.limit = self.pageSize;
+    KJKuCunParam *kucunParam = [[KJKuCunParam alloc] init];
+    kucunParam.cpxh = self.cpxh;
+    kucunParam.cpdm = self.cpdm;
+    kucunParam.cpmc = self.cpmc;
+    kucunParam.tjgs = self.tjgs;
+    kucunParam.page = self.pageNum;
+    kucunParam.limit = self.pageSize;
     WEAKSELF
-    [KJDaokuanTool getDaokuanList:daokuanParam success:^(KJDaokuanResult * _Nonnull result) {
+    [KJKuCunTool getKuCunList:kucunParam success:^(KJKuCunResult * _Nonnull result) {
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:result.data];
         if ([result.total length] < 1) {
             result.total = @"0";
         }
-        [self.totalLabel setText:[NSString stringWithFormat:@"到款总金额: %@", result.total]];
+        [self.totalLabel setText:[NSString stringWithFormat:@"库存总数: %@", result.total]];
         
         NSInteger pages = ( result.count + weakSelf.pageSize - 1 ) / weakSelf.pageSize;
         if (pages > 1) {
-            weakSelf.pageNum ++;
-            [weakSelf setupFooterRefreshing];
+            self.pageNum ++;
+            [self setupFooterRefreshing];
         } else {
             self.tableView.mj_footer = nil;
         }
@@ -232,15 +233,15 @@
 }
 
 - (void)footerRefreshing {
-    KJDaokuanParam *daokuanParam = [[KJDaokuanParam alloc] init];
-    daokuanParam.startDat = self.startDat;
-    daokuanParam.endDat = self.endDat;
-    daokuanParam.dkdd = self.dkdd;
-    daokuanParam.hzdd = self.hzdd;
-    daokuanParam.page = self.pageNum;
-    daokuanParam.limit = self.pageSize;
+    KJKuCunParam *kucunParam = [[KJKuCunParam alloc] init];
+    kucunParam.cpxh = self.cpxh;
+    kucunParam.cpdm = self.cpdm;
+    kucunParam.cpmc = self.cpmc;
+    kucunParam.tjgs = self.tjgs;
+    kucunParam.page = self.pageNum;
+    kucunParam.limit = self.pageSize;
     WEAKSELF
-    [KJDaokuanTool getDaokuanList:daokuanParam success:^(KJDaokuanResult * _Nonnull result) {
+    [KJKuCunTool getKuCunList:kucunParam success:^(KJKuCunResult * _Nonnull result) {
         [self.dataArray addObjectsFromArray:result.data];
         [self.tableView reloadData];
         self->_pageNum ++;
@@ -269,10 +270,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    KJDaoKuanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJDaoKuanTableViewCellID" forIndexPath:indexPath];
+    KJKuCunTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJKuCunTableViewCellID" forIndexPath:indexPath];
     
-    KJDaokuan *daokuan = self.dataArray[indexPath.row];
-    cell.daokuan = daokuan;
+    KJKuCun *kucun = self.dataArray[indexPath.row];
+    cell.kucun = kucun;
     
     return cell;
 }
@@ -287,8 +288,8 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    KJDaoKuanTableHeaderView *headerView = [KJDaoKuanTableHeaderView headerView];
-    headerView.frame = CGRectMake(0.0f, 0.0f, 1280.0f, 44.0f);
+    KJKuCunTableHeaderView *headerView = [KJKuCunTableHeaderView headerView];
+    headerView.frame = CGRectMake(0.0f, 0.0f, 840.0f, 44.0f);
     return headerView;
 }
 

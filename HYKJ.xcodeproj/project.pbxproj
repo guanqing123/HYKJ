@@ -68,6 +68,8 @@
 		D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F642499E22500AF10F5 /* ATAppUpdater.m */; };
 		D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */; };
 		D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */; };
+		D66B246724ED2455009D48CF /* KJKuCunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B246524ED2455009D48CF /* KJKuCunTableViewCell.m */; };
+		D66B246824ED2455009D48CF /* KJKuCunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66B246624ED2455009D48CF /* KJKuCunTableViewCell.xib */; };
 		D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */; };
 		D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */; };
 		D66D2A5324E8B9C700DA0E42 /* KJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D2A5224E8B9C700DA0E42 /* KJDatePickerView.m */; };
@@ -91,6 +93,15 @@
 		D6B9E8FD24EB71C200686E42 /* KJDaokuanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E8FC24EB71C200686E42 /* KJDaokuanTool.m */; };
 		D6B9E90024EB7AD900686E42 /* KJDaokuanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E8FF24EB7AD900686E42 /* KJDaokuanResult.m */; };
 		D6B9E90324EB7BA800686E42 /* KJDaokuan.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E90224EB7BA800686E42 /* KJDaokuan.m */; };
+		D6B9E90B24EBCE2000686E42 /* KJKuCunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E90A24EBCE2000686E42 /* KJKuCunViewController.m */; };
+		D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E90D24EBCE8B00686E42 /* KJKuCunSearchView.m */; };
+		D6B9E91124EBD1E400686E42 /* KJKuCunParam.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E91024EBD1E400686E42 /* KJKuCunParam.m */; };
+		D6B9E91424EBD22000686E42 /* KJKuCunTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E91324EBD22000686E42 /* KJKuCunTool.m */; };
+		D6B9E91724EBD27200686E42 /* KJKuCunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E91624EBD27200686E42 /* KJKuCunResult.m */; };
+		D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E91924EBD4BE00686E42 /* KJKuCun.m */; };
+		D6B9E91D24EBD5CE00686E42 /* KJKuCunTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E91C24EBD5CE00686E42 /* KJKuCunTableHeaderView.m */; };
+		D6B9E91F24EBD5E600686E42 /* KJKuCunTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B9E91E24EBD5E600686E42 /* KJKuCunTableHeaderView.xib */; };
+		D6B9E92124EBDAE400686E42 /* KJKuCunSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B9E92024EBDAE400686E42 /* KJKuCunSearchView.xib */; };
 		D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF51F24A763C8004B24AA /* KJLoginTool.m */; };
 		D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52224A78119004B24AA /* KJHYTool.m */; };
 		D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAF52524A78570004B24AA /* KJIndexViewController.m */; };
@@ -213,6 +224,9 @@
 		D66A3F6B2499E61400AF10F5 /* KJLoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginResult.m; sourceTree = "<group>"; };
 		D66A3F6E2499E90D00AF10F5 /* KJAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAccountTool.h; sourceTree = "<group>"; };
 		D66A3F6F2499E90D00AF10F5 /* KJAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAccountTool.m; sourceTree = "<group>"; };
+		D66B246424ED2455009D48CF /* KJKuCunTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunTableViewCell.h; sourceTree = "<group>"; };
+		D66B246524ED2455009D48CF /* KJKuCunTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunTableViewCell.m; sourceTree = "<group>"; };
+		D66B246624ED2455009D48CF /* KJKuCunTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJKuCunTableViewCell.xib; sourceTree = "<group>"; };
 		D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
 		D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
 		D66D2A5124E8B9C700DA0E42 /* KJDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDatePickerView.h; sourceTree = "<group>"; };
@@ -251,6 +265,22 @@
 		D6B9E8FF24EB7AD900686E42 /* KJDaokuanResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaokuanResult.m; sourceTree = "<group>"; };
 		D6B9E90124EB7BA800686E42 /* KJDaokuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaokuan.h; sourceTree = "<group>"; };
 		D6B9E90224EB7BA800686E42 /* KJDaokuan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaokuan.m; sourceTree = "<group>"; };
+		D6B9E90924EBCE2000686E42 /* KJKuCunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunViewController.h; sourceTree = "<group>"; };
+		D6B9E90A24EBCE2000686E42 /* KJKuCunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunViewController.m; sourceTree = "<group>"; };
+		D6B9E90C24EBCE8B00686E42 /* KJKuCunSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunSearchView.h; sourceTree = "<group>"; };
+		D6B9E90D24EBCE8B00686E42 /* KJKuCunSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunSearchView.m; sourceTree = "<group>"; };
+		D6B9E90F24EBD1E400686E42 /* KJKuCunParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunParam.h; sourceTree = "<group>"; };
+		D6B9E91024EBD1E400686E42 /* KJKuCunParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunParam.m; sourceTree = "<group>"; };
+		D6B9E91224EBD22000686E42 /* KJKuCunTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunTool.h; sourceTree = "<group>"; };
+		D6B9E91324EBD22000686E42 /* KJKuCunTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunTool.m; sourceTree = "<group>"; };
+		D6B9E91524EBD27200686E42 /* KJKuCunResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunResult.h; sourceTree = "<group>"; };
+		D6B9E91624EBD27200686E42 /* KJKuCunResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunResult.m; sourceTree = "<group>"; };
+		D6B9E91824EBD4BE00686E42 /* KJKuCun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCun.h; sourceTree = "<group>"; };
+		D6B9E91924EBD4BE00686E42 /* KJKuCun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCun.m; sourceTree = "<group>"; };
+		D6B9E91B24EBD5CE00686E42 /* KJKuCunTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJKuCunTableHeaderView.h; sourceTree = "<group>"; };
+		D6B9E91C24EBD5CE00686E42 /* KJKuCunTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJKuCunTableHeaderView.m; sourceTree = "<group>"; };
+		D6B9E91E24EBD5E600686E42 /* KJKuCunTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJKuCunTableHeaderView.xib; sourceTree = "<group>"; };
+		D6B9E92024EBDAE400686E42 /* KJKuCunSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJKuCunSearchView.xib; sourceTree = "<group>"; };
 		D6BAF51E24A763C8004B24AA /* KJLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJLoginTool.h; sourceTree = "<group>"; };
 		D6BAF51F24A763C8004B24AA /* KJLoginTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJLoginTool.m; sourceTree = "<group>"; };
 		D6BAF52124A78119004B24AA /* KJHYTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJHYTool.h; sourceTree = "<group>"; };
@@ -744,6 +774,7 @@
 		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				D6B9E90424EBCDC400686E42 /* kucun(库存) */,
 				D63CC9FD24E5227200D8815F /* daokuan(到款) */,
 				D66D847B24B5CBF800B34335 /* WebView(网页) */,
 				D668D7EC24B1D6DC00AE36BB /* AboutMe(关于我们) */,
@@ -870,6 +901,64 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D6B9E90424EBCDC400686E42 /* kucun(库存) */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9E90524EBCDF600686E42 /* Model */,
+				D6B9E90824EBCDF600686E42 /* Tool */,
+				D6B9E90624EBCDF600686E42 /* View */,
+				D6B9E90724EBCDF600686E42 /* Controller */,
+			);
+			path = "kucun(库存)";
+			sourceTree = "<group>";
+		};
+		D6B9E90524EBCDF600686E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9E90F24EBD1E400686E42 /* KJKuCunParam.h */,
+				D6B9E91024EBD1E400686E42 /* KJKuCunParam.m */,
+				D6B9E91524EBD27200686E42 /* KJKuCunResult.h */,
+				D6B9E91624EBD27200686E42 /* KJKuCunResult.m */,
+				D6B9E91824EBD4BE00686E42 /* KJKuCun.h */,
+				D6B9E91924EBD4BE00686E42 /* KJKuCun.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6B9E90624EBCDF600686E42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9E90C24EBCE8B00686E42 /* KJKuCunSearchView.h */,
+				D6B9E90D24EBCE8B00686E42 /* KJKuCunSearchView.m */,
+				D6B9E92024EBDAE400686E42 /* KJKuCunSearchView.xib */,
+				D6B9E91B24EBD5CE00686E42 /* KJKuCunTableHeaderView.h */,
+				D6B9E91C24EBD5CE00686E42 /* KJKuCunTableHeaderView.m */,
+				D6B9E91E24EBD5E600686E42 /* KJKuCunTableHeaderView.xib */,
+				D66B246424ED2455009D48CF /* KJKuCunTableViewCell.h */,
+				D66B246524ED2455009D48CF /* KJKuCunTableViewCell.m */,
+				D66B246624ED2455009D48CF /* KJKuCunTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6B9E90724EBCDF600686E42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9E90924EBCE2000686E42 /* KJKuCunViewController.h */,
+				D6B9E90A24EBCE2000686E42 /* KJKuCunViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6B9E90824EBCDF600686E42 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9E91224EBD22000686E42 /* KJKuCunTool.h */,
+				D6B9E91324EBD22000686E42 /* KJKuCunTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		D6BAF52724A785F8004B24AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,6 +1055,7 @@
 				D65C542224E2C36A00001C9E /* TDCenterServiceCell.xib in Resources */,
 				D637693924B47AC300A23672 /* service.plist in Resources */,
 				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
+				D66B246824ED2455009D48CF /* KJKuCunTableViewCell.xib in Resources */,
 				D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */,
 				D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */,
 				D66DEDDF24EA2F40009D8C96 /* KJDataPickerView.xib in Resources */,
@@ -973,6 +1063,8 @@
 				D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */,
 				D6A9A97924E56A040073E932 /* KJDaoKuanTableViewCell.xib in Resources */,
 				D65C45592498860C0042E42E /* LaunchScreen.storyboard in Resources */,
+				D6B9E92124EBDAE400686E42 /* KJKuCunSearchView.xib in Resources */,
+				D6B9E91F24EBD5E600686E42 /* KJKuCunTableHeaderView.xib in Resources */,
 				D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */,
 				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
 				D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */,
@@ -1048,10 +1140,13 @@
 				D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */,
 				D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
+				D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */,
 				D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */,
 				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
+				D6B9E91124EBD1E400686E42 /* KJKuCunParam.m in Sources */,
 				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
+				D66B246724ED2455009D48CF /* KJKuCunTableViewCell.m in Sources */,
 				D66EF59924E69BF800E4CC3E /* CALayer+SPCustomerCALayer.m in Sources */,
 				D668D7FC24B1D9B300AE36BB /* LxGridViewFlowLayout.m in Sources */,
 				D65C542024E2C36A00001C9E /* TDGridItem.m in Sources */,
@@ -1076,9 +1171,11 @@
 				D668D7EB24B1D53C00AE36BB /* UIView+SPExtension.m in Sources */,
 				D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */,
 				D668D7F024B1D6DC00AE36BB /* SPAboutMeViewController.m in Sources */,
+				D6B9E91724EBD27200686E42 /* KJKuCunResult.m in Sources */,
 				D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */,
 				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
 				D6B9E8FD24EB71C200686E42 /* KJDaokuanTool.m in Sources */,
+				D6B9E90B24EBCE2000686E42 /* KJKuCunViewController.m in Sources */,
 				D668D85F24B2073D00AE36BB /* DCStateItemCell.m in Sources */,
 				D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */,
 				D637693524B3F92F00A23672 /* KJCartViewController.m in Sources */,
@@ -1086,6 +1183,7 @@
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				D65C542124E2C36A00001C9E /* TDGoodsGridCell.m in Sources */,
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
+				D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */,
 				D6B9E90024EB7AD900686E42 /* KJDaokuanResult.m in Sources */,
 				D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */,
 				D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */,
@@ -1097,6 +1195,8 @@
 				D668D82C24B1FEE600AE36BB /* DCTitleRolling.m in Sources */,
 				D63A942F249F82DD00DF546C /* KJLoginHeaderView.m in Sources */,
 				D668D86824B207CE00AE36BB /* DCGridItem.m in Sources */,
+				D6B9E91424EBD22000686E42 /* KJKuCunTool.m in Sources */,
+				D6B9E91D24EBD5CE00686E42 /* KJKuCunTableHeaderView.m in Sources */,
 				D668D7E524B1D42900AE36BB /* SPSettingTopView.m in Sources */,
 				D6BAF52C24A78620004B24AA /* KJMeViewController.m in Sources */,
 				D668D7E224B1D42900AE36BB /* SPSettingViewController.m in Sources */,

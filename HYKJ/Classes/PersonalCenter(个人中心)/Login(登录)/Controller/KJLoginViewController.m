@@ -178,7 +178,7 @@
         [KJHYTool chooseRootController];
         
         // 3.获取产业
-        [weakSelf getCys];
+        [weakSelf getFcy];
         
     } failure:^(NSError * _Nonnull error) {
         [SVProgressHUD dismiss];
@@ -186,8 +186,8 @@
     }];
 }
 
-- (void)getCys {
-    [KJLoginTool getCysuccess:^(NSArray * _Nonnull cys) {
+- (void)getFcy {
+    [KJLoginTool getFcysuccess:^(NSArray * _Nonnull cys) {
         NSMutableArray *dms = [NSMutableArray array];
         NSMutableArray *mcs = [NSMutableArray array];
         for (KJCyResult *result in cys) {

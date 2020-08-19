@@ -22,6 +22,7 @@
         label.font = PFR12Font;
         [label.layer setBorderColor:[[UIColor blackColor] CGColor]];
         [label.layer setBorderWidth:0.5f];
+        label.textAlignment = NSTextAlignmentCenter;
         self.textLabel = label;
         [self addSubview:label];
     }
