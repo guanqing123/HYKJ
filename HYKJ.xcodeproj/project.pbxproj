@@ -80,6 +80,17 @@
 		D66DEDDD24EA2F1A009D8C96 /* KJDataPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DEDDC24EA2F1A009D8C96 /* KJDataPickerView.m */; };
 		D66DEDDF24EA2F40009D8C96 /* KJDataPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66DEDDE24EA2F40009D8C96 /* KJDataPickerView.xib */; };
 		D66E369C24E385D300EEE2C7 /* business.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66E369B24E385D300EEE2C7 /* business.plist */; };
+		D66E558124EE118100529F61 /* KJDuiZhangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E558024EE118100529F61 /* KJDuiZhangViewController.m */; };
+		D66E558424EE127B00529F61 /* KJDuiZhangSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E558324EE127B00529F61 /* KJDuiZhangSearchView.m */; };
+		D66E558624EE14C800529F61 /* KJDuiZhangSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E558524EE14C800529F61 /* KJDuiZhangSearchView.xib */; };
+		D66E558924EE4C0F00529F61 /* KJDuiZhangTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E558824EE4C0F00529F61 /* KJDuiZhangTableHeaderView.m */; };
+		D66E558B24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E558A24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib */; };
+		D66E558E24EE782600529F61 /* KJDuiZhangResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E558D24EE782600529F61 /* KJDuiZhangResult.m */; };
+		D66E559124EE784500529F61 /* KJDuiZhangParam.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559024EE784500529F61 /* KJDuiZhangParam.m */; };
+		D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559324EE785200529F61 /* KJDuiZhang.m */; };
+		D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559624EE796500529F61 /* KJDuiZhangTool.m */; };
+		D66E559B24EE7D1600529F61 /* KJDuiZhangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */; };
+		D66E559C24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */; };
 		D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */; };
 		D66EF57D24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */; };
 		D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */; };
@@ -242,6 +253,25 @@
 		D66DEDDC24EA2F1A009D8C96 /* KJDataPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDataPickerView.m; sourceTree = "<group>"; };
 		D66DEDDE24EA2F40009D8C96 /* KJDataPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDataPickerView.xib; sourceTree = "<group>"; };
 		D66E369B24E385D300EEE2C7 /* business.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = business.plist; sourceTree = "<group>"; };
+		D66E557F24EE118100529F61 /* KJDuiZhangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangViewController.h; sourceTree = "<group>"; };
+		D66E558024EE118100529F61 /* KJDuiZhangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangViewController.m; sourceTree = "<group>"; };
+		D66E558224EE127B00529F61 /* KJDuiZhangSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangSearchView.h; sourceTree = "<group>"; };
+		D66E558324EE127B00529F61 /* KJDuiZhangSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangSearchView.m; sourceTree = "<group>"; };
+		D66E558524EE14C800529F61 /* KJDuiZhangSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDuiZhangSearchView.xib; sourceTree = "<group>"; };
+		D66E558724EE4C0F00529F61 /* KJDuiZhangTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangTableHeaderView.h; sourceTree = "<group>"; };
+		D66E558824EE4C0F00529F61 /* KJDuiZhangTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangTableHeaderView.m; sourceTree = "<group>"; };
+		D66E558A24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDuiZhangTableHeaderView.xib; sourceTree = "<group>"; };
+		D66E558C24EE782600529F61 /* KJDuiZhangResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangResult.h; sourceTree = "<group>"; };
+		D66E558D24EE782600529F61 /* KJDuiZhangResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangResult.m; sourceTree = "<group>"; };
+		D66E558F24EE784500529F61 /* KJDuiZhangParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangParam.h; sourceTree = "<group>"; };
+		D66E559024EE784500529F61 /* KJDuiZhangParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangParam.m; sourceTree = "<group>"; };
+		D66E559224EE785200529F61 /* KJDuiZhang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhang.h; sourceTree = "<group>"; };
+		D66E559324EE785200529F61 /* KJDuiZhang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhang.m; sourceTree = "<group>"; };
+		D66E559524EE796500529F61 /* KJDuiZhangTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangTool.h; sourceTree = "<group>"; };
+		D66E559624EE796500529F61 /* KJDuiZhangTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangTool.m; sourceTree = "<group>"; };
+		D66E559824EE7D1600529F61 /* KJDuiZhangTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangTableViewCell.h; sourceTree = "<group>"; };
+		D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangTableViewCell.m; sourceTree = "<group>"; };
+		D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDuiZhangTableViewCell.xib; sourceTree = "<group>"; };
 		D66EF57924E669C800E4CC3E /* KJDaoKuanTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableHeaderView.h; sourceTree = "<group>"; };
 		D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaoKuanTableHeaderView.m; sourceTree = "<group>"; };
 		D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanTableHeaderView.xib; sourceTree = "<group>"; };
@@ -774,6 +804,7 @@
 		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				D66E557A24EE112C00529F61 /* duizhang(对账) */,
 				D6B9E90424EBCDC400686E42 /* kucun(库存) */,
 				D63CC9FD24E5227200D8815F /* daokuan(到款) */,
 				D66D847B24B5CBF800B34335 /* WebView(网页) */,
@@ -868,6 +899,64 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D66E557A24EE112C00529F61 /* duizhang(对账) */ = {
+			isa = PBXGroup;
+			children = (
+				D66E557D24EE115500529F61 /* Model */,
+				D66E557E24EE115500529F61 /* Tool */,
+				D66E557C24EE115500529F61 /* View */,
+				D66E557B24EE115500529F61 /* Controller */,
+			);
+			path = "duizhang(对账)";
+			sourceTree = "<group>";
+		};
+		D66E557B24EE115500529F61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D66E557F24EE118100529F61 /* KJDuiZhangViewController.h */,
+				D66E558024EE118100529F61 /* KJDuiZhangViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D66E557C24EE115500529F61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D66E558224EE127B00529F61 /* KJDuiZhangSearchView.h */,
+				D66E558324EE127B00529F61 /* KJDuiZhangSearchView.m */,
+				D66E558524EE14C800529F61 /* KJDuiZhangSearchView.xib */,
+				D66E558724EE4C0F00529F61 /* KJDuiZhangTableHeaderView.h */,
+				D66E558824EE4C0F00529F61 /* KJDuiZhangTableHeaderView.m */,
+				D66E558A24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib */,
+				D66E559824EE7D1600529F61 /* KJDuiZhangTableViewCell.h */,
+				D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */,
+				D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D66E557D24EE115500529F61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D66E558F24EE784500529F61 /* KJDuiZhangParam.h */,
+				D66E559024EE784500529F61 /* KJDuiZhangParam.m */,
+				D66E558C24EE782600529F61 /* KJDuiZhangResult.h */,
+				D66E558D24EE782600529F61 /* KJDuiZhangResult.m */,
+				D66E559224EE785200529F61 /* KJDuiZhang.h */,
+				D66E559324EE785200529F61 /* KJDuiZhang.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D66E557E24EE115500529F61 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D66E559524EE796500529F61 /* KJDuiZhangTool.h */,
+				D66E559624EE796500529F61 /* KJDuiZhangTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		D679D85F24AAF6AB004F1463 /* Consts(常量) */ = {
@@ -1053,6 +1142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65C542224E2C36A00001C9E /* TDCenterServiceCell.xib in Resources */,
+				D66E558624EE14C800529F61 /* KJDuiZhangSearchView.xib in Resources */,
+				D66E559C24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib in Resources */,
 				D637693924B47AC300A23672 /* service.plist in Resources */,
 				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
 				D66B246824ED2455009D48CF /* KJKuCunTableViewCell.xib in Resources */,
@@ -1068,6 +1159,7 @@
 				D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */,
 				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
 				D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */,
+				D66E558B24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib in Resources */,
 				D66D2A5524E8B9FD00DA0E42 /* KJDatePickerView.xib in Resources */,
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
 				D637693724B478BC00A23672 /* order.plist in Resources */,
@@ -1128,6 +1220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
+				D66E559124EE784500529F61 /* KJDuiZhangParam.m in Sources */,
 				D66D2A5B24E8C78500DA0E42 /* KJCoverView.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
 				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
@@ -1136,11 +1229,15 @@
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
 				D637693224B3F91A00A23672 /* KJCategroyViewController.m in Sources */,
 				D66A3F702499E90D00AF10F5 /* KJAccountTool.m in Sources */,
+				D66E558424EE127B00529F61 /* KJDuiZhangSearchView.m in Sources */,
 				D63A9435249F978400DF546C /* KJPasswordLoginView.m in Sources */,
+				D66E558E24EE782600529F61 /* KJDuiZhangResult.m in Sources */,
 				D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */,
 				D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
 				D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */,
+				D66E558124EE118100529F61 /* KJDuiZhangViewController.m in Sources */,
+				D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */,
 				D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */,
 				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
@@ -1172,6 +1269,7 @@
 				D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */,
 				D668D7F024B1D6DC00AE36BB /* SPAboutMeViewController.m in Sources */,
 				D6B9E91724EBD27200686E42 /* KJKuCunResult.m in Sources */,
+				D66E559B24EE7D1600529F61 /* KJDuiZhangTableViewCell.m in Sources */,
 				D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */,
 				D6BAF52624A78570004B24AA /* KJIndexViewController.m in Sources */,
 				D6B9E8FD24EB71C200686E42 /* KJDaokuanTool.m in Sources */,
@@ -1185,6 +1283,7 @@
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
 				D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */,
 				D6B9E90024EB7AD900686E42 /* KJDaokuanResult.m in Sources */,
+				D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */,
 				D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */,
 				D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */,
 				D668D82D24B1FEE600AE36BB /* UIView+DCRolling.m in Sources */,
@@ -1203,6 +1302,7 @@
 				D668D7E624B1D42900AE36BB /* SPUpDownButton.m in Sources */,
 				D6A9A97824E56A040073E932 /* KJDaoKuanTableViewCell.m in Sources */,
 				D668D7CA24B1CA4000AE36BB /* KJScanResultViewController.m in Sources */,
+				D66E558924EE4C0F00529F61 /* KJDuiZhangTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

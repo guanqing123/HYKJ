@@ -247,6 +247,10 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
             break;
         case TDKucunService:  // 库存
             [self loadVc:@"KJKuCunViewController" title:@"库存查询"];
+            break;
+        case TDDuizhangService: // 对账
+            [self loadVc:@"KJDuiZhangViewController" title:@"对账查询"];
+            break;
         default:
             break;
     }

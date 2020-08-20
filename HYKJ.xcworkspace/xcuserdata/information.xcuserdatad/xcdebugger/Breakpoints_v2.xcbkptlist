@@ -366,8 +366,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Controller/KJMeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-centerItemCell:didClickCollectionViewItem:"
             landmarkType = "7">
          </BreakpointContent>

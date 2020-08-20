@@ -280,7 +280,7 @@
                 <outlet property="huazhiBtn" destination="0mY-lA-49X" id="uIz-WY-qlb"/>
                 <outlet property="startDatBtn" destination="HND-Js-oT5" id="wRD-dh-9YU"/>
             </connections>
-            <point key="canvasLocation" x="-1591" y="-382"/>
+            <point key="canvasLocation" x="-2250" y="-370"/>
         </view>
     </objects>
 </document>
