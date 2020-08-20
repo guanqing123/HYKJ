@@ -46,6 +46,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    [self setupData];
 }
 
 - (void)setupData {
@@ -68,6 +70,7 @@
     _mcs = [userDefaults objectForKey:cymc];
     _dms = [userDefaults objectForKey:cydm];
     _dmc = [NSDictionary dictionaryWithObjects:_dms forKeys:_mcs];
+    [self.tableView reloadData];
 }
 
 + (instancetype)searchView {
@@ -93,6 +96,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
      __weak typeof(cell) weakCell = cell;
     if (indexPath.row == 0) {
         UILabel *dzLabel = [[UILabel alloc] init];
@@ -383,6 +387,5 @@
 
 - (IBAction)reset {
     [self setupData];
-    [self.tableView reloadData];
 }
 @end

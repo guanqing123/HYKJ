@@ -69,7 +69,6 @@
 - (void)shanxuan {
     if (_searchView == nil) {
         _searchView = [KJDuiZhangSearchView searchView];
-        [_searchView setupData];
         _searchView.delegate = self;
         _searchView.alpha = 0;
         [self.view addSubview:_searchView];

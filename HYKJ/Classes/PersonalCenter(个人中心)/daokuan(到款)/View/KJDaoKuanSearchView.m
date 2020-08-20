@@ -54,6 +54,7 @@
     [super awakeFromNib];
     
     // init data
+    [self setupData];
 }
 
 - (void)setupData {
