@@ -46,8 +46,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
-    [self setupData];
 }
 
 - (void)setupData {
