@@ -46,15 +46,15 @@
     self.fcyLabel.text = duizhang.fcy;
     self.kpkhLabel.text = duizhang.kpkh;
     self.kpmcLabel.text = duizhang.kpmc;
-    self.balamtLabel.text = duizhang.balamt;
-    self.sinamtLabel.text = duizhang.sinamt;
-    self.retamtLabel.text = duizhang.retamt;
-    self.recamtLabel.text = duizhang.recamt;
-    self.devamtLabel.text = duizhang.devamt;
-    self.amtLabel.text = duizhang.amt;
-    self.ntaxamtLabel.text = duizhang.ntaxamt;
-    self.taxamtLabel.text = duizhang.taxamt;
-    self.zwostauzLabel.text = duizhang.zwostauz;
+    self.balamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.balamt];
+    self.sinamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.sinamt];
+    self.retamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.retamt];
+    self.recamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.recamt];
+    self.devamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.devamt];
+    self.amtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.amt];
+    self.ntaxamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.ntaxamt];
+    self.taxamtLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.taxamt];
+    self.zwostauzLabel.text = [NSString stringWithFormat:@"%.2f", duizhang.zwostauz];
     self.cwshLabel.text = duizhang.cwsh;
 }
 

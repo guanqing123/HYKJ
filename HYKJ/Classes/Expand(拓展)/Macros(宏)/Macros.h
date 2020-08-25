@@ -97,6 +97,8 @@
 #define Cuxiao @"/gcxorder/gcxorder.html"
 //返利
 #define Fanli @"/gflorder/gflorder.html"
+//协议书
+#define Xieyishu @"/gprotocol/gprotocol.html"
 //客服地址
 #define KefuService @"/gcustom/gcustom.html"
 #define Kefu @"https://hzhydqyxgs.qiyukf.com/client?k=85cdffbd3ba211a68e2896899167ee3c&wp=1"

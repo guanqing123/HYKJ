@@ -22,31 +22,31 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *kpmc;
 
 // 期初余额
-@property (nonatomic, copy) NSString *balamt;
+@property (nonatomic, assign) double balamt;
 
 // 期间要货金额
-@property (nonatomic, copy) NSString *sinamt;
+@property (nonatomic, assign) double sinamt;
 
 // 期间退货金额
-@property (nonatomic, copy) NSString *retamt;
+@property (nonatomic, assign) double retamt;
 
 // 期间到款金额
-@property (nonatomic, copy) NSString *recamt;
+@property (nonatomic, assign) double recamt;
 
 // 期间财务调整
-@property (nonatomic, copy) NSString *devamt;
+@property (nonatomic, assign) double devamt;
 
 // 余额
-@property (nonatomic, copy) NSString *amt;
+@property (nonatomic, assign) double amt;
 
 // 累计未开金税
-@property (nonatomic, copy) NSString *ntaxamt;
+@property (nonatomic, assign) double ntaxamt;
 
 // 期间已开金税
-@property (nonatomic, copy) NSString *taxamt;
+@property (nonatomic, assign) double taxamt;
 
 // 授信金额
-@property (nonatomic, copy) NSString *zwostauz;
+@property (nonatomic, assign) double zwostauz;
 
 // 财务未审核
 @property (nonatomic, copy) NSString *cwsh;

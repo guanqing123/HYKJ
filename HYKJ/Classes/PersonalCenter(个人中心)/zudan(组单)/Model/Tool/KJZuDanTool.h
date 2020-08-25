@@ -11,6 +11,8 @@
 #import "KJZuDanParam.h"
 #import "KJZuDanResult.h"
 
+#import "KJZuDanDetail.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KJZuDanTool : NSObject
@@ -20,6 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param success 成功回调
 /// @param failure 失败回调
 + (void)getZuDanList:(KJZuDanParam *)zudanParam success:(void(^)(KJZuDanResult *result))success failure:(void(^)(NSError *error))failure;
+
+/// 组单详情
+/// @param dict 请求参数
+/// @param success 成功回调
+/// @param failure 失败回调
++ (void)getZuDanDetail:(NSDictionary *)dict success:(void(^)(NSArray *details))success failure:(void(^)(NSError *error))failure;
 
 @end
 

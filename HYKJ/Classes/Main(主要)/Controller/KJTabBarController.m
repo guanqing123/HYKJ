@@ -31,15 +31,24 @@
 
 // 0.设置底部工具栏
 - (void)setUpTabBar {
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(168, 168, 168),NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(0, 157, 133),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    if (@available(iOS 13.0, *)) {
+        // iOS 13以上
+        self.tabBar.tintColor = RGB(0, 157, 133);
+        self.tabBar.unselectedItemTintColor = RGB(168, 168, 168);
+        UITabBarItem *item = [UITabBarItem appearance];
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(168, 168, 168),NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(0, 157, 133),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    } else {
+        [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(168, 168, 168),NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+        [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(0, 157, 133),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    }
 }
 
 // 1.添加子控制器
 - (void)addKJChildViewController {
     NSArray *childArray = @[
                             @{MallClassKey  : @"KJIndexViewController",
-                              MallTitleKey  : @"商城",
+                              MallTitleKey  : @"首页",
                               MallImgKey    : @"tabr_1_up",
                               MallSelImgKey : @"tabr_1_down"},
                             

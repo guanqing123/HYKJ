@@ -21,8 +21,21 @@
         KJZuDanResult *result = [KJZuDanResult mj_objectWithKeyValues:json];
         success(result);
     } failure:^(NSError * _Nonnull error) {
-        
+        failure(error);
     }];
+}
+
++ (void)getZuDanDetail:(NSDictionary *)dict success:(nonnull void (^)(NSArray * _Nonnull))success failure:(nonnull void (^)(NSError * _Nonnull))failure {
+    
+    NSString *requestURL = [KJURL stringByAppendingString:@"/baseData/zddetail"];
+    
+    [KJHttpTool postWithURL:requestURL params:dict success:^(id  _Nonnull json) {
+        NSArray *details = [KJZuDanDetail mj_objectArrayWithKeyValuesArray:[json objectForKey:@"data"]];
+        success(details);
+    } failure:^(NSError * _Nonnull error) {
+        failure(error);
+    }];
+    
 }
 
 @end

@@ -94,8 +94,8 @@
             filePath = "HYKJ/Classes/Main(&#x4e3b;&#x8981;)/Controller/KJTabBarController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-addKJChildViewController"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +366,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Controller/KJMeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
             landmarkName = "-centerItemCell:didClickCollectionViewItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,8 +414,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/WebView(&#x7f51;&#x9875;)/Controller/KJBrowseViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1628,9 +1628,296 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Controller/KJZuDanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Controller/KJZuDanViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-headerRefreshing"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - a7001869a74231ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KJZuDanViewController headerRefreshing]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Controller/KJZuDanViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "659">
+               </Location>
+               <Location
+                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - 582e44bdc10e517"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[KJZuDanViewController headerRefreshing]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Controller/KJZuDanViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "208"
+                  endingLineNumber = "208"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "845398DF-CA44-4367-909E-660FC0FB5B89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "+getZuDanList:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81AB6FD8-885E-4F21-9262-19DE9681BAB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "+getZuDanList:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+getZuDanList:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - e7cf126c71743ff2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[KJZuDanTool getZuDanList:success:failure:]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Tool/KJZuDanTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "214">
+               </Location>
+               <Location
+                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - 764f39c389c9c97e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44+[KJZuDanTool getZuDanList:success:failure:]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Tool/KJZuDanTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "+getZuDanList:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - e7cf126c71743ff2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[KJZuDanTool getZuDanList:success:failure:]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Tool/KJZuDanTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - 764f39c389c9c97e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44+[KJZuDanTool getZuDanList:success:failure:]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Tool/KJZuDanTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - dddd6b959a4333e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44+[KJZuDanTool getZuDanList:success:failure:]_block_invoke.9"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/zudan(%E7%BB%84%E5%8D%95)/Tool/KJZuDanTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BDF34AD-5560-4A33-AB11-D75B981FB5BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/View/KJZuDanTableViewCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-setZudan:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0117D93-78CB-49C5-AC14-8DFAEB2DA0F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/View/KJZuDanSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
+            landmarkName = "-valueChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEF8E774-862A-4219-A35E-6F2637A9CA4B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "+getTuiHuoDetail:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09129E31-B50B-4809-9C88-B27FE2F8D263"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Model/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+getZuDanDetail:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAAA4742-D31A-49B7-B708-40668501288A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Model/Tool/KJZuDanTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "+getZuDanDetail:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C66362F-0924-49B0-9E22-1B123CF8B609"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/WebView(&#x7f51;&#x9875;)/Controller/KJFujianViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

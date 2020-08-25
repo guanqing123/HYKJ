@@ -7,6 +7,8 @@
 //
 
 #import "KJBrowseViewController.h"
+#import "KJFujianViewController.h"
+#import "KJNavigationController.h"
 
 // webview/js bridge
 #import <WebKit/WebKit.h>
@@ -190,6 +192,14 @@
         dispatch_async(dispatch_get_main_queue(),^{
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
         });
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
+    }
+    if ([navigationAction.request.URL.absoluteString containsString:@"/common/download-client-agreement"]) {
+        KJFujianViewController *fjVc = [[KJFujianViewController alloc] initWithRequest:navigationAction.request Configuration:webView.configuration];
+        KJNavigationController *nav = [[KJNavigationController alloc] initWithRootViewController:fjVc];
+        nav.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:nav animated:YES completion:nil];
         decisionHandler(WKNavigationActionPolicyCancel);
         return;
     }

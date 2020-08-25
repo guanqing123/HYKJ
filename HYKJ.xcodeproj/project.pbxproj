@@ -99,6 +99,13 @@
 		D66B804D24F3B834000943C1 /* KJZuDanTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66B804C24F3B834000943C1 /* KJZuDanTableHeaderView.xib */; };
 		D66B805124F3BC2E000943C1 /* KJZuDanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B804F24F3BC2E000943C1 /* KJZuDanTableViewCell.m */; };
 		D66B805224F3BC2E000943C1 /* KJZuDanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66B805024F3BC2E000943C1 /* KJZuDanTableViewCell.xib */; };
+		D66BE8C524F4DA92008EAB5A /* KJZuDanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BE8C424F4DA92008EAB5A /* KJZuDanDetailViewController.m */; };
+		D66BE8C824F4DBFC008EAB5A /* KJZuDanDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BE8C724F4DBFC008EAB5A /* KJZuDanDetail.m */; };
+		D66BE8CB24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BE8CA24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m */; };
+		D66BE8CD24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66BE8CC24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib */; };
+		D66BE8D124F4E501008EAB5A /* KJZuDanDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BE8CF24F4E501008EAB5A /* KJZuDanDetailTableViewCell.m */; };
+		D66BE8D224F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66BE8D024F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib */; };
+		D66BE8D524F50621008EAB5A /* KJFujianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66BE8D424F50621008EAB5A /* KJFujianViewController.m */; };
 		D66CCB3024B2F4A70038CCE7 /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */; };
 		D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */; };
 		D66D2A5324E8B9C700DA0E42 /* KJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D2A5224E8B9C700DA0E42 /* KJDatePickerView.m */; };
@@ -317,6 +324,18 @@
 		D66B804E24F3BC2E000943C1 /* KJZuDanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJZuDanTableViewCell.h; sourceTree = "<group>"; };
 		D66B804F24F3BC2E000943C1 /* KJZuDanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJZuDanTableViewCell.m; sourceTree = "<group>"; };
 		D66B805024F3BC2E000943C1 /* KJZuDanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJZuDanTableViewCell.xib; sourceTree = "<group>"; };
+		D66BE8C324F4DA92008EAB5A /* KJZuDanDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJZuDanDetailViewController.h; sourceTree = "<group>"; };
+		D66BE8C424F4DA92008EAB5A /* KJZuDanDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJZuDanDetailViewController.m; sourceTree = "<group>"; };
+		D66BE8C624F4DBFC008EAB5A /* KJZuDanDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJZuDanDetail.h; sourceTree = "<group>"; };
+		D66BE8C724F4DBFC008EAB5A /* KJZuDanDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJZuDanDetail.m; sourceTree = "<group>"; };
+		D66BE8C924F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJZuDanDetailTableHeaderView.h; sourceTree = "<group>"; };
+		D66BE8CA24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJZuDanDetailTableHeaderView.m; sourceTree = "<group>"; };
+		D66BE8CC24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJZuDanDetailTableHeaderView.xib; sourceTree = "<group>"; };
+		D66BE8CE24F4E501008EAB5A /* KJZuDanDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJZuDanDetailTableViewCell.h; sourceTree = "<group>"; };
+		D66BE8CF24F4E501008EAB5A /* KJZuDanDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJZuDanDetailTableViewCell.m; sourceTree = "<group>"; };
+		D66BE8D024F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJZuDanDetailTableViewCell.xib; sourceTree = "<group>"; };
+		D66BE8D324F50621008EAB5A /* KJFujianViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJFujianViewController.h; sourceTree = "<group>"; };
+		D66BE8D424F50621008EAB5A /* KJFujianViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJFujianViewController.m; sourceTree = "<group>"; };
 		D66CCB2E24B2F4A70038CCE7 /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
 		D66CCB2F24B2F4A70038CCE7 /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
 		D66D2A5124E8B9C700DA0E42 /* KJDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDatePickerView.h; sourceTree = "<group>"; };
@@ -1011,7 +1030,6 @@
 			isa = PBXGroup;
 			children = (
 				D66B803124F38ED4000943C1 /* Model */,
-				D66B803424F38ED4000943C1 /* Tool */,
 				D66B803224F38ED4000943C1 /* View */,
 				D66B803324F38ED4000943C1 /* Controller */,
 			);
@@ -1027,6 +1045,9 @@
 				D66B804424F3B2EB000943C1 /* KJZuDanResult.m */,
 				D66B804624F3B2F8000943C1 /* KJZuDan.h */,
 				D66B804724F3B2F8000943C1 /* KJZuDan.m */,
+				D66BE8C624F4DBFC008EAB5A /* KJZuDanDetail.h */,
+				D66BE8C724F4DBFC008EAB5A /* KJZuDanDetail.m */,
+				D66B803424F38ED4000943C1 /* Tool */,
 			);
 			name = Model;
 			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Model";
@@ -1044,6 +1065,12 @@
 				D66B804E24F3BC2E000943C1 /* KJZuDanTableViewCell.h */,
 				D66B804F24F3BC2E000943C1 /* KJZuDanTableViewCell.m */,
 				D66B805024F3BC2E000943C1 /* KJZuDanTableViewCell.xib */,
+				D66BE8C924F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.h */,
+				D66BE8CA24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m */,
+				D66BE8CC24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib */,
+				D66BE8CE24F4E501008EAB5A /* KJZuDanDetailTableViewCell.h */,
+				D66BE8CF24F4E501008EAB5A /* KJZuDanDetailTableViewCell.m */,
+				D66BE8D024F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib */,
 			);
 			name = View;
 			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/View";
@@ -1054,6 +1081,8 @@
 			children = (
 				D66B803524F38F23000943C1 /* KJZuDanViewController.h */,
 				D66B803624F38F23000943C1 /* KJZuDanViewController.m */,
+				D66BE8C324F4DA92008EAB5A /* KJZuDanDetailViewController.h */,
+				D66BE8C424F4DA92008EAB5A /* KJZuDanDetailViewController.m */,
 			);
 			name = Controller;
 			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Controller";
@@ -1066,7 +1095,7 @@
 				D66B804124F3A145000943C1 /* KJZuDanTool.m */,
 			);
 			name = Tool;
-			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Tool";
+			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Model/Tool";
 			sourceTree = SOURCE_ROOT;
 		};
 		D66CCB2C24B2F4A70038CCE7 /* Resource(资源) */ = {
@@ -1103,6 +1132,8 @@
 			children = (
 				D66D847E24B5CC3300B34335 /* KJBrowseViewController.h */,
 				D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */,
+				D66BE8D324F50621008EAB5A /* KJFujianViewController.h */,
+				D66BE8D424F50621008EAB5A /* KJFujianViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1374,6 +1405,8 @@
 				D6B9E92124EBDAE400686E42 /* KJKuCunSearchView.xib in Resources */,
 				D6B9E91F24EBD5E600686E42 /* KJKuCunTableHeaderView.xib in Resources */,
 				D66B802A24F37DA9000943C1 /* KJTuiHuoDetailTableHeaderView.xib in Resources */,
+				D66BE8D224F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib in Resources */,
+				D66BE8CD24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib in Resources */,
 				D66AA66B24EFAC6100B97426 /* KJTuiHuoTableHeaderView.xib in Resources */,
 				D66B805224F3BC2E000943C1 /* KJZuDanTableViewCell.xib in Resources */,
 				D66CCB3124B2F4A70038CCE7 /* MyServiceFlow.plist in Resources */,
@@ -1461,8 +1494,10 @@
 				D66AA65E24EF683600B97426 /* KJTuiHuoSearchView.m in Sources */,
 				D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */,
 				D668D85E24B2073D00AE36BB /* DCCenterItemCell.m in Sources */,
+				D66BE8C524F4DA92008EAB5A /* KJZuDanDetailViewController.m in Sources */,
 				D65C455C2498860C0042E42E /* main.m in Sources */,
 				D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */,
+				D66BE8D524F50621008EAB5A /* KJFujianViewController.m in Sources */,
 				D66E558124EE118100529F61 /* KJDuiZhangViewController.m in Sources */,
 				D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */,
 				D66AA65B24EF671E00B97426 /* KJTuiHuoViewController.m in Sources */,
@@ -1482,6 +1517,7 @@
 				D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */,
 				D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */,
 				D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */,
+				D66BE8D124F4E501008EAB5A /* KJZuDanDetailTableViewCell.m in Sources */,
 				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
 				D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */,
 				D66D2A5324E8B9C700DA0E42 /* KJDatePickerView.m in Sources */,
@@ -1514,9 +1550,11 @@
 				D637693524B3F92F00A23672 /* KJCartViewController.m in Sources */,
 				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
+				D66BE8C824F4DBFC008EAB5A /* KJZuDanDetail.m in Sources */,
 				D65C542124E2C36A00001C9E /* TDGoodsGridCell.m in Sources */,
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
 				D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */,
+				D66BE8CB24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m in Sources */,
 				D6B9E90024EB7AD900686E42 /* KJDaokuanResult.m in Sources */,
 				D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */,
 				D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */,

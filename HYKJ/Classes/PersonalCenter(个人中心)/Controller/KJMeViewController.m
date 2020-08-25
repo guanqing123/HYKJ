@@ -254,6 +254,9 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
         case TDTuihuoService:   // 退货
             [self loadVc:@"KJTuiHuoViewController" title:@"退货查询"];
             break;
+        case TDXieyishuService: // 协议书
+            [self browseHTML:[H5URL stringByAppendingString:Xieyishu]];
+            break;
         case TDZudanService:    // 组单
             [self loadVc:@"KJZuDanViewController" title:@"组单查询"];
             break;

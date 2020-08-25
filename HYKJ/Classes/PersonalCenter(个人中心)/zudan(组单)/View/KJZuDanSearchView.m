@@ -14,7 +14,7 @@
 #import "KJDataPickerView.h"
 #import "KJCoverView.h"
 
-@interface KJZuDanSearchView() <UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate,KJDatePickerViewDelegate,KJDataPickerViewDelegate>
+@interface KJZuDanSearchView() <UITableViewDataSource, UITableViewDelegate,KJDatePickerViewDelegate,KJDataPickerViewDelegate>
 
 // date view
 @property (nonatomic, strong)  KJDatePickerView *datePickerView;
@@ -196,9 +196,10 @@
         }];
         
         UITextField *zdTextField = [[UITextField alloc] init];
+        zdTextField.font = [UIFont systemFontOfSize:13.0f];
         zdTextField.backgroundColor = RGB(238, 238, 238);
         zdTextField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-        zdTextField.delegate = self;
+        [zdTextField addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventEditingChanged];
         [zdTextField.layer setBorderColor:[RGB(200, 200, 200) CGColor]];
         [zdTextField.layer setBorderWidth:1.0f];
         [zdTextField.layer setCornerRadius:5.0f];
@@ -416,7 +417,7 @@
 }
 
 #pragma mark - UITextField
-- (void)textFieldDidEndEditing:(UITextField *)textField {
+- (void)valueChange:(UITextField *)textField {
     _zddh = textField.text;
 }
 
@@ -498,6 +499,7 @@
     }];
 }
 - (IBAction)search {
+    [self.zdTextField resignFirstResponder];
     if ([self.delegate respondsToSelector:@selector(zudanSearchViewDidSearch:)]) {
         [self.delegate zudanSearchViewDidSearch:self];
     }

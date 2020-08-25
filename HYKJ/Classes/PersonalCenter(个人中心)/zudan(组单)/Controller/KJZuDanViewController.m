@@ -7,6 +7,7 @@
 //
 
 #import "KJZuDanViewController.h"
+#import "KJZuDanDetailViewController.h"
 
 // tool
 #import "KJZuDanTool.h"
@@ -22,7 +23,7 @@
 // view
 #import "KJZuDanSearchView.h"
 
-@interface KJZuDanViewController ()<UITableViewDataSource,UITableViewDelegate,KJZuDanSearchViewDelegate>
+@interface KJZuDanViewController ()<UITableViewDataSource,UITableViewDelegate,KJZuDanSearchViewDelegate,KJZuDanTableViewCellDelegate>
 
 @property (nonatomic, strong) KJZuDanSearchView  *searchView;
 
@@ -82,7 +83,7 @@
             make.left.equalTo(self.view);
             make.top.equalTo(self.baseView);
             make.right.equalTo(self.view);
-            make.height.mas_equalTo(@(220));
+            make.height.mas_equalTo(@(264));
         }];
     }
     if (_searchView.alpha == 0) {
@@ -114,7 +115,7 @@
 - (void)setTableView {
     // 1. baseView
     UIScrollView *baseView = [[UIScrollView alloc] init];
-    baseView.contentSize = CGSizeMake(1220.0f, 0.0f);
+    baseView.contentSize = CGSizeMake(1540.0f, 0.0f);
     _baseView = baseView;
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -131,7 +132,7 @@
         #endif
 
         [make top].equalTo(top);
-        [make bottom].equalTo(bottom);
+        [make bottom].equalTo(bottom).offset(-32);
     }];
     
     // 2. tableView
@@ -145,7 +146,7 @@
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
-        make.width.mas_equalTo(@(1220));
+        make.width.mas_equalTo(@(1540));
 
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
@@ -158,10 +159,37 @@
         #endif
 
         [make top].equalTo(top);
-        [make bottom].equalTo(bottom);
+        [make bottom].equalTo(bottom).offset(-32);
     }];
     
     [tableView registerNib:[UINib nibWithNibName:@"KJZuDanTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJZuDanTableViewCellID"];
+    
+    // 3. bottomView
+    UIView *bottomView = [[UIView alloc] init];
+    bottomView.backgroundColor = RGB(0, 157, 133);
+    [self.view addSubview:bottomView];
+    
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make leading] trailing].equalTo([self view]);
+
+        MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
+
+        #ifdef __IPHONE_11_0    // 如果有这个宏，说明Xcode版本是9开始
+            if (@available(iOS 11.0, *)) {
+                bottom = [[self view] mas_safeAreaLayoutGuideBottom];
+            }
+        #endif
+        [make height].mas_equalTo(@(32));
+        [make bottom].equalTo(bottom);
+    }];
+    
+    UILabel *totalLabel = [[UILabel alloc] init];
+    totalLabel.frame = CGRectMake(10.0f, 6.0f, 200.0f, 20.0f);
+    totalLabel.font = [UIFont systemFontOfSize:14];
+    totalLabel.textColor = [UIColor whiteColor];
+    totalLabel.text = [NSString stringWithFormat:@"运费合计: 0"];
+    _totalLabel = totalLabel;
+    [bottomView addSubview:totalLabel];
 }
 
 - (void)headerRefreshing {
@@ -183,6 +211,11 @@
         }
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:result.data];
+        if ([result.total length] < 1) {
+            result.total = @"0";
+        }
+        [self.totalLabel setText:[NSString stringWithFormat:@"运费合计: %@", result.total]];
+        
         NSInteger pages = ( result.count + weakSelf.pageSize - 1 ) / weakSelf.pageSize;
         if (pages > 1) {
             self.pageNum ++;
@@ -249,11 +282,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KJZuDanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJZuDanTableViewCellID" forIndexPath:indexPath];
+    cell.delegate = self;
     
     KJZuDan *zudan = self.dataArray[indexPath.row];
     cell.zudan = zudan;
     
     return cell;
+}
+
+#pragma mark - KJZuDanTableViewCellDelegate
+- (void)zudanTableViewCellShowDetail:(KJZuDanTableViewCell *)tableViewCell {
+    KJZuDanDetailViewController *detailVc = [[KJZuDanDetailViewController alloc] initWithZspnum:tableViewCell.zudan.zspnum];
+    detailVc.view.backgroundColor = [UIColor whiteColor];
+    detailVc.title = @"组单详情";
+    [self.navigationController pushViewController:detailVc animated:YES];
 }
 
 #pragma mark - tableView delegate
@@ -267,7 +309,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     KJZuDanTableHeaderView *headerView = [KJZuDanTableHeaderView headerView];
-    headerView.frame = CGRectMake(0.0f, 0.0f, 1220.0f, 44.0f);
+    headerView.frame = CGRectMake(0.0f, 0.0f, 1540.0f, 44.0f);
     return headerView;
 }
 
