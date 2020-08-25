@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="KJTuiHuoSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-5Z-zQ3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="mdf-Cj-dK1"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="bgj-Bi-LIp"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81b-Be-kkr">
+                    <rect key="frame" x="0.0" y="176" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.61568627450980395" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="reset" destination="iN0-l3-epB" eventType="touchUpInside" id="S8Z-7f-Lv5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApZ-eR-n7N">
+                    <rect key="frame" x="187.5" y="176" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.61568627450980395" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="search" destination="iN0-l3-epB" eventType="touchUpInside" id="A4l-DZ-Yrl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ApZ-eR-n7N" secondAttribute="trailing" id="2ab-5H-UYw"/>
+                <constraint firstItem="ApZ-eR-n7N" firstAttribute="top" secondItem="A7p-5Z-zQ3" secondAttribute="bottom" id="7nt-Lv-raE"/>
+                <constraint firstItem="81b-Be-kkr" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="HhL-oC-vhe"/>
+                <constraint firstItem="81b-Be-kkr" firstAttribute="top" secondItem="A7p-5Z-zQ3" secondAttribute="bottom" id="Mpn-xq-FxF"/>
+                <constraint firstItem="81b-Be-kkr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ryz-AY-QoE"/>
+                <constraint firstItem="A7p-5Z-zQ3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TGK-gz-fAN"/>
+                <constraint firstAttribute="trailing" secondItem="A7p-5Z-zQ3" secondAttribute="trailing" id="Xfk-yB-WrW"/>
+                <constraint firstAttribute="bottom" secondItem="A7p-5Z-zQ3" secondAttribute="bottom" constant="44" id="ewH-g2-KcA"/>
+                <constraint firstItem="A7p-5Z-zQ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n7J-ne-cDK"/>
+                <constraint firstAttribute="bottom" secondItem="81b-Be-kkr" secondAttribute="bottom" id="vts-8x-Ffn"/>
+                <constraint firstAttribute="bottom" secondItem="ApZ-eR-n7N" secondAttribute="bottom" id="yh6-IM-1He"/>
+                <constraint firstItem="ApZ-eR-n7N" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="ywp-hl-k7e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="A7p-5Z-zQ3" id="Dph-1N-gEN"/>
+            </connections>
+            <point key="canvasLocation" x="-186" y="78"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="KJTuiHuoDetailTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品系列" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFp-bx-0Ge">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="aQv-5L-zz7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品代码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK9-Q5-75X">
+                    <rect key="frame" x="120" y="0.0" width="120" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="ktr-CW-yBh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销售单价" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYl-IF-lUI">
+                    <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="aYL-e4-wtB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请数量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvM-ZL-aHf">
+                    <rect key="frame" x="320" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bVk-dh-41D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="批准数量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGx-wQ-c6W">
+                    <rect key="frame" x="400" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="wu8-3Y-vNk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="JK9-Q5-75X" firstAttribute="leading" secondItem="UFp-bx-0Ge" secondAttribute="trailing" id="7B4-fi-0VT"/>
+                <constraint firstAttribute="bottom" secondItem="RGx-wQ-c6W" secondAttribute="bottom" id="Ioy-ut-bLJ"/>
+                <constraint firstItem="UFp-bx-0Ge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JcH-kF-7N7"/>
+                <constraint firstAttribute="bottom" secondItem="JK9-Q5-75X" secondAttribute="bottom" id="KPx-Oh-dbY"/>
+                <constraint firstItem="UFp-bx-0Ge" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mlj-of-KuU"/>
+                <constraint firstAttribute="bottom" secondItem="UFp-bx-0Ge" secondAttribute="bottom" id="VCp-t5-XLu"/>
+                <constraint firstAttribute="bottom" secondItem="YYl-IF-lUI" secondAttribute="bottom" id="YCz-vU-64S"/>
+                <constraint firstItem="JK9-Q5-75X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZFZ-8E-ico"/>
+                <constraint firstItem="YYl-IF-lUI" firstAttribute="leading" secondItem="JK9-Q5-75X" secondAttribute="trailing" id="daC-Pi-lET"/>
+                <constraint firstItem="nvM-ZL-aHf" firstAttribute="leading" secondItem="YYl-IF-lUI" secondAttribute="trailing" id="dhg-wg-8F5"/>
+                <constraint firstItem="RGx-wQ-c6W" firstAttribute="leading" secondItem="nvM-ZL-aHf" secondAttribute="trailing" id="ogp-T1-7O8"/>
+                <constraint firstItem="YYl-IF-lUI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tur-LI-xiO"/>
+                <constraint firstAttribute="bottom" secondItem="nvM-ZL-aHf" secondAttribute="bottom" id="ug9-aa-Rqd"/>
+                <constraint firstItem="nvM-ZL-aHf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vjY-u4-8pt"/>
+                <constraint firstItem="RGx-wQ-c6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wbn-LV-gmM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+</document>

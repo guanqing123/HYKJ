@@ -1,35 +1,40 @@
 //
-//  KJDuiZhangViewController.m
+//  KJTuiHuoViewController.m
 //  HYKJ
 //
-//  Created by information on 2020/8/20.
+//  Created by information on 2020/8/21.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
-#import "KJDuiZhangViewController.h"
+#import "KJTuiHuoViewController.h"
+#import "KJTuiHuoDetailViewController.h"
 
 // tool
-#import "KJDuiZhangTool.h"
+#import "KJTuiHuoTool.h"
 
 // model
-#import "KJDuiZhangParam.h"
+#import "KJTuiHuoZDParam.h"
 
 // table
 #import "MJRefresh.h"
-#import "KJDuiZhangTableViewCell.h"
-#import "KJDuiZhangTableHeaderView.h"
+#import "KJTuiHuoTableViewCell.h"
+#import "KJTuiHuoTableHeaderView.h"
 
 // view
-#import "KJDuiZhangSearchView.h"
+#import "KJTuiHuoSearchView.h"
 
-@interface KJDuiZhangViewController ()<UITableViewDataSource,UITableViewDelegate,KJDuiZhangSearchViewDelegate>
+@interface KJTuiHuoViewController ()<UITableViewDataSource,UITableViewDelegate,KJTuiHuoSearchViewDelegate,KJTuiHuoTableViewCellDelegate>
 
-@property (nonatomic, strong) KJDuiZhangSearchView  *searchView;
+@property (nonatomic, strong) KJTuiHuoSearchView  *searchView;
 
 // tableView
 @property (nonatomic, weak) UIScrollView  *baseView;
 @property (nonatomic, weak) UITableView  *tableView;
 @property (nonatomic, weak) UILabel  *totalLabel;
+
+// 分页
+@property (nonatomic, assign) NSInteger pageNum;
+@property (nonatomic, assign) NSInteger pageSize;
 
 // data
 @property (nonatomic, strong)  NSMutableArray *dataArray;
@@ -37,12 +42,12 @@
 // condition
 @property (nonatomic, copy) NSString *startDat;
 @property (nonatomic, copy) NSString *endDat;
-@property (nonatomic, copy) NSString *khdm;
+@property (nonatomic, copy) NSString *nodeId;
 @property (nonatomic, copy) NSString *tjgs;
 
 @end
 
-@implementation KJDuiZhangViewController
+@implementation KJTuiHuoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,7 +73,8 @@
 
 - (void)shanxuan {
     if (_searchView == nil) {
-        _searchView = [KJDuiZhangSearchView searchView];
+        _searchView = [KJTuiHuoSearchView searchView];
+        [_searchView initData];
         _searchView.delegate = self;
         _searchView.alpha = 0;
         [self.view addSubview:_searchView];
@@ -93,12 +99,12 @@
 }
 
 // KJKuCunSearchViewDelegate
-- (void)duizhangSearchView:(KJDuiZhangSearchView *)duizhangSearchView {
+- (void)tuihuoSearchView:(KJTuiHuoSearchView *)tuihuoSearchView {
     [self shanxuan];
-    self.startDat = duizhangSearchView.startDat;
-    self.endDat = duizhangSearchView.endDat;
-    self.tjgs = duizhangSearchView.tjgs;
-    self.khdm = duizhangSearchView.khdm;
+    self.startDat = tuihuoSearchView.startDat;
+    self.endDat = tuihuoSearchView.endDat;
+    self.tjgs = tuihuoSearchView.tjgs;
+    self.nodeId = tuihuoSearchView.nodeId;
     [self.tableView.mj_header beginRefreshing];
 }
 
@@ -106,7 +112,7 @@
 - (void)setTableView {
     // 1. baseView
     UIScrollView *baseView = [[UIScrollView alloc] init];
-    baseView.contentSize = CGSizeMake(1860.0f, 0.0f);
+    baseView.contentSize = CGSizeMake(1390.0f, 0.0f);
     _baseView = baseView;
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -137,7 +143,7 @@
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
-        make.width.mas_equalTo(@(1860));
+        make.width.mas_equalTo(@(1390));
 
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
@@ -153,21 +159,33 @@
         [make bottom].equalTo(bottom);
     }];
     
-    [tableView registerNib:[UINib nibWithNibName:@"KJDuiZhangTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJDuiZhangTableViewCellID"];
+    [tableView registerNib:[UINib nibWithNibName:@"KJTuiHuoTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJTuiHuoTableViewCellID"];
 }
 
 - (void)headerRefreshing {
-    KJDuiZhangParam *duizhangParam = [[KJDuiZhangParam alloc] init];
-    duizhangParam.startDat = self.startDat;
-    duizhangParam.endDat = self.endDat;
-    duizhangParam.khdm = self.khdm;
-    duizhangParam.tjgs = self.tjgs;
-    [KJDuiZhangTool getDuiZhangList:duizhangParam success:^(KJDuiZhangResult * _Nonnull result) {
+    _pageNum = 1;
+    _pageSize = 20;
+    KJTuiHuoZDParam *tuihuoZDParam = [[KJTuiHuoZDParam alloc] init];
+    tuihuoZDParam.startDat = self.startDat;
+    tuihuoZDParam.endDat = self.endDat;
+    tuihuoZDParam.tjgs = self.tjgs;
+    tuihuoZDParam.nodeId = self.nodeId;
+    tuihuoZDParam.page = self.pageNum;
+    tuihuoZDParam.limit = self.pageSize;
+    WEAKSELF
+    [KJTuiHuoTool getTuiHuoList:tuihuoZDParam success:^(KJTuiHuoZDResult * _Nonnull result) {
         if ([result.data count] < 1) {
             [SVProgressHUD showInfoWithStatus:@"该查询条件下没有数据!"];
         }
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:result.data];
+        NSInteger pages = ( result.count + weakSelf.pageSize - 1 ) / weakSelf.pageSize;
+        if (pages > 1) {
+            self.pageNum ++;
+            [self setupFooterRefreshing];
+        } else {
+            self.tableView.mj_footer = nil;
+        }
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
     } failure:^(NSError * _Nonnull error) {
@@ -180,6 +198,34 @@
         _dataArray = [NSMutableArray array];
     }
     return _dataArray;
+}
+
+- (void)setupFooterRefreshing {
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRefreshing)];
+}
+
+- (void)footerRefreshing {
+    KJTuiHuoZDParam *tuihuoZDParam = [[KJTuiHuoZDParam alloc] init];
+    tuihuoZDParam.startDat = self.startDat;
+    tuihuoZDParam.endDat = self.endDat;
+    tuihuoZDParam.tjgs = self.tjgs;
+    tuihuoZDParam.nodeId = self.nodeId;
+    tuihuoZDParam.page = self.pageNum;
+    tuihuoZDParam.limit = self.pageSize;
+    WEAKSELF
+    [KJTuiHuoTool getTuiHuoList:tuihuoZDParam success:^(KJTuiHuoZDResult * _Nonnull result) {
+        [self.dataArray addObjectsFromArray:result.data];
+        [self.tableView reloadData];
+        self->_pageNum ++;
+        NSInteger totalPage = ( result.count + weakSelf.pageSize - 1) / weakSelf.pageSize;
+        if (self->_pageNum > totalPage) {
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
+        } else {
+            [self.tableView.mj_footer endRefreshing];
+        }
+    } failure:^(NSError * _Nonnull error) {
+        [self.tableView.mj_footer endRefreshing];
+    }];
 }
 
 - (void)back {
@@ -196,12 +242,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    KJDuiZhangTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJDuiZhangTableViewCellID" forIndexPath:indexPath];
+    KJTuiHuoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJTuiHuoTableViewCellID" forIndexPath:indexPath];
+    cell.delegate = self;
     
-    KJDuiZhang *duizhang = self.dataArray[indexPath.row];
-    cell.duizhang = duizhang;
+    KJTuiHuoZD *tuihuoZD = self.dataArray[indexPath.row];
+    cell.tuihuoZD = tuihuoZD;
     
     return cell;
+}
+
+#pragma mark - KJTuiHuoTableViewCellDelegate
+- (void)tuihuoTableViewCellShowDetail:(KJTuiHuoTableViewCell *)tableViewCell {
+    KJTuiHuoDetailViewController *detailVc = [[KJTuiHuoDetailViewController alloc] initWithMainId:tableViewCell.tuihuoZD.mainId];
+    detailVc.view.backgroundColor = [UIColor whiteColor];
+    detailVc.title = @"退货详情";
+    [self.navigationController pushViewController:detailVc animated:YES];
 }
 
 #pragma mark - tableView delegate
@@ -214,8 +269,8 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    KJDuiZhangTableHeaderView *headerView = [KJDuiZhangTableHeaderView headerView];
-    headerView.frame = CGRectMake(0.0f, 0.0f, 1860.0f, 44.0f);
+    KJTuiHuoTableHeaderView *headerView = [KJTuiHuoTableHeaderView headerView];
+    headerView.frame = CGRectMake(0.0f, 0.0f, 1390.0f, 44.0f);
     return headerView;
 }
 

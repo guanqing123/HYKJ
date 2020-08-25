@@ -366,8 +366,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Controller/KJMeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "-centerItemCell:didClickCollectionViewItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -494,8 +494,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/daokuan(&#x5230;&#x6b3e;)/Controller/KJDaoKuanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -925,8 +925,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/daokuan(&#x5230;&#x6b3e;)/Controller/KJDaoKuanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "-footerRefreshing"
             landmarkType = "7">
          </BreakpointContent>
@@ -941,8 +941,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/daokuan(&#x5230;&#x6b3e;)/Controller/KJDaoKuanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "-footerRefreshing"
             landmarkType = "7">
          </BreakpointContent>
@@ -957,8 +957,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/daokuan(&#x5230;&#x6b3e;)/Controller/KJDaoKuanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-headerRefreshing"
             landmarkType = "7">
          </BreakpointContent>
@@ -973,8 +973,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/daokuan(&#x5230;&#x6b3e;)/Controller/KJDaoKuanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "-headerRefreshing"
             landmarkType = "7">
          </BreakpointContent>
@@ -1101,8 +1101,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/kucun(&#x5e93;&#x5b58;)/Controller/KJKuCunViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
             landmarkName = "-tableView:numberOfRowsInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1117,8 +1117,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/kucun(&#x5e93;&#x5b58;)/Controller/KJKuCunViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "-headerRefreshing"
             landmarkType = "7">
          </BreakpointContent>
@@ -1327,6 +1327,310 @@
             startingLineNumber = "104"
             endingLineNumber = "104"
             landmarkName = "+searchView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "370702A3-910C-4F17-B138-0A2318A97BBB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
+            landmarkName = "-dataBtnClick:value:data:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "282320CA-CD27-403A-B8FB-F8632E4E7067"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
+            landmarkName = "-dataBtnClick:value:data:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8681FBC-79DC-4A61-9F54-080EE8ACAE0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "375"
+            endingLineNumber = "375"
+            landmarkName = "-spBtnClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3619F7FD-FEC7-40BD-B073-6CDB7A11928F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Controller/KJTuiHuoViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "-shanxuan"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-initData"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - 2c30725300da9d6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[KJTuiHuoSearchView initData]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/tuihuo(%E9%80%80%E8%B4%A7)/View/KJTuiHuoSearchView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - b96b15e66fac7ce2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[KJTuiHuoSearchView initData]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/tuihuo(%E9%80%80%E8%B4%A7)/View/KJTuiHuoSearchView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4524182-EF42-49C2-BCB5-E36F588CA1B0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoSearchView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-initData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5F79335-3DC1-44DD-8D5F-7CA3D3D5A93C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+getNodeList:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5B0EB94-23D0-4AC6-89C8-2BF8350457FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "+getNodeList:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "+getTuiHuoList:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - 22326a0a04a5492a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[KJTuiHuoTool getTuiHuoList:success:failure:]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/tuihuo(%E9%80%80%E8%B4%A7)/Tool/KJTuiHuoTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "214">
+               </Location>
+               <Location
+                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - da6f87215ed375b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46+[KJTuiHuoTool getTuiHuoList:success:failure:]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/PersonalCenter(%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83)/tuihuo(%E9%80%80%E8%B4%A7)/Tool/KJTuiHuoTool.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5E5BAA2-1EF5-41C6-99DB-C0204E7BD006"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "+getTuiHuoList:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "581B9AB3-F5D9-4D8D-9E70-1806156FF842"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+getTuiHuoList:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E023D464-FCFE-4766-A07E-DA872E76126F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Controller/KJTuiHuoViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-headerRefreshing"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1E3B221-05BD-4A4E-BC5C-FB7D84233F21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/View/KJTuiHuoTableViewCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-tapItem"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F80FA8A9-F840-41D5-9850-F3D8C2583933"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/tuihuo(&#x9000;&#x8d27;)/Tool/KJTuiHuoTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "+getTuiHuoDetail:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65029246-113C-417F-BC98-884D04E1613E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/zudan(&#x7ec4;&#x5355;)/Controller/KJZuDanViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取对账列表
 /// @param duizhangParam 参数
 /// @param success 成功回调
-/// @param error 失败回调
+/// @param failure 失败回调
 + (void)getDuiZhangList:(KJDuiZhangParam *)duizhangParam success:(void(^)(KJDuiZhangResult *result))success failure:(void(^)(NSError * error))failure;
 
 @end

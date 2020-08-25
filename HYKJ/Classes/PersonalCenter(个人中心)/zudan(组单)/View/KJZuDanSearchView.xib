@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="KJZuDanSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S0Y-Q7-uEm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="uOj-Mg-cLu"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Cgr-0V-EVc"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR4-Bv-8EL">
+                    <rect key="frame" x="0.0" y="176" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.61568627450980395" blue="0.52156862745098043" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="重置"/>
+                    <connections>
+                        <action selector="reset" destination="iN0-l3-epB" eventType="touchUpInside" id="hBn-0R-Tbf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6m-By-rbP">
+                    <rect key="frame" x="187.5" y="176" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.61568627450980395" blue="0.52156862745098043" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="查询"/>
+                    <connections>
+                        <action selector="search" destination="iN0-l3-epB" eventType="touchUpInside" id="vxX-GC-2bP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="S0Y-Q7-uEm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="05c-c5-TUR"/>
+                <constraint firstAttribute="trailing" secondItem="S0Y-Q7-uEm" secondAttribute="trailing" id="4I5-PY-uzM"/>
+                <constraint firstItem="yR4-Bv-8EL" firstAttribute="top" secondItem="S0Y-Q7-uEm" secondAttribute="bottom" id="DID-WP-Ldb"/>
+                <constraint firstAttribute="trailing" secondItem="y6m-By-rbP" secondAttribute="trailing" id="IFi-WM-prO"/>
+                <constraint firstItem="S0Y-Q7-uEm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RH3-ju-qRh"/>
+                <constraint firstAttribute="bottom" secondItem="yR4-Bv-8EL" secondAttribute="bottom" id="STm-M5-VBJ"/>
+                <constraint firstAttribute="bottom" secondItem="y6m-By-rbP" secondAttribute="bottom" id="cFd-LU-Qb2"/>
+                <constraint firstAttribute="bottom" secondItem="S0Y-Q7-uEm" secondAttribute="bottom" constant="44" id="hQE-HI-VvU"/>
+                <constraint firstItem="y6m-By-rbP" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="iob-I1-YFv"/>
+                <constraint firstItem="yR4-Bv-8EL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mDt-uw-N9t"/>
+                <constraint firstItem="yR4-Bv-8EL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="rwb-gK-syE"/>
+                <constraint firstItem="y6m-By-rbP" firstAttribute="top" secondItem="S0Y-Q7-uEm" secondAttribute="bottom" id="xGl-1s-j3c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="S0Y-Q7-uEm" id="lyl-Oc-Its"/>
+            </connections>
+            <point key="canvasLocation" x="-234" y="-79"/>
+        </view>
+    </objects>
+</document>

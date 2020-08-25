@@ -200,6 +200,10 @@
     kucunParam.limit = self.pageSize;
     WEAKSELF
     [KJKuCunTool getKuCunList:kucunParam success:^(KJKuCunResult * _Nonnull result) {
+        if ([result.data count] < 1) {
+            [SVProgressHUD showInfoWithStatus:@"该查询条件下没有数据!"];
+        }
+        
         [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:result.data];
         if ([result.total length] < 1) {
