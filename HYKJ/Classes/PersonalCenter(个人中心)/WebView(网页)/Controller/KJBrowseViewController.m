@@ -100,7 +100,7 @@
     }
     
     WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:configuration];
-    webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
+//    webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
@@ -110,6 +110,24 @@
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_desUrl]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
+    
+    [webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make leading] trailing].equalTo([self view]);
+
+        MASViewAttribute *top = [self mas_topLayoutGuideBottom];
+        MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
+
+        #ifdef __IPHONE_11_0    // 如果有这个宏，说明Xcode版本是9开始
+            if (@available(iOS 11.0, *)) {
+                top = [[self view] mas_safeAreaLayoutGuideTop];
+                bottom = [[self view] mas_safeAreaLayoutGuideBottom];
+            }
+        #endif
+
+        [make top].equalTo(top);
+        [make bottom].equalTo(bottom);
+    }];
+    
     
     [WKWebViewJavascriptBridge enableLogging];
     _bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];

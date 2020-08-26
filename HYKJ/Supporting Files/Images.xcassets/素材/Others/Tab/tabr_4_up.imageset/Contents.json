@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "tabr_2_up.png",
+      "filename" : "tabr_4_up.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "tabr_2_up@2x.png",
+      "filename" : "tabr_4_up@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "tabr_2_up@3x.png",
+      "filename" : "tabr_4_up@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

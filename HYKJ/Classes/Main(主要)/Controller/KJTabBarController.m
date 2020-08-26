@@ -62,11 +62,15 @@
                               MallImgKey    : @"tabr_3_up",
                               MallSelImgKey : @"tabr_3_down"},
                             
+                            @{MallClassKey  : @"KJServiceViewController",
+                              MallTitleKey  : @"服务",
+                              MallImgKey    : @"tabr_4_up",
+                              MallSelImgKey : @"tabr_4_down"},
                             
                             @{MallClassKey  : @"KJMeViewController",
                               MallTitleKey  : @"我的",
-                              MallImgKey    : @"tabr_4_up",
-                              MallSelImgKey : @"tabr_4_down"}
+                              MallImgKey    : @"tabr_5_up",
+                              MallSelImgKey : @"tabr_5_down"}
                             ];
     [childArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [NSClassFromString(dict[MallClassKey]) new];
