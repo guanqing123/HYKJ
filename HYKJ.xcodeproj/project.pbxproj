@@ -112,6 +112,12 @@
 		D66D2A5524E8B9FD00DA0E42 /* KJDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66D2A5424E8B9FD00DA0E42 /* KJDatePickerView.xib */; };
 		D66D2A5B24E8C78500DA0E42 /* KJCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D2A5A24E8C78500DA0E42 /* KJCoverView.m */; };
 		D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */; };
+		D66D95CB24F736B700ABC31F /* KJDingDanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D95CA24F736B700ABC31F /* KJDingDanSearchView.m */; };
+		D66D95CD24F736CD00ABC31F /* KJDingDanSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66D95CC24F736CD00ABC31F /* KJDingDanSearchView.xib */; };
+		D66D95D024F75E6900ABC31F /* KJDingDanParam.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D95CF24F75E6900ABC31F /* KJDingDanParam.m */; };
+		D66D95D324F7B0B400ABC31F /* KJDingDanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D95D224F7B0B400ABC31F /* KJDingDanResult.m */; };
+		D66D95D624F7B3B700ABC31F /* KJDingDan.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D95D524F7B3B700ABC31F /* KJDingDan.m */; };
+		D66D95D924F7B69900ABC31F /* KJDingDanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D95D824F7B69900ABC31F /* KJDingDanTool.m */; };
 		D66DEDDA24EA0F29009D8C96 /* KJCyResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DEDD924EA0F29009D8C96 /* KJCyResult.m */; };
 		D66DEDDD24EA2F1A009D8C96 /* KJDataPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DEDDC24EA2F1A009D8C96 /* KJDataPickerView.m */; };
 		D66DEDDF24EA2F40009D8C96 /* KJDataPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66DEDDE24EA2F40009D8C96 /* KJDataPickerView.xib */; };
@@ -137,6 +143,7 @@
 		D67712DB24F62DA7005379AA /* KJServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67712D924F62DA7005379AA /* KJServiceCollectionViewCell.xib */; };
 		D67712DE24F63424005379AA /* KJServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D67712DD24F63424005379AA /* KJServiceItem.m */; };
 		D67712E224F6550C005379AA /* services.plist in Resources */ = {isa = PBXBuildFile; fileRef = D67712E124F6550C005379AA /* services.plist */; };
+		D67712EA24F66537005379AA /* KJDingDanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67712E924F66537005379AA /* KJDingDanViewController.m */; };
 		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
 		D6A9A97824E56A040073E932 /* KJDaoKuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9A97624E56A040073E932 /* KJDaoKuanTableViewCell.m */; };
 		D6A9A97924E56A040073E932 /* KJDaoKuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A9A97724E56A040073E932 /* KJDaoKuanTableViewCell.xib */; };
@@ -350,6 +357,17 @@
 		D66D2A5A24E8C78500DA0E42 /* KJCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCoverView.m; sourceTree = "<group>"; };
 		D66D847E24B5CC3300B34335 /* KJBrowseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBrowseViewController.h; sourceTree = "<group>"; };
 		D66D847F24B5CC3300B34335 /* KJBrowseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBrowseViewController.m; sourceTree = "<group>"; };
+		D66D95C924F736B700ABC31F /* KJDingDanSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDanSearchView.h; sourceTree = "<group>"; };
+		D66D95CA24F736B700ABC31F /* KJDingDanSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanSearchView.m; sourceTree = "<group>"; };
+		D66D95CC24F736CD00ABC31F /* KJDingDanSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDingDanSearchView.xib; sourceTree = "<group>"; };
+		D66D95CE24F75E6900ABC31F /* KJDingDanParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDanParam.h; sourceTree = "<group>"; };
+		D66D95CF24F75E6900ABC31F /* KJDingDanParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanParam.m; sourceTree = "<group>"; };
+		D66D95D124F7B0B400ABC31F /* KJDingDanResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDanResult.h; sourceTree = "<group>"; };
+		D66D95D224F7B0B400ABC31F /* KJDingDanResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanResult.m; sourceTree = "<group>"; };
+		D66D95D424F7B3B700ABC31F /* KJDingDan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDan.h; sourceTree = "<group>"; };
+		D66D95D524F7B3B700ABC31F /* KJDingDan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDan.m; sourceTree = "<group>"; };
+		D66D95D724F7B69900ABC31F /* KJDingDanTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDanTool.h; sourceTree = "<group>"; };
+		D66D95D824F7B69900ABC31F /* KJDingDanTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanTool.m; sourceTree = "<group>"; };
 		D66DEDD824EA0F29009D8C96 /* KJCyResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCyResult.h; sourceTree = "<group>"; };
 		D66DEDD924EA0F29009D8C96 /* KJCyResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCyResult.m; sourceTree = "<group>"; };
 		D66DEDDB24EA2F1A009D8C96 /* KJDataPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDataPickerView.h; sourceTree = "<group>"; };
@@ -391,6 +409,8 @@
 		D67712DC24F63424005379AA /* KJServiceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJServiceItem.h; sourceTree = "<group>"; };
 		D67712DD24F63424005379AA /* KJServiceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJServiceItem.m; sourceTree = "<group>"; };
 		D67712E124F6550C005379AA /* services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = services.plist; sourceTree = "<group>"; };
+		D67712E824F66537005379AA /* KJDingDanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDingDanViewController.h; sourceTree = "<group>"; };
+		D67712E924F66537005379AA /* KJDingDanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanViewController.m; sourceTree = "<group>"; };
 		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
 		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
 		D6A9A97524E56A040073E932 /* KJDaoKuanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableViewCell.h; sourceTree = "<group>"; };
@@ -916,6 +936,7 @@
 		D66A3F672499E48A00AF10F5 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				D67712E324F664DA005379AA /* dingdan(订单) */,
 				D66B803024F38EA5000943C1 /* zudan(组单查询) */,
 				D66AA65424EF61F000B97426 /* tuihuo(退货) */,
 				D66E557A24EE112C00529F61 /* duizhang(对账) */,
@@ -1044,6 +1065,7 @@
 			isa = PBXGroup;
 			children = (
 				D66B803124F38ED4000943C1 /* Model */,
+				D66B803424F38ED4000943C1 /* Tool */,
 				D66B803224F38ED4000943C1 /* View */,
 				D66B803324F38ED4000943C1 /* Controller */,
 			);
@@ -1061,7 +1083,6 @@
 				D66B804724F3B2F8000943C1 /* KJZuDan.m */,
 				D66BE8C624F4DBFC008EAB5A /* KJZuDanDetail.h */,
 				D66BE8C724F4DBFC008EAB5A /* KJZuDanDetail.m */,
-				D66B803424F38ED4000943C1 /* Tool */,
 			);
 			name = Model;
 			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Model";
@@ -1109,7 +1130,7 @@
 				D66B804124F3A145000943C1 /* KJZuDanTool.m */,
 			);
 			name = Tool;
-			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单)/Model/Tool";
+			path = "HYKJ/Classes/PersonalCenter(个人中心)/zudan(组单查询)/Tool";
 			sourceTree = SOURCE_ROOT;
 		};
 		D66CCB2C24B2F4A70038CCE7 /* Resource(资源) */ = {
@@ -1260,6 +1281,58 @@
 			children = (
 				D67712DC24F63424005379AA /* KJServiceItem.h */,
 				D67712DD24F63424005379AA /* KJServiceItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D67712E324F664DA005379AA /* dingdan(订单) */ = {
+			isa = PBXGroup;
+			children = (
+				D67712E724F66513005379AA /* Model */,
+				D67712E424F66513005379AA /* Tool */,
+				D67712E524F66513005379AA /* View */,
+				D67712E624F66513005379AA /* Controller */,
+			);
+			path = "dingdan(订单)";
+			sourceTree = "<group>";
+		};
+		D67712E424F66513005379AA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D66D95D724F7B69900ABC31F /* KJDingDanTool.h */,
+				D66D95D824F7B69900ABC31F /* KJDingDanTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D67712E524F66513005379AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D66D95C924F736B700ABC31F /* KJDingDanSearchView.h */,
+				D66D95CA24F736B700ABC31F /* KJDingDanSearchView.m */,
+				D66D95CC24F736CD00ABC31F /* KJDingDanSearchView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D67712E624F66513005379AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D67712E824F66537005379AA /* KJDingDanViewController.h */,
+				D67712E924F66537005379AA /* KJDingDanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D67712E724F66513005379AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D66D95CE24F75E6900ABC31F /* KJDingDanParam.h */,
+				D66D95CF24F75E6900ABC31F /* KJDingDanParam.m */,
+				D66D95D124F7B0B400ABC31F /* KJDingDanResult.h */,
+				D66D95D224F7B0B400ABC31F /* KJDingDanResult.m */,
+				D66D95D424F7B3B700ABC31F /* KJDingDan.h */,
+				D66D95D524F7B3B700ABC31F /* KJDingDan.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1476,6 +1549,7 @@
 				D65C45562498860C0042E42E /* Images.xcassets in Resources */,
 				D668D80324B1F3F600AE36BB /* SPPersonCenterHeaderView.xib in Resources */,
 				D66E558B24EE4C1D00529F61 /* KJDuiZhangTableHeaderView.xib in Resources */,
+				D66D95CD24F736CD00ABC31F /* KJDingDanSearchView.xib in Resources */,
 				D66D2A5524E8B9FD00DA0E42 /* KJDatePickerView.xib in Resources */,
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
 				D637693724B478BC00A23672 /* order.plist in Resources */,
@@ -1540,8 +1614,10 @@
 				D66B802524F36A4E000943C1 /* KJTuiHuoMX.m in Sources */,
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
 				D66E559124EE784500529F61 /* KJDuiZhangParam.m in Sources */,
+				D66D95D624F7B3B700ABC31F /* KJDingDan.m in Sources */,
 				D66D2A5B24E8C78500DA0E42 /* KJCoverView.m in Sources */,
 				D67712DA24F62DA7005379AA /* KJServiceCollectionViewCell.m in Sources */,
+				D66D95CB24F736B700ABC31F /* KJDingDanSearchView.m in Sources */,
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
 				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
 				D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */,
@@ -1563,12 +1639,14 @@
 				D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */,
 				D66BE8D524F50621008EAB5A /* KJFujianViewController.m in Sources */,
 				D66E558124EE118100529F61 /* KJDuiZhangViewController.m in Sources */,
+				D66D95D324F7B0B400ABC31F /* KJDingDanResult.m in Sources */,
 				D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */,
 				D66AA65B24EF671E00B97426 /* KJTuiHuoViewController.m in Sources */,
 				D66B803A24F39092000943C1 /* KJZuDanSearchView.m in Sources */,
 				D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */,
 				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
+				D66D95D924F7B69900ABC31F /* KJDingDanTool.m in Sources */,
 				D6B9E91124EBD1E400686E42 /* KJKuCunParam.m in Sources */,
 				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
 				D66B246724ED2455009D48CF /* KJKuCunTableViewCell.m in Sources */,
@@ -1583,6 +1661,7 @@
 				D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */,
 				D66BE8D124F4E501008EAB5A /* KJZuDanDetailTableViewCell.m in Sources */,
 				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
+				D67712EA24F66537005379AA /* KJDingDanViewController.m in Sources */,
 				D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */,
 				D66D2A5324E8B9C700DA0E42 /* KJDatePickerView.m in Sources */,
 				D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */,
@@ -1616,6 +1695,7 @@
 				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				D66BE8C824F4DBFC008EAB5A /* KJZuDanDetail.m in Sources */,
+				D66D95D024F75E6900ABC31F /* KJDingDanParam.m in Sources */,
 				D65C542124E2C36A00001C9E /* TDGoodsGridCell.m in Sources */,
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
 				D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */,
@@ -1801,7 +1881,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1826,7 +1906,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *zaddress;
 // 快递单号
 @property (nonatomic, copy) NSString *zkddh;
+
 @end
 
 NS_ASSUME_NONNULL_END
