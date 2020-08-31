@@ -40,7 +40,7 @@
      
      UITextField *khdmTextField = [[UITextField alloc] init];
      [khdmTextField addTarget:self action:@selector(contentChanged) forControlEvents:UIControlEventEditingChanged];
-     khdmTextField.placeholder = @"请输入客户代码";
+     khdmTextField.placeholder = @"客户代码/工号/手机号";
      _khdmTextField = khdmTextField;
      [self addSubview:khdmTextField];
      

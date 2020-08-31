@@ -25,4 +25,16 @@
     }];
 }
 
++ (void)getDingDanDetail:(NSDictionary *)detailParam success:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    
+    NSString *requestURL = [KJURL stringByAppendingString:@"/baseData/dddetail"];
+    
+    [KJHttpTool postWithURL:requestURL params:detailParam success:^(id  _Nonnull json) {
+        NSArray *details = [KJDingDanDetail mj_objectArrayWithKeyValuesArray:[json objectForKey:@"data"]];
+        success(details);
+    } failure:^(NSError * _Nonnull error) {
+        failure(error);
+    }];
+}
+
 @end

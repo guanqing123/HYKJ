@@ -1,24 +1,24 @@
 //
-//  KJZuDanMXViewController.m
+//  KJDingDanDetailViewController.m
 //  HYKJ
 //
-//  Created by information on 2020/8/25.
+//  Created by information on 2020/8/28.
 //  Copyright © 2020 hongyan. All rights reserved.
 //
 
-#import "KJZuDanDetailViewController.h"
+#import "KJDingDanDetailViewController.h"
 
 // tool
-#import "KJZuDanTool.h"
+#import "KJDingDanTool.h"
 
 // table
 #import "MJRefresh.h"
-#import "KJZuDanDetailTableViewCell.h"
-#import "KJZuDanDetailTableHeaderView.h"
+#import "KJDingDanDetailTableViewCell.h"
+#import "KJDingDanDetailTableHeaderView.h"
 
-@interface KJZuDanDetailViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface KJDingDanDetailViewController ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, copy) NSString *zspnum;
+@property (nonatomic, copy) NSString *sohnum;
 
 // tableView
 @property (nonatomic, weak) UIScrollView  *baseView;
@@ -30,11 +30,11 @@
 
 @end
 
-@implementation KJZuDanDetailViewController
+@implementation KJDingDanDetailViewController
 
-- (instancetype)initWithZspnum:(NSString *)zspnum {
+- (instancetype)initWithSohnum:(NSString *)sohnum {
     if (self = [super init]) {
-        _zspnum = zspnum;
+        _sohnum = sohnum;
     }
     return self;
 }
@@ -59,7 +59,7 @@
 - (void)setTableView {
     // 1. baseView
     UIScrollView *baseView = [[UIScrollView alloc] init];
-    baseView.contentSize = CGSizeMake(1140.0f, 0.0f);
+    baseView.contentSize = CGSizeMake(1290.0f, 0.0f);
     _baseView = baseView;
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -90,7 +90,7 @@
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
-        make.width.mas_equalTo(@(1140));
+        make.width.mas_equalTo(@(1290));
 
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
@@ -106,12 +106,12 @@
         [make bottom].equalTo(bottom);
     }];
     
-    [tableView registerNib:[UINib nibWithNibName:@"KJZuDanDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJZuDanDetailTableViewCellID"];
+    [tableView registerNib:[UINib nibWithNibName:@"KJDingDanDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"KJDingDanDetailTableViewCellID"];
     [tableView.mj_header beginRefreshing];
 }
 
 - (void)headerRefreshing {
-    [KJZuDanTool getZuDanDetail:@{@"zspnum": _zspnum} success:^(NSArray * _Nonnull details) {
+    [KJDingDanTool getDingDanDetail:@{@"sohnum": _sohnum} success:^(NSArray * _Nonnull details) {
         if ([details count] < 1) {
             [SVProgressHUD showInfoWithStatus:@"该查询条件下没有数据!"];
         }
@@ -145,10 +145,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    KJZuDanDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJZuDanDetailTableViewCellID" forIndexPath:indexPath];
+    KJDingDanDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KJDingDanDetailTableViewCellID" forIndexPath:indexPath];
     
-    KJZuDanDetail *zudanDetail = self.dataArray[indexPath.row];
-    cell.zudanDetail = zudanDetail;
+    KJDingDanDetail *dingdanDetail = self.dataArray[indexPath.row];
+    cell.dingdanDetail = dingdanDetail;
     
     return cell;
 }
@@ -163,8 +163,8 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    KJZuDanDetailTableHeaderView *headerView = [KJZuDanDetailTableHeaderView headerView];
-    headerView.frame = CGRectMake(0.0f, 0.0f, 1140.0f, 44.0f);
+    KJDingDanDetailTableHeaderView *headerView = [KJDingDanDetailTableHeaderView headerView];
+    headerView.frame = CGRectMake(0.0f, 0.0f, 1290.0f, 44.0f);
     return headerView;
 }
 

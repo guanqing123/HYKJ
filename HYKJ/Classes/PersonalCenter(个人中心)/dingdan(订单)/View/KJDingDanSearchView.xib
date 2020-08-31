@@ -27,6 +27,9 @@
                     <state key="normal" title="重置">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="reset" destination="iN0-l3-epB" eventType="touchUpInside" id="199-e4-EsQ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6no-DU-jvH">
                     <rect key="frame" x="187.5" y="176" width="187.5" height="44"/>
@@ -34,6 +37,9 @@
                     <state key="normal" title="查询">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="search" destination="iN0-l3-epB" eventType="touchUpInside" id="Mbc-JO-lf5"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

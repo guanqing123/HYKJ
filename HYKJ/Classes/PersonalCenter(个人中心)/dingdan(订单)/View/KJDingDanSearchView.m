@@ -15,7 +15,7 @@
 #import "KJCoverView.h"
 
 
-@interface KJDingDanSearchView()<UITableViewDataSource, UITableViewDelegate>
+@interface KJDingDanSearchView()<UITableViewDataSource, UITableViewDelegate, KJDatePickerViewDelegate,KJDataPickerViewDelegate>
 
 // date view
 @property (nonatomic, strong)  KJDatePickerView *datePickerView;
@@ -51,6 +51,10 @@
 // 产业dict
 @property (nonatomic, strong)  NSDictionary *dmc;
 
+- (IBAction)reset;
+- (IBAction)search;
+
+
 @end
 
 
@@ -60,6 +64,17 @@
     [super awakeFromNib];
     
     [self setupData];
+}
+
++ (instancetype)searchView {
+    return [[[NSBundle mainBundle] loadNibNamed:@"KJDingDanSearchView" owner:nil options:nil] lastObject];
+}
+
+- (KJCoverView *)coverView {
+    if (_coverView == nil) {
+        _coverView = [[KJCoverView alloc] initCoverView];
+    }
+    return _coverView;
 }
 
 - (void)setupData {
@@ -86,29 +101,29 @@
     _ordstaArray = [NSArray arrayWithObjects:@"全部", @"未关闭", @"关闭", nil];
     NSArray *ordstaArray = [NSArray arrayWithObjects:@"", @"1", @"2", nil];
     _ordstaDict = [NSDictionary dictionaryWithObjects:ordstaArray forKeys:_ordstaArray];
-    _ordsta = @"全部";
-    _ordstasm = @"";
+    _ordsta = @"";
+    _ordstasm = @"全部";
     
     // 分配状态
     _allstaArray = [NSArray arrayWithObjects:@"全部", @"未分配", @"部分分配", @"已分配", nil];
     NSArray *allstaArray = [NSArray arrayWithObjects:@"", @"1", @"2", @"3", nil];
     _allstaDict = [NSDictionary dictionaryWithObjects:allstaArray forKeys:_allstaArray];
-    _allsta = @"全部";
-    _allstasm = @"";
+    _allsta = @"";
+    _allstasm = @"全部";
     
     // 装运状态
     _dlvstaArray = [NSArray arrayWithObjects:@"全部", @"未发货", @"部分发货", @"已发货", nil];
     NSArray *dlvstaArray = [NSArray arrayWithObjects:@"", @"1", @"2", @"3", nil];
     _dlvstaDict = [NSDictionary dictionaryWithObjects:dlvstaArray forKeys:_dlvstaArray];
-    _dlvsta = @"全部";
-    _dlvstasm = @"";
+    _dlvsta = @"";
+    _dlvstasm = @"全部";
     
     // 开票状态
     _invstaArray = [NSArray arrayWithObjects:@"全部", @"未开票", @"部分开票", @"已开票", nil];
     NSArray *invstaArray = [NSArray arrayWithObjects:@"", @"1", @"2", @"3", nil];
     _invstaDict = [NSDictionary dictionaryWithObjects:invstaArray forKeys:_invstaArray];
-    _invsta = @"全部";
-    _invstasm = @"";
+    _invsta = @"";
+    _invstasm = @"全部";
     
     // 订单号
     _sohnum = @"";
@@ -121,7 +136,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -250,7 +265,7 @@
         }];
         
         UIButton *ordstaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        ordstaBtn.tag = 0;
+        ordstaBtn.tag = 1;
         ordstaBtn.backgroundColor = RGB(238, 238, 238);
         ordstaBtn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [ordstaBtn setTitle:_ordstasm forState:UIControlStateNormal];
@@ -290,7 +305,7 @@
         }];
         
         UIButton *allstaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        allstaBtn.tag = 1;
+        allstaBtn.tag = 2;
         allstaBtn.backgroundColor = RGB(238, 238, 238);
         allstaBtn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [allstaBtn setTitle:_allstasm forState:UIControlStateNormal];
@@ -330,7 +345,7 @@
         }];
                
         UIButton *dlvstaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        dlvstaBtn.tag = 2;
+        dlvstaBtn.tag = 3;
         dlvstaBtn.backgroundColor = RGB(238, 238, 238);
         dlvstaBtn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [dlvstaBtn setTitle:_dlvstasm forState:UIControlStateNormal];
@@ -370,7 +385,7 @@
         }];
                
         UIButton *invstaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        invstaBtn.tag = 2;
+        invstaBtn.tag = 4;
         invstaBtn.backgroundColor = RGB(238, 238, 238);
         invstaBtn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [invstaBtn setTitle:_invstasm forState:UIControlStateNormal];
@@ -440,4 +455,179 @@
     return cell;
 }
 
+#pragma mark - dateBtnClick
+- (void)startDatBtnClick:(UIButton *)startDatBtn {
+    [self datePicker:(int)startDatBtn.tag date:_startDat];
+}
+
+- (void)endDatBtnClick:(UIButton *)endDatBtn {
+    [self datePicker:(int)endDatBtn.tag date:_endDat];
+}
+
+- (void)datePicker:(int)tag date:(NSString *)date{
+    [self.sohnumTextField resignFirstResponder];
+    UIViewController *vc = [KJHYTool getCurrentVC];
+    
+    if (_datePickerView == nil) {
+        _datePickerView = [KJDatePickerView dateView];
+        _datePickerView.delegate = self;
+    }
+    
+    [self.coverView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.coverView addSubview:_datePickerView];
+    
+    [_datePickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make leading] trailing].equalTo(_coverView);
+        [make bottom].equalTo(_coverView);
+        [make height].equalTo(@(236));
+    }];
+    _datePickerView.tag = tag;
+    [_datePickerView setDate:date];
+    
+    [vc.view addSubview:self.coverView];
+    [_coverView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make trailing] leading].equalTo([vc view]);
+
+        MASViewAttribute *top = [vc mas_topLayoutGuideBottom];
+        MASViewAttribute *bottom = [vc mas_bottomLayoutGuideTop];
+
+        #ifdef __IPHONE_11_0    // 如果有这个宏，说明Xcode版本是9开始
+            if (@available(iOS 11.0, *)) {
+                top = [[vc view] mas_safeAreaLayoutGuideTop];
+                bottom = [[vc view] mas_safeAreaLayoutGuideBottom];
+            }
+        #endif
+        
+        [make top].equalTo(top);
+        [make bottom].equalTo(bottom);
+    }];
+}
+
+- (void)didFinishDatePicker:(KJDatePickerView *)datePickerView buttonType:(DatePickerViewButtonType)buttonType {
+    switch (buttonType) {
+        case DatePickerViewButtonTypeCancel:
+            [self.coverView destory];
+            break;
+        case DatePickerViewButtonTypeSure:
+            if (datePickerView.tag == 0) {
+                _startDat = datePickerView.selecteDate;
+                [self.tableView reloadData];
+                [self.coverView destory];
+            }
+            if (datePickerView.tag == 1) {
+                _endDat = datePickerView.selecteDate;
+                [self.tableView reloadData];
+                [self.coverView destory];
+            }
+            break;
+        default:
+            break;
+    }
+}
+
+#pragma mark - UITextField
+- (void)valueChange:(UITextField *)textField {
+    _sohnum = textField.text;
+}
+
+#pragma mark - dataBtnClick
+- (void)didFinishDataPicker:(KJDataPickerView *)dataPickerView buttonType:(DataPickerViewButtonType)buttonType {
+    switch (buttonType) {
+        case DataPickerViewButtonTypeCancel:
+            [self.coverView destory];
+            break;
+        case DataPickerViewButtonTypeSure:
+            if (dataPickerView.tag == 0) {
+                _tjgssm = dataPickerView.selecteData;
+                _tjgs = [_dmc objectForKey:_tjgssm];
+            }
+            if (dataPickerView.tag == 1) {
+                _ordstasm = dataPickerView.selecteData;
+                _ordsta = [_ordstaDict objectForKey:_ordstasm];
+            }
+            if (dataPickerView.tag == 2) {
+                _allstasm = dataPickerView.selecteData;
+                _allsta = [_allstaDict objectForKey:_allstasm];
+            }
+            if (dataPickerView.tag == 3) {
+                _dlvstasm = dataPickerView.selecteData;
+                _dlvsta = [_dlvstaDict objectForKey:_dlvstasm];
+            }
+            [self.tableView reloadData];
+            [self.coverView destory];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)tjgsBtnClick:(UIButton *)button {
+    [self dataBtnClick:(int)button.tag value:self.tjgssm data:self.mcs];
+}
+
+- (void)ordstaBtnClick:(UIButton *)button {
+    [self dataBtnClick:(int)button.tag value:self.ordstasm data:self.ordstaArray];
+}
+
+- (void)allstaBtnClick:(UIButton *)button {
+    [self dataBtnClick:(int)button.tag value:self.allstasm data:self.allstaArray];
+}
+
+- (void)dlvstaBtnClick:(UIButton *)button {
+    [self dataBtnClick:(int)button.tag value:self.dlvstasm data:self.dlvstaArray];
+}
+
+- (void)invstaBtnClick:(UIButton *)button {
+    [self dataBtnClick:(int)button.tag value:self.invstasm data:self.invstaArray];
+}
+
+- (void)dataBtnClick:(int)tag value:(NSString *)value data:(NSArray *)data{
+    [self.sohnumTextField resignFirstResponder];
+    UIViewController *vc = [KJHYTool getCurrentVC];
+    if (_dataPickerView == nil) {
+        _dataPickerView = [KJDataPickerView dataView];
+        _dataPickerView.delegate = self;
+    }
+    _dataPickerView.tag = tag;
+    [_dataPickerView setDataArray:data];
+    [_dataPickerView setData:value];
+    
+    [self.coverView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.coverView addSubview:_dataPickerView];
+    
+    [_dataPickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make leading] trailing].equalTo(_coverView);
+        [make bottom].equalTo(_coverView);
+        [make height].equalTo(@(236));
+    }];
+    
+    [vc.view addSubview:self.coverView];
+    [_coverView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [[make trailing] leading].equalTo([vc view]);
+
+        MASViewAttribute *top = [vc mas_topLayoutGuideBottom];
+        MASViewAttribute *bottom = [vc mas_bottomLayoutGuideTop];
+
+        #ifdef __IPHONE_11_0    // 如果有这个宏，说明Xcode版本是9开始
+            if (@available(iOS 11.0, *)) {
+                top = [[vc view] mas_safeAreaLayoutGuideTop];
+                bottom = [[vc view] mas_safeAreaLayoutGuideBottom];
+            }
+        #endif
+        
+        [make top].equalTo(top);
+        [make bottom].equalTo(bottom);
+    }];
+}
+
+- (IBAction)search {
+    [self.sohnumTextField resignFirstResponder];
+    if ([self.delegate respondsToSelector:@selector(dingdanSearchViewDidSearch:)]) {
+        [self.delegate dingdanSearchViewDidSearch:self];
+    }
+}
+
+- (IBAction)reset {
+     [self setupData];
+}
 @end

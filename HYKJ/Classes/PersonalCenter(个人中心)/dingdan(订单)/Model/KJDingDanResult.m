@@ -7,7 +7,13 @@
 //
 
 #import "KJDingDanResult.h"
+#import "KJDingDan.h"
+#import "MJExtension.h"
 
 @implementation KJDingDanResult
+
++ (NSDictionary *)mj_objectClassInArray {
+    return @{@"data": [KJDingDan class]};
+}
 
 @end
