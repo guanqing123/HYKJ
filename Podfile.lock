@@ -15,33 +15,40 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - FSCalendar (2.8.1)
-  - IQKeyboardManager (6.5.5)
-  - LBXScan/LBXNative (2.3):
+  - IQKeyboardManager (6.5.6)
+  - LBXScan/LBXNative (2.5.1):
     - LBXScan/Types (~> 2.2)
-  - LBXScan/Types (2.3)
-  - LBXScan/UI (2.3):
+  - LBXScan/LBXZXing (2.5.1):
     - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.5.1)
+  - LBXScan/UI (2.5.1):
+    - LBXScan/Types (~> 2.2)
+  - LBXZBarSDK (1.3.5)
   - Masonry (1.1.0)
-  - MJExtension (3.2.1)
+  - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
-  - SDWebImage (5.8.3):
-    - SDWebImage/Core (= 5.8.3)
-  - SDWebImage/Core (5.8.3)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
   - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
   - TZImagePickerController (3.3.2)
   - WebViewJavascriptBridge (6.0.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
-  - FSCalendar
+  - FSCalendar (~> 2.8.1)
   - IQKeyboardManager (~> 6.5.5)
-  - LBXScan/LBXNative
-  - LBXScan/UI
+  - LBXScan/LBXNative (~> 2.5)
+  - LBXScan/LBXZXing (~> 2.5)
+  - LBXScan/UI (~> 2.5)
+  - LBXZBarSDK (~> 1.3)
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.2.1)
   - MJRefresh (~> 3.5.0)
   - SDWebImage (~> 5.8.3)
   - SVProgressHUD (~> 2.2.5)
+  - Toast (~> 4.0.0)
   - TZImagePickerController (~> 3.3.2)
   - WebViewJavascriptBridge (~> 6.0.3)
 
@@ -51,27 +58,31 @@ SPEC REPOS:
     - FSCalendar
     - IQKeyboardManager
     - LBXScan
+    - LBXZBarSDK
     - Masonry
     - MJExtension
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
+    - Toast
     - TZImagePickerController
     - WebViewJavascriptBridge
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
-  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
+  LBXZBarSDK: db826d1265fbb4fbdbb2f30d7d1e96142e32bfff
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 1d8c1f0554fc344bc296b1b77c89e32ae398b156
+PODFILE CHECKSUM: 0fc6418486edc34cc844c8422b7c79df2af84d6e
 
 COCOAPODS: 1.9.3

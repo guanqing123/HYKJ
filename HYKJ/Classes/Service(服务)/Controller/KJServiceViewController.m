@@ -74,7 +74,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     KJServiceItem *item = _serviceItem[indexPath.row];
     switch (item.serviceType) {
-        case ServiceTypeKefu:
+        case ServiceTypeFangwei:
             [self browseHTML:[H5URL stringByAppendingString:KefuService]];
             break;
         default:

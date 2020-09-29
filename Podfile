@@ -35,12 +35,14 @@ target 'HYKJ' do
   pod 'WebViewJavascriptBridge', '~> 6.0.3'
   
   #扫一扫
-  pod 'LBXScan/LBXNative'
-  #pod 'LBXScan/LBXZXing','~> 2.3'
-  #pod 'LBXScan/LBXZBar','~> 2.3'
-  pod 'LBXScan/UI'
+  pod 'LBXScan/LBXNative','~> 2.5'
+  pod 'LBXScan/LBXZXing','~> 2.5'
+  pod 'LBXZBarSDK','~> 1.3'
+  pod 'LBXScan/UI','~> 2.5'
+  pod 'Toast', '~> 4.0.0'
   
   #日期
   pod 'FSCalendar', '~> 2.8.1'
+  
   
 end

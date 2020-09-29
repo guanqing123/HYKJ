@@ -1,9 +1,9 @@
 //
-//  SPStyleDIY.m
-//  HYSmartPlus
+//  DemoListViewModel.m
+//  LBXScanDemo
 //
-//  Created by information on 2018/5/10.
-//  Copyright © 2018年 hongyan. All rights reserved.
+//  Created by lbxia on 2017/4/1.
+//  Copyright © 2017年 lbx. All rights reserved.
 //
 
 #import "KJStyleDIY.h"
@@ -277,54 +277,54 @@
 }
 
 
-//+ (NSString*)convertZXBarcodeFormat:(ZXBarcodeFormat)barCodeFormat
-//{
-//    NSString *strAVMetadataObjectType = nil;
-//    
-//    switch (barCodeFormat) {
-//        case kBarcodeFormatQRCode:
-//            strAVMetadataObjectType = AVMetadataObjectTypeQRCode;
-//            break;
-//        case kBarcodeFormatEan13:
-//            strAVMetadataObjectType = AVMetadataObjectTypeEAN13Code;
-//            break;
-//        case kBarcodeFormatEan8:
-//            strAVMetadataObjectType = AVMetadataObjectTypeEAN8Code;
-//            break;
-//        case kBarcodeFormatPDF417:
-//            strAVMetadataObjectType = AVMetadataObjectTypePDF417Code;
-//            break;
-//        case kBarcodeFormatAztec:
-//            strAVMetadataObjectType = AVMetadataObjectTypeAztecCode;
-//            break;
-//        case kBarcodeFormatCode39:
-//            strAVMetadataObjectType = AVMetadataObjectTypeCode39Code;
-//            break;
-//        case kBarcodeFormatCode93:
-//            strAVMetadataObjectType = AVMetadataObjectTypeCode93Code;
-//            break;
-//        case kBarcodeFormatCode128:
-//            strAVMetadataObjectType = AVMetadataObjectTypeCode128Code;
-//            break;
-//        case kBarcodeFormatDataMatrix:
-//            strAVMetadataObjectType = AVMetadataObjectTypeDataMatrixCode;
-//            break;
-//        case kBarcodeFormatITF:
-//            strAVMetadataObjectType = AVMetadataObjectTypeITF14Code;
-//            break;
-//        case kBarcodeFormatRSS14:
-//            break;
-//        case kBarcodeFormatRSSExpanded:
-//            break;
-//        case kBarcodeFormatUPCA:
-//            break;
-//        case kBarcodeFormatUPCE:
-//            strAVMetadataObjectType = AVMetadataObjectTypeUPCECode;
-//            break;
-//        default:
-//            break;
-//    }
-//    return strAVMetadataObjectType;
-//}
++ (NSString*)convertZXBarcodeFormat:(ZXBarcodeFormat)barCodeFormat
+{
+    NSString *strAVMetadataObjectType = nil;
+    
+    switch (barCodeFormat) {
+        case kBarcodeFormatQRCode:
+            strAVMetadataObjectType = AVMetadataObjectTypeQRCode;
+            break;
+        case kBarcodeFormatEan13:
+            strAVMetadataObjectType = AVMetadataObjectTypeEAN13Code;
+            break;
+        case kBarcodeFormatEan8:
+            strAVMetadataObjectType = AVMetadataObjectTypeEAN8Code;
+            break;
+        case kBarcodeFormatPDF417:
+            strAVMetadataObjectType = AVMetadataObjectTypePDF417Code;
+            break;
+        case kBarcodeFormatAztec:
+            strAVMetadataObjectType = AVMetadataObjectTypeAztecCode;
+            break;
+        case kBarcodeFormatCode39:
+            strAVMetadataObjectType = AVMetadataObjectTypeCode39Code;
+            break;
+        case kBarcodeFormatCode93:
+            strAVMetadataObjectType = AVMetadataObjectTypeCode93Code;
+            break;
+        case kBarcodeFormatCode128:
+            strAVMetadataObjectType = AVMetadataObjectTypeCode128Code;
+            break;
+        case kBarcodeFormatDataMatrix:
+            strAVMetadataObjectType = AVMetadataObjectTypeDataMatrixCode;
+            break;
+        case kBarcodeFormatITF:
+            strAVMetadataObjectType = AVMetadataObjectTypeITF14Code;
+            break;
+        case kBarcodeFormatRSS14:
+            break;
+        case kBarcodeFormatRSSExpanded:
+            break;
+        case kBarcodeFormatUPCA:
+            break;
+        case kBarcodeFormatUPCE:
+            strAVMetadataObjectType = AVMetadataObjectTypeUPCECode;
+            break;
+        default:
+            break;
+    }
+    return strAVMetadataObjectType;
+}
 
 @end

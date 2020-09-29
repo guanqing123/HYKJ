@@ -99,8 +99,17 @@
 #define Fanli @"/gflorder/gflorder.html"
 //协议书
 #define Xieyishu @"/gprotocol/gprotocol.html"
+
+
+//服务
 //客服地址
 #define KefuService @"/gcustom/gcustom.html"
 #define Kefu @"https://hzhydqyxgs.qiyukf.com/client?k=85cdffbd3ba211a68e2896899167ee3c&wp=1"
+//防伪查询
+#define FangweiService @"/gfwsearch/gfwsearch.html"
+//售后反馈
+#define ShouhouService @"/gsaleservice/gsaleservice.html"
+//投诉建议
+#define ToushuService @"/gproposal/gproposal.html"
 
 #endif /* Macros_h */

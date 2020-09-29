@@ -54,12 +54,19 @@
 - (void)setWebView {
     WKWebView *webView = [[WKWebView alloc] init];
     webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
+//    NSLog(@"KJTopNavH = %f, ScreenW=%f, ScreenH=%f, KJBottomTabH=%d, heigth=%f",KJTopNavH, ScreenW, ScreenH, KJBottomTabH, ScreenH - KJTopNavH - KJBottomTabH);
+//    NSLog(@"frame = %@", NSStringFromCGRect(webView.frame));
+//    webView.frame = self.view.bounds;
+//    [webView setOpaque:false];
+//    webView.backgroundColor = [UIColor redColor];
+    
+    NSLog(@"bounds = %@",NSStringFromCGRect(self.view.bounds));
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     _webView = webView;
-                            //http://dev.sge.cn/hykj/ghome/ghome.html
+                           
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/ghome/ghome.html"]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
@@ -71,7 +78,8 @@
     if (@available(iOS 11.0, *)){
         self.webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
     // 1.获取token
@@ -174,11 +182,15 @@
             [self setupNavItem];
         }
         self.tabBarController.tabBar.hidden = YES;
+        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH);
+        [self.webView layoutIfNeeded];
     }else{
         if (self.navigationItem.leftBarButtonItem) {
             self.navigationItem.leftBarButtonItem = nil;
         }
         self.tabBarController.tabBar.hidden = NO;
+        self.webView.frame = CGRectMake(0, KJTopNavH, ScreenW, ScreenH - KJTopNavH - KJBottomTabH);
+        [self.webView layoutIfNeeded];
     }
 }
 

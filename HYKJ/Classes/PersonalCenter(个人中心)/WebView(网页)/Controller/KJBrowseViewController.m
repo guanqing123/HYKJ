@@ -18,7 +18,11 @@
 #import "KJAccountTool.h"
 #import "KJHYTool.h"
 
-@interface KJBrowseViewController () <WKUIDelegate, WKNavigationDelegate>
+// scan
+#import "LBXScanZXingViewController.h"
+#import "StyleDIY.h"
+
+@interface KJBrowseViewController () <WKUIDelegate, WKNavigationDelegate, LBXScanZXingViewControllerDelegate>
 
 // 目标路径
 @property (nonatomic, copy) NSString *desUrl;
@@ -29,6 +33,8 @@
 @property (nonatomic, strong) UIProgressView *myProgressView;
 // js bridge
 @property (nonatomic, strong)  WKWebViewJavascriptBridge *bridge;
+// scanQR
+@property (nonatomic, strong)  LBXScanZXingViewController *scanVc;
 
 @end
 
@@ -159,6 +165,38 @@
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:@"refreshCart" forKey:refreshCart];
     }];
+    
+    // 4.scanRQcode
+    [_bridge registerHandler:@"scanQRCode" handler:^(id data, WVJBResponseCallback responseCallback) {
+        [self openScanVCWithStyle:[StyleDIY notSquare]];
+    }];
+}
+
+- (void)openScanVCWithStyle:(LBXScanViewStyle *)style {
+    LBXScanBaseViewController *vc = [self createScanVC];
+    
+    vc.style = style;
+    vc.orientation = [StyleDIY videoOrientation];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (LBXScanBaseViewController *)createScanVC {
+    LBXScanZXingViewController* vc = [LBXScanZXingViewController new];
+    vc.zdelegate = self;
+    vc.cameraInvokeMsg = @"相机启动中";
+     
+     //开启只识别框内,ZBar暂不支持
+     vc.isOpenInterestRect = NO;
+     
+    vc.continuous = false;
+
+     
+     return vc;
+}
+
+#pragma mark - LBXScanZXingViewControllerDelegate
+- (void)scanZXingDidFinish:(LBXScanZXingViewController *)zxingVc andCode:(NSString *)qrcode {
+    [_bridge callHandler:@"getQRCode" data:@{@"qrcode": qrcode}];
 }
 
 #pragma mark - getter and setter

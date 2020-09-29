@@ -62,7 +62,7 @@
                               MallImgKey    : @"tabr_3_up",
                               MallSelImgKey : @"tabr_3_down"},
                             
-                            @{MallClassKey  : @"KJServiceViewController",
+                            @{MallClassKey  : @"KJServiceCollectionViewController",
                               MallTitleKey  : @"服务",
                               MallImgKey    : @"tabr_4_up",
                               MallSelImgKey : @"tabr_4_down"},

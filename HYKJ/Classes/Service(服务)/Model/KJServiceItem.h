@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 typedef enum {
-    ServiceTypeKefu = 0  // 客服
+    ServiceTypeFangwei = 0,  // 防伪
+    ServiceTypeShouhou = 1,  // 售后
+    ServiceTypeToushu = 2,   // 投诉
+    ServiceTypeKnowledge = 3, // 知识
+    ServiceTypeKefu = 4 // 客服
 } ServiceType;
 
 NS_ASSUME_NONNULL_BEGIN

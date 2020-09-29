@@ -36,7 +36,6 @@
 		D668D7CC24B1CA4000AE36BB /* UIActionSheet+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C424B1CA3F00AE36BB /* UIActionSheet+LBXAlertAction.m */; };
 		D668D7CD24B1CA4000AE36BB /* UIAlertView+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C524B1CA3F00AE36BB /* UIAlertView+LBXAlertAction.m */; };
 		D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7C624B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.m */; };
-		D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D024B1D00300AE36BB /* KJStyleDIY.m */; };
 		D668D7E224B1D42900AE36BB /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D724B1D42800AE36BB /* SPSettingViewController.m */; };
 		D668D7E324B1D42900AE36BB /* SPSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */; };
 		D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D668D7DC24B1D42900AE36BB /* SPSettingTopView.xib */; };
@@ -143,6 +142,15 @@
 		D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559624EE796500529F61 /* KJDuiZhangTool.m */; };
 		D66E559B24EE7D1600529F61 /* KJDuiZhangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */; };
 		D66E559C24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */; };
+		D66E8FAE252318C2000C7FD9 /* KJStyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FAD252318C2000C7FD9 /* KJStyleDIY.m */; };
+		D66E8FB225232A7D000C7FD9 /* StyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FB125232A7D000C7FD9 /* StyleDIY.m */; };
+		D66E8FB525232C87000C7FD9 /* LBXScanBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FB425232C87000C7FD9 /* LBXScanBaseViewController.m */; };
+		D66E8FB925232DEE000C7FD9 /* LBXScanNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FB825232DEE000C7FD9 /* LBXScanNativeViewController.m */; };
+		D66E8FBD25232EF9000C7FD9 /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E8FBA25232EF9000C7FD9 /* ScanResultViewController.xib */; };
+		D66E8FBE25232EFA000C7FD9 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FBC25232EF9000C7FD9 /* ScanResultViewController.m */; };
+		D66E8FC125232F58000C7FD9 /* LBXToast..m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FC025232F58000C7FD9 /* LBXToast..m */; };
+		D66E8FC5252338CB000C7FD9 /* LBXScanZXingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FC4252338CA000C7FD9 /* LBXScanZXingViewController.m */; };
+		D66E8FCD25235273000C7FD9 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D66E8FCC25235273000C7FD9 /* CodeScan.bundle */; };
 		D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */; };
 		D66EF57D24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */; };
 		D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */; };
@@ -155,6 +163,11 @@
 		D67712E224F6550C005379AA /* services.plist in Resources */ = {isa = PBXBuildFile; fileRef = D67712E124F6550C005379AA /* services.plist */; };
 		D67712EA24F66537005379AA /* KJDingDanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67712E924F66537005379AA /* KJDingDanViewController.m */; };
 		D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = D679D86124AAF6D5004F1463 /* KJConsts.m */; };
+		D67C815A2521CC6C00788181 /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = D67C81592521CC6C00788181 /* services.json */; };
+		D67C815D2521CE8800788181 /* KJServiceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C815C2521CE8800788181 /* KJServiceCollectionViewController.m */; };
+		D67C81632521D1C300788181 /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C815F2521D1C200788181 /* XLPlainFlowLayout.m */; };
+		D67C81642521D1C300788181 /* ReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C81612521D1C300788181 /* ReusableView.m */; };
+		D67C81672521D5A000788181 /* KJGroupServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C81662521D5A000788181 /* KJGroupServiceItem.m */; };
 		D6A9A97824E56A040073E932 /* KJDaoKuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9A97624E56A040073E932 /* KJDaoKuanTableViewCell.m */; };
 		D6A9A97924E56A040073E932 /* KJDaoKuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A9A97724E56A040073E932 /* KJDaoKuanTableViewCell.xib */; };
 		D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9A97B24E5748F0073E932 /* KJLongTextScrollView.m */; };
@@ -232,8 +245,6 @@
 		D668D7C624B1CA3F00AE36BB /* UIAlertController+supportedInterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+supportedInterfaceOrientations.m"; sourceTree = "<group>"; };
 		D668D7C724B1CA3F00AE36BB /* UIWindow+LBXHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LBXHierarchy.h"; sourceTree = "<group>"; };
 		D668D7C824B1CA3F00AE36BB /* KJScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJScanResultViewController.h; sourceTree = "<group>"; };
-		D668D7CF24B1D00300AE36BB /* KJStyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJStyleDIY.h; sourceTree = "<group>"; };
-		D668D7D024B1D00300AE36BB /* KJStyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJStyleDIY.m; sourceTree = "<group>"; };
 		D668D7D524B1D42800AE36BB /* SPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingViewController.h; sourceTree = "<group>"; };
 		D668D7D724B1D42800AE36BB /* SPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingViewController.m; sourceTree = "<group>"; };
 		D668D7D924B1D42800AE36BB /* SPSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingTableViewCell.m; sourceTree = "<group>"; };
@@ -419,6 +430,22 @@
 		D66E559824EE7D1600529F61 /* KJDuiZhangTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangTableViewCell.h; sourceTree = "<group>"; };
 		D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangTableViewCell.m; sourceTree = "<group>"; };
 		D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDuiZhangTableViewCell.xib; sourceTree = "<group>"; };
+		D66E8FAC252318C2000C7FD9 /* KJStyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJStyleDIY.h; sourceTree = "<group>"; };
+		D66E8FAD252318C2000C7FD9 /* KJStyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJStyleDIY.m; sourceTree = "<group>"; };
+		D66E8FB025232A7D000C7FD9 /* StyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleDIY.h; sourceTree = "<group>"; };
+		D66E8FB125232A7D000C7FD9 /* StyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleDIY.m; sourceTree = "<group>"; };
+		D66E8FB325232C87000C7FD9 /* LBXScanBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanBaseViewController.h; sourceTree = "<group>"; };
+		D66E8FB425232C87000C7FD9 /* LBXScanBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanBaseViewController.m; sourceTree = "<group>"; };
+		D66E8FB725232DEE000C7FD9 /* LBXScanNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNativeViewController.h; sourceTree = "<group>"; };
+		D66E8FB825232DEE000C7FD9 /* LBXScanNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNativeViewController.m; sourceTree = "<group>"; };
+		D66E8FBA25232EF9000C7FD9 /* ScanResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
+		D66E8FBB25232EF9000C7FD9 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		D66E8FBC25232EF9000C7FD9 /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		D66E8FBF25232F58000C7FD9 /* LBXToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXToast.h; sourceTree = "<group>"; };
+		D66E8FC025232F58000C7FD9 /* LBXToast..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXToast..m; sourceTree = "<group>"; };
+		D66E8FC3252338CA000C7FD9 /* LBXScanZXingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanZXingViewController.h; sourceTree = "<group>"; };
+		D66E8FC4252338CA000C7FD9 /* LBXScanZXingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanZXingViewController.m; sourceTree = "<group>"; };
+		D66E8FCC25235273000C7FD9 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
 		D66EF57924E669C800E4CC3E /* KJDaoKuanTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableHeaderView.h; sourceTree = "<group>"; };
 		D66EF57A24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaoKuanTableHeaderView.m; sourceTree = "<group>"; };
 		D66EF57C24E669D500E4CC3E /* KJDaoKuanTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanTableHeaderView.xib; sourceTree = "<group>"; };
@@ -439,6 +466,15 @@
 		D67712E924F66537005379AA /* KJDingDanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDingDanViewController.m; sourceTree = "<group>"; };
 		D679D86024AAF6D5004F1463 /* KJConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJConsts.h; sourceTree = "<group>"; };
 		D679D86124AAF6D5004F1463 /* KJConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJConsts.m; sourceTree = "<group>"; };
+		D67C81592521CC6C00788181 /* services.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = services.json; sourceTree = "<group>"; };
+		D67C815B2521CE8800788181 /* KJServiceCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJServiceCollectionViewController.h; sourceTree = "<group>"; };
+		D67C815C2521CE8800788181 /* KJServiceCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJServiceCollectionViewController.m; sourceTree = "<group>"; };
+		D67C815F2521D1C200788181 /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
+		D67C81602521D1C200788181 /* ReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReusableView.h; sourceTree = "<group>"; };
+		D67C81612521D1C300788181 /* ReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReusableView.m; sourceTree = "<group>"; };
+		D67C81622521D1C300788181 /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
+		D67C81652521D5A000788181 /* KJGroupServiceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJGroupServiceItem.h; sourceTree = "<group>"; };
+		D67C81662521D5A000788181 /* KJGroupServiceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJGroupServiceItem.m; sourceTree = "<group>"; };
 		D6A9A97524E56A040073E932 /* KJDaoKuanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDaoKuanTableViewCell.h; sourceTree = "<group>"; };
 		D6A9A97624E56A040073E932 /* KJDaoKuanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDaoKuanTableViewCell.m; sourceTree = "<group>"; };
 		D6A9A97724E56A040073E932 /* KJDaoKuanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanTableViewCell.xib; sourceTree = "<group>"; };
@@ -642,6 +678,7 @@
 		D654F7362498E0EA002F66A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D66E8FCC25235273000C7FD9 /* CodeScan.bundle */,
 				D65C45522498860A0042E42E /* Main.storyboard */,
 				D65C45552498860C0042E42E /* Images.xcassets */,
 				D65C45572498860C0042E42E /* LaunchScreen.storyboard */,
@@ -716,6 +753,7 @@
 		D668D7B524B1C7A200AE36BB /* Scan(扫码) */ = {
 			isa = PBXGroup;
 			children = (
+				D66E8FAF2523279B000C7FD9 /* DIYScanViewController */,
 				D668D7B624B1C7C200AE36BB /* Model */,
 				D668D7B724B1C7C200AE36BB /* Controller */,
 			);
@@ -725,8 +763,8 @@
 		D668D7B624B1C7C200AE36BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D668D7CF24B1D00300AE36BB /* KJStyleDIY.h */,
-				D668D7D024B1D00300AE36BB /* KJStyleDIY.m */,
+				D66E8FAC252318C2000C7FD9 /* KJStyleDIY.h */,
+				D66E8FAD252318C2000C7FD9 /* KJStyleDIY.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1162,6 +1200,7 @@
 		D66CCB2C24B2F4A70038CCE7 /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				D67C81582521CC0900788181 /* Json */,
 				D66CCB2D24B2F4A70038CCE7 /* Plist */,
 			);
 			path = "Resource(资源)";
@@ -1265,9 +1304,46 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D66E8FAF2523279B000C7FD9 /* DIYScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D66E8FB625232DDF000C7FD9 /* Native */,
+				D66E8FC2252338CA000C7FD9 /* ZXing */,
+				D66E8FC025232F58000C7FD9 /* LBXToast..m */,
+				D66E8FBF25232F58000C7FD9 /* LBXToast.h */,
+				D66E8FBB25232EF9000C7FD9 /* ScanResultViewController.h */,
+				D66E8FBC25232EF9000C7FD9 /* ScanResultViewController.m */,
+				D66E8FBA25232EF9000C7FD9 /* ScanResultViewController.xib */,
+				D66E8FB325232C87000C7FD9 /* LBXScanBaseViewController.h */,
+				D66E8FB425232C87000C7FD9 /* LBXScanBaseViewController.m */,
+				D66E8FB025232A7D000C7FD9 /* StyleDIY.h */,
+				D66E8FB125232A7D000C7FD9 /* StyleDIY.m */,
+			);
+			path = DIYScanViewController;
+			sourceTree = "<group>";
+		};
+		D66E8FB625232DDF000C7FD9 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				D66E8FB725232DEE000C7FD9 /* LBXScanNativeViewController.h */,
+				D66E8FB825232DEE000C7FD9 /* LBXScanNativeViewController.m */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		D66E8FC2252338CA000C7FD9 /* ZXing */ = {
+			isa = PBXGroup;
+			children = (
+				D66E8FC3252338CA000C7FD9 /* LBXScanZXingViewController.h */,
+				D66E8FC4252338CA000C7FD9 /* LBXScanZXingViewController.m */,
+			);
+			path = ZXing;
+			sourceTree = "<group>";
+		};
 		D67712CC24F624CD005379AA /* Service(服务) */ = {
 			isa = PBXGroup;
 			children = (
+				D67C815E2521CEDD00788181 /* XLPlainFlowLayout */,
 				D67712D324F62D4B005379AA /* Model */,
 				D67712D124F62D4B005379AA /* Tool */,
 				D67712D224F62D4B005379AA /* View */,
@@ -1281,6 +1357,8 @@
 			children = (
 				D67712CE24F62511005379AA /* KJServiceViewController.h */,
 				D67712CF24F62511005379AA /* KJServiceViewController.m */,
+				D67C815B2521CE8800788181 /* KJServiceCollectionViewController.h */,
+				D67C815C2521CE8800788181 /* KJServiceCollectionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1307,6 +1385,8 @@
 			children = (
 				D67712DC24F63424005379AA /* KJServiceItem.h */,
 				D67712DD24F63424005379AA /* KJServiceItem.m */,
+				D67C81652521D5A000788181 /* KJGroupServiceItem.h */,
+				D67C81662521D5A000788181 /* KJGroupServiceItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1386,6 +1466,25 @@
 				D679D86124AAF6D5004F1463 /* KJConsts.m */,
 			);
 			path = "Consts(常量)";
+			sourceTree = "<group>";
+		};
+		D67C81582521CC0900788181 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				D67C81592521CC6C00788181 /* services.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		D67C815E2521CEDD00788181 /* XLPlainFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D67C81622521D1C300788181 /* XLPlainFlowLayout.h */,
+				D67C815F2521D1C200788181 /* XLPlainFlowLayout.m */,
+				D67C81602521D1C200788181 /* ReusableView.h */,
+				D67C81612521D1C300788181 /* ReusableView.m */,
+			);
+			path = XLPlainFlowLayout;
 			sourceTree = "<group>";
 		};
 		D6B9E8F624EB6EB500686E42 /* Model */ = {
@@ -1564,13 +1663,16 @@
 				D65C542224E2C36A00001C9E /* TDCenterServiceCell.xib in Resources */,
 				D66E558624EE14C800529F61 /* KJDuiZhangSearchView.xib in Resources */,
 				D66AA3D424F917DD00839DF0 /* KJDingDanDetailTableViewCell.xib in Resources */,
+				D66E8FCD25235273000C7FD9 /* CodeScan.bundle in Resources */,
 				D66E559C24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib in Resources */,
 				D66B804D24F3B834000943C1 /* KJZuDanTableHeaderView.xib in Resources */,
+				D67C815A2521CC6C00788181 /* services.json in Resources */,
 				D637693924B47AC300A23672 /* service.plist in Resources */,
 				D668D7E424B1D42900AE36BB /* SPSettingTopView.xib in Resources */,
 				D66B246824ED2455009D48CF /* KJKuCunTableViewCell.xib in Resources */,
 				D66CA70224F888D0009D5A73 /* KJDingDanTableViewCell.xib in Resources */,
 				D668D7F124B1D6DC00AE36BB /* SPAboutMeViewController.xib in Resources */,
+				D66E8FBD25232EF9000C7FD9 /* ScanResultViewController.xib in Resources */,
 				D668D86A24B207CE00AE36BB /* DCCenterServiceCell.xib in Resources */,
 				D66AA67924EFCE9600B97426 /* KJTuiHuoTableViewCell.xib in Resources */,
 				D66DEDDF24EA2F40009D8C96 /* KJDataPickerView.xib in Resources */,
@@ -1661,6 +1763,7 @@
 				D66B802524F36A4E000943C1 /* KJTuiHuoMX.m in Sources */,
 				D63A9438249F986200DF546C /* KJLoginParam.m in Sources */,
 				D66E559124EE784500529F61 /* KJDuiZhangParam.m in Sources */,
+				D66E8FB925232DEE000C7FD9 /* LBXScanNativeViewController.m in Sources */,
 				D66D95D624F7B3B700ABC31F /* KJDingDan.m in Sources */,
 				D66D2A5B24E8C78500DA0E42 /* KJCoverView.m in Sources */,
 				D66AA3C724F90C4D00839DF0 /* KJDingDanDetailViewController.m in Sources */,
@@ -1669,6 +1772,7 @@
 				D65C454B2498860A0042E42E /* AppDelegate.m in Sources */,
 				D668D7F524B1D7C000AE36BB /* SPSpeedy.m in Sources */,
 				D66D848024B5CC3300B34335 /* KJBrowseViewController.m in Sources */,
+				D67C81632521D1C300788181 /* XLPlainFlowLayout.m in Sources */,
 				D63A9432249F8F9200DF546C /* KJLoginFooterView.m in Sources */,
 				D66A3F622499D8CC00AF10F5 /* KJNavigationController.m in Sources */,
 				D637693224B3F91A00A23672 /* KJCategroyViewController.m in Sources */,
@@ -1687,19 +1791,23 @@
 				D65C455C2498860C0042E42E /* main.m in Sources */,
 				D6B9E91A24EBD4BE00686E42 /* KJKuCun.m in Sources */,
 				D66BE8D524F50621008EAB5A /* KJFujianViewController.m in Sources */,
+				D67C815D2521CE8800788181 /* KJServiceCollectionViewController.m in Sources */,
 				D66E558124EE118100529F61 /* KJDuiZhangViewController.m in Sources */,
 				D66D95D324F7B0B400ABC31F /* KJDingDanResult.m in Sources */,
+				D66E8FB525232C87000C7FD9 /* LBXScanBaseViewController.m in Sources */,
 				D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */,
 				D66AA65B24EF671E00B97426 /* KJTuiHuoViewController.m in Sources */,
 				D66B803A24F39092000943C1 /* KJZuDanSearchView.m in Sources */,
 				D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */,
 				D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */,
+				D66E8FC125232F58000C7FD9 /* LBXToast..m in Sources */,
 				D63A942B249F81E800DF546C /* KJLoginViewController.m in Sources */,
 				D66D95D924F7B69900ABC31F /* KJDingDanTool.m in Sources */,
 				D6B9E91124EBD1E400686E42 /* KJKuCunParam.m in Sources */,
 				D6BAF52F24A79977004B24AA /* KJTool.m in Sources */,
 				D66B246724ED2455009D48CF /* KJKuCunTableViewCell.m in Sources */,
 				D66EF59924E69BF800E4CC3E /* CALayer+SPCustomerCALayer.m in Sources */,
+				D66E8FC5252338CB000C7FD9 /* LBXScanZXingViewController.m in Sources */,
 				D668D7FC24B1D9B300AE36BB /* LxGridViewFlowLayout.m in Sources */,
 				D65C542024E2C36A00001C9E /* TDGridItem.m in Sources */,
 				D668D85D24B2073D00AE36BB /* DCStateItemFooterView.m in Sources */,
@@ -1707,15 +1815,17 @@
 				D65C542324E2C36A00001C9E /* TDCenterServiceCell.m in Sources */,
 				D679D86224AAF6D5004F1463 /* KJConsts.m in Sources */,
 				D6BAF52324A78119004B24AA /* KJHYTool.m in Sources */,
-				D668D7D124B1D00300AE36BB /* KJStyleDIY.m in Sources */,
+				D66E8FB225232A7D000C7FD9 /* StyleDIY.m in Sources */,
 				D66BE8D124F4E501008EAB5A /* KJZuDanDetailTableViewCell.m in Sources */,
 				D66A3F662499E22500AF10F5 /* ATAppUpdater.m in Sources */,
 				D67712EA24F66537005379AA /* KJDingDanViewController.m in Sources */,
 				D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */,
 				D66D2A5324E8B9C700DA0E42 /* KJDatePickerView.m in Sources */,
 				D66A3F6C2499E61400AF10F5 /* KJLoginResult.m in Sources */,
+				D66E8FAE252318C2000C7FD9 /* KJStyleDIY.m in Sources */,
 				D668D86924B207CE00AE36BB /* DCGoodsGridCell.m in Sources */,
 				D66A3F592499B75900AF10F5 /* KJTabBarController.m in Sources */,
+				D66E8FBE25232EFA000C7FD9 /* ScanResultViewController.m in Sources */,
 				D66B803724F38F23000943C1 /* KJZuDanViewController.m in Sources */,
 				D67712DE24F63424005379AA /* KJServiceItem.m in Sources */,
 				D668D7E324B1D42900AE36BB /* SPSettingTableViewCell.m in Sources */,
@@ -1745,6 +1855,7 @@
 				D668D80424B1F3F600AE36BB /* SPPersonCenterHeaderView.m in Sources */,
 				D668D7CE24B1CA4000AE36BB /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				D66BE8C824F4DBFC008EAB5A /* KJZuDanDetail.m in Sources */,
+				D67C81672521D5A000788181 /* KJGroupServiceItem.m in Sources */,
 				D66D95D024F75E6900ABC31F /* KJDingDanParam.m in Sources */,
 				D65C542124E2C36A00001C9E /* TDGoodsGridCell.m in Sources */,
 				D668D86724B207CE00AE36BB /* DCCenterServiceCell.m in Sources */,
@@ -1773,6 +1884,7 @@
 				D6B9E91D24EBD5CE00686E42 /* KJKuCunTableHeaderView.m in Sources */,
 				D668D7E524B1D42900AE36BB /* SPSettingTopView.m in Sources */,
 				D6BAF52C24A78620004B24AA /* KJMeViewController.m in Sources */,
+				D67C81642521D1C300788181 /* ReusableView.m in Sources */,
 				D66B804824F3B2F8000943C1 /* KJZuDan.m in Sources */,
 				D668D7E224B1D42900AE36BB /* SPSettingViewController.m in Sources */,
 				D668D7E624B1D42900AE36BB /* SPUpDownButton.m in Sources */,
@@ -1933,7 +2045,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = hykj;
@@ -1958,7 +2070,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = hykj;

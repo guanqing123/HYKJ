@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LOj-s9-xoa">
-                        <rect key="frame" x="20" y="10" width="45" height="45"/>
+                        <rect key="frame" x="22.5" y="10" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="JRD-sJ-sXL"/>
-                            <constraint firstAttribute="width" constant="45" id="sFi-Dh-lHD"/>
+                            <constraint firstAttribute="height" constant="40" id="JRD-sJ-sXL"/>
+                            <constraint firstAttribute="width" constant="40" id="sFi-Dh-lHD"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-SY-EP9">
@@ -44,7 +44,7 @@
             <constraints>
                 <constraint firstItem="irC-4k-dA1" firstAttribute="leading" secondItem="LOj-s9-xoa" secondAttribute="centerX" id="5bS-2Z-SLO"/>
                 <constraint firstItem="LOj-s9-xoa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="BB7-5S-hhr"/>
-                <constraint firstItem="hg8-SY-EP9" firstAttribute="top" secondItem="LOj-s9-xoa" secondAttribute="bottom" constant="5" id="NuR-bC-EEY"/>
+                <constraint firstItem="hg8-SY-EP9" firstAttribute="top" secondItem="LOj-s9-xoa" secondAttribute="bottom" constant="10" id="NuR-bC-EEY"/>
                 <constraint firstItem="LOj-s9-xoa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="U15-eQ-fnT"/>
                 <constraint firstItem="irC-4k-dA1" firstAttribute="top" secondItem="LOj-s9-xoa" secondAttribute="top" id="YBU-Yi-de4"/>
                 <constraint firstItem="hg8-SY-EP9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dlm-cA-FDm"/>
@@ -55,7 +55,7 @@
                 <outlet property="tagLabel" destination="irC-4k-dA1" id="Rer-Ov-KLA"/>
                 <outlet property="titleLabel" destination="hg8-SY-EP9" id="Tc4-1V-7d4"/>
             </connections>
-            <point key="canvasLocation" x="-202" y="55"/>
+            <point key="canvasLocation" x="-202.17391304347828" y="54.575892857142854"/>
         </collectionViewCell>
     </objects>
 </document>

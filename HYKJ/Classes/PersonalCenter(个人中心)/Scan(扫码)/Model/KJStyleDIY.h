@@ -1,14 +1,14 @@
 //
-//  SPStyleDIY.h
-//  HYSmartPlus
+//  DemoListViewModel.h
+//  LBXScanDemo
 //
-//  Created by information on 2018/5/10.
-//  Copyright © 2018年 hongyan. All rights reserved.
+//  Created by lbxia on 2017/4/1.
+//  Copyright © 2017年 lbx. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <LBXScanViewStyle.h>
-//#import <ZXBarcodeFormat.h>
+#import <ZXBarcodeFormat.h>
 
 @interface KJStyleDIY : NSObject
 
@@ -40,6 +40,6 @@
 + (LBXScanViewStyle*)notSquare;
 
 #pragma mark -ZXing码格式类型转native
-//+ (NSString*)convertZXBarcodeFormat:(ZXBarcodeFormat)barCodeFormat;
++ (NSString*)convertZXBarcodeFormat:(ZXBarcodeFormat)barCodeFormat;
 
 @end
