@@ -120,7 +120,7 @@
 - (void)setTableView {
     // 1. baseView
     UIScrollView *baseView = [[UIScrollView alloc] init];
-    baseView.contentSize = CGSizeMake(1820.0f, 0.0f);
+    baseView.contentSize = CGSizeMake(1840.0f, 0.0f);
     _baseView = baseView;
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -151,7 +151,7 @@
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(@(0));
-        make.width.mas_equalTo(@(1820));
+        make.width.mas_equalTo(@(1840));
 
         MASViewAttribute *top = [self mas_topLayoutGuideBottom];
         MASViewAttribute *bottom = [self mas_bottomLayoutGuideTop];
@@ -281,7 +281,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     KJDingDanTableHeaderView *headerView = [KJDingDanTableHeaderView headerView];
-    headerView.frame = CGRectMake(0.0f, 0.0f, 1820.0f, 44.0f);
+    headerView.frame = CGRectMake(0.0f, 0.0f, 1840.0f, 44.0f);
     return headerView;
 }
 

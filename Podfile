@@ -1,6 +1,9 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
 target 'HYKJ' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -44,5 +47,6 @@ target 'HYKJ' do
   #日期
   pod 'FSCalendar', '~> 2.8.1'
   
-  
+  #推送
+  pod 'AlicloudPush', '~> 1.9.9'
 end

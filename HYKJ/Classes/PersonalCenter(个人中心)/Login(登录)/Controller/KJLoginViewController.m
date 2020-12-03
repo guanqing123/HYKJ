@@ -17,6 +17,9 @@
 #import "KJLoginTool.h"
 #import "KJHYTool.h"
 
+// 阿里push
+#import <CloudPushSDK/CloudPushSDK.h>
+
 @interface KJLoginViewController () <UIScrollViewDelegate,KJPasswordLoginViewDelegate>
 
 @property (nonatomic, strong) KJLoginHeaderView  *headerView;
@@ -179,6 +182,15 @@
         
         // 3.获取产业
         [weakSelf getFcy];
+        
+        // 4.推送绑定账号
+        [CloudPushSDK bindAccount:[KJAccountTool getUserCode] withCallback:^(CloudPushCallbackResult *res) {
+            if (res.success) {
+                NSLog(@"账号%@绑定成功", [KJAccountTool getUserCode]);
+            } else {
+                NSLog(@"账号绑定 error=%@", res.error);
+            }
+        }];
         
     } failure:^(NSError * _Nonnull error) {
         [SVProgressHUD dismiss];

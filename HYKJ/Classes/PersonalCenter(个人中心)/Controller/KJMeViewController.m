@@ -234,7 +234,7 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
     } else if (indexPath.section == 1) {
         return 130;
     } else if (indexPath.section == 2) {
-        return 185;
+        return 260;
     }
     return 0;
 }
@@ -263,6 +263,18 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
         case TDDingdanService:  // 订单
             [self loadVc:@"KJDingDanViewController" title:@"订单查询"];
             break;
+        case TDTejiaService:   // 特价查询
+            [self browseHTML:[H5URL stringByAppendingString:Tejia]];
+            break;
+        case TDCuxiaoService:  // 促销查询
+            [self browseHTML:[H5URL stringByAppendingString:Cuxiao]];
+            break;
+        case TDFanliService:  // 返利查询
+            [self browseHTML:[H5URL stringByAppendingString:Fanli]];
+            break;
+        case TDDaokuanluruService:  // 到款录入
+            [self browseHTML:[H5URL stringByAppendingString:Dklr]];
+            break;
         default:
             break;
     }
@@ -283,13 +295,13 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
             [self browseHTML:[H5URL stringByAppendingString:Progress]];
             break;
         case TejiaService:  // 特价
-            [self browseHTML:[H5URL stringByAppendingString:Tejia]];
+            [self browseHTML:[H5URL stringByAppendingString:Tejiafx]];
             break;
         case CuxiaoService: // 促销
-            [self browseHTML:[H5URL stringByAppendingString:Cuxiao]];
+            [self browseHTML:[H5URL stringByAppendingString:Cuxiaofx]];
             break;
         case FanliService:  // 返利
-            [self browseHTML:[H5URL stringByAppendingString:Fanli]];
+            [self browseHTML:[H5URL stringByAppendingString:Fanlifx]];
             break;
         default:
             break;

@@ -14,9 +14,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAa-tP-X4B">
-                    <rect key="frame" x="0.0" y="0.0" width="150" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="Mpy-LY-npm"/>
+                        <constraint firstAttribute="width" constant="160" id="Mpy-LY-npm"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <nil key="textColor"/>
@@ -31,7 +31,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Jo-Xd0">
-                    <rect key="frame" x="150" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="160" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="gXI-GA-rEu"/>
                     </constraints>
@@ -48,7 +48,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXx-5r-xDE">
-                    <rect key="frame" x="230" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="240" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="CnM-t3-9YM"/>
                     </constraints>
@@ -65,7 +65,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发货金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wll-rK-e45">
-                    <rect key="frame" x="310" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="320" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="Id9-7U-zTc"/>
                     </constraints>
@@ -82,7 +82,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发货模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms8-zf-cfH">
-                    <rect key="frame" x="390" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="400" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="c71-1u-sXd"/>
                     </constraints>
@@ -99,7 +99,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="承运人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz3-bY-KUI">
-                    <rect key="frame" x="470" y="0.0" width="200" height="44"/>
+                    <rect key="frame" x="480" y="0.0" width="200" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="dKz-PP-08g"/>
                     </constraints>
@@ -116,7 +116,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="业务员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNY-TL-KCq">
-                    <rect key="frame" x="670" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="680" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="8Wq-9c-bwM"/>
                     </constraints>
@@ -133,7 +133,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销售地点" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-Ro-y3E">
-                    <rect key="frame" x="750" y="0.0" width="200" height="44"/>
+                    <rect key="frame" x="760" y="0.0" width="200" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="OAx-jk-5fT"/>
                     </constraints>
@@ -150,7 +150,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装运地点" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f4-ha-gEh">
-                    <rect key="frame" x="950" y="0.0" width="200" height="44"/>
+                    <rect key="frame" x="960" y="0.0" width="200" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="7Nw-OD-mu6"/>
                     </constraints>
@@ -167,7 +167,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvy-Ns-7B4">
-                    <rect key="frame" x="1150" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="1160" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="Cti-xC-Z2Z"/>
                     </constraints>
@@ -184,7 +184,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分配状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL7-gq-Pkf">
-                    <rect key="frame" x="1230" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="1240" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="wrt-PU-m8w"/>
                     </constraints>
@@ -201,7 +201,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装运状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm2-kt-gp1">
-                    <rect key="frame" x="1310" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="1320" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="BXq-Jh-Mnt"/>
                     </constraints>
@@ -218,7 +218,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发票状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7t-Rh-S0w">
-                    <rect key="frame" x="1390" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="1400" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="vTo-aN-7Wm"/>
                     </constraints>
@@ -235,7 +235,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户代码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxA-dy-QKa">
-                    <rect key="frame" x="1470" y="0.0" width="80" height="44"/>
+                    <rect key="frame" x="1480" y="0.0" width="80" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="RIf-Io-VqR"/>
                     </constraints>
@@ -252,7 +252,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uie-re-sEa">
-                    <rect key="frame" x="1550" y="0.0" width="120" height="44"/>
+                    <rect key="frame" x="1560" y="0.0" width="120" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="1XE-fb-CeU"/>
                     </constraints>
@@ -269,9 +269,9 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产业单号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfA-6g-h6w">
-                    <rect key="frame" x="1670" y="0.0" width="150" height="44"/>
+                    <rect key="frame" x="1680" y="0.0" width="160" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="2El-hr-Ul3"/>
+                        <constraint firstAttribute="width" constant="160" id="2El-hr-Ul3"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <nil key="textColor"/>

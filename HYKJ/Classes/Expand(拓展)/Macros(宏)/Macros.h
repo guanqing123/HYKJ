@@ -93,12 +93,19 @@
 #define Progress @"/gecharts/gecharts.html"
 //特价
 #define Tejia @"/gtjorder/gtjorder.html"
+#define Tejiafx @"/gtjecharts/gtjecharts.html"
 //促销
 #define Cuxiao @"/gcxorder/gcxorder.html"
+#define Cuxiaofx @"/gcxecharts/gcxecharts.html"
 //返利
 #define Fanli @"/gflorder/gflorder.html"
+#define Fanlifx @"/gflecharts/gflecharts.html"
 //协议书
 #define Xieyishu @"/gprotocol/gprotocol.html"
+
+//商务
+//到款录入
+#define Dklr @"/gpayment/gpaymentLists.html"
 
 
 //服务
@@ -108,7 +115,7 @@
 //防伪查询
 #define FangweiService @"/gfwsearch/gfwsearch.html"
 //售后反馈
-#define ShouhouService @"/gsaleservice/gsaleservice.html"
+#define ShouhouService @"/gserviceList/gserviceList.html"
 //投诉建议
 #define ToushuService @"/gproposal/gproposal.html"
 

@@ -41,12 +41,12 @@
     [super awakeFromNib];
     // Initialization code
     KJLongTextScrollView *bptnumVc = [[KJLongTextScrollView alloc] init];
-    bptnumVc.frame = CGRectMake(470, 0, 200, 30);
+    bptnumVc.frame = CGRectMake(480, 0, 200, 30);
     _bptnumVc = bptnumVc;
     [self.contentView addSubview:bptnumVc];
     
     KJLongTextScrollView *bpcnamVc = [[KJLongTextScrollView alloc] init];
-    bpcnamVc.frame = CGRectMake(1550, 0, 120, 30);
+    bpcnamVc.frame = CGRectMake(1560, 0, 120, 30);
     _bpcnamVc = bpcnamVc;
     [self.contentView addSubview:bpcnamVc];
 }
