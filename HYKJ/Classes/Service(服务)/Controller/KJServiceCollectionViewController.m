@@ -11,6 +11,7 @@
 #import "XLPlainFlowLayout.h"
 #import "ReusableView.h"
 #import "KJServiceCollectionViewCell.h"
+#import "DES3EncryptUtil.h"
 
 #import <MJExtension.h>
 #import "KJGroupServiceItem.h"
@@ -130,8 +131,12 @@ static NSString * const reusableHeader = @"reusableHeader";
             [self browseHTML:[H5URL stringByAppendingString:ToushuService]];
             break;
         case ServiceTypeKnowledge: // 知识库
-            [SVProgressHUD showInfoWithStatus:@"正在建设中,敬请期待!"];
+        {
+            NSString *account = [DES3EncryptUtil encrypt:@"HYJXS"];
+            NSString *encodStr = [account stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"'();:@&=+$,/?%#[]"].invertedSet];
+            [self browseHTML:[NSString stringWithFormat:LNURL, encodStr]];
             break;
+        }
         case ServiceTypeKefu: // 客服
             [self browseHTML:[H5URL stringByAppendingString:KefuService]];
             break;

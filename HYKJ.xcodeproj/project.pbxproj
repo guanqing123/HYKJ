@@ -157,6 +157,8 @@
 		D66EF59424E6897300E4CC3E /* KJDaoKuanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59324E6897300E4CC3E /* KJDaoKuanSearchView.m */; };
 		D66EF59624E6899700E4CC3E /* KJDaoKuanSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF59524E6899700E4CC3E /* KJDaoKuanSearchView.xib */; };
 		D66EF59924E69BF800E4CC3E /* CALayer+SPCustomerCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF59724E69BF700E4CC3E /* CALayer+SPCustomerCALayer.m */; };
+		D6765129258AEF8F00E81823 /* DES3EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D6765125258AEF8E00E81823 /* DES3EncryptUtil.m */; };
+		D676512A258AEF8F00E81823 /* MyBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D6765126258AEF8E00E81823 /* MyBase64.m */; };
 		D67712D024F62511005379AA /* KJServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67712CF24F62511005379AA /* KJServiceViewController.m */; };
 		D67712DA24F62DA7005379AA /* KJServiceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D67712D824F62DA7005379AA /* KJServiceCollectionViewCell.m */; };
 		D67712DB24F62DA7005379AA /* KJServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67712D924F62DA7005379AA /* KJServiceCollectionViewCell.xib */; };
@@ -459,6 +461,10 @@
 		D66EF59524E6899700E4CC3E /* KJDaoKuanSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDaoKuanSearchView.xib; sourceTree = "<group>"; };
 		D66EF59724E69BF700E4CC3E /* CALayer+SPCustomerCALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SPCustomerCALayer.m"; sourceTree = "<group>"; };
 		D66EF59824E69BF800E4CC3E /* CALayer+SPCustomerCALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SPCustomerCALayer.h"; sourceTree = "<group>"; };
+		D6765125258AEF8E00E81823 /* DES3EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3EncryptUtil.m; sourceTree = "<group>"; };
+		D6765126258AEF8E00E81823 /* MyBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBase64.m; sourceTree = "<group>"; };
+		D6765127258AEF8F00E81823 /* DES3EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3EncryptUtil.h; sourceTree = "<group>"; };
+		D6765128258AEF8F00E81823 /* MyBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBase64.h; sourceTree = "<group>"; };
 		D67712CE24F62511005379AA /* KJServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJServiceViewController.h; sourceTree = "<group>"; };
 		D67712CF24F62511005379AA /* KJServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJServiceViewController.m; sourceTree = "<group>"; };
 		D67712D724F62DA7005379AA /* KJServiceCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJServiceCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1384,6 +1390,10 @@
 		D67712D124F62D4B005379AA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				D6765127258AEF8F00E81823 /* DES3EncryptUtil.h */,
+				D6765125258AEF8E00E81823 /* DES3EncryptUtil.m */,
+				D6765128258AEF8F00E81823 /* MyBase64.h */,
+				D6765126258AEF8E00E81823 /* MyBase64.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1816,6 +1826,7 @@
 				D66D95D324F7B0B400ABC31F /* KJDingDanResult.m in Sources */,
 				D66E8FB525232C87000C7FD9 /* LBXScanBaseViewController.m in Sources */,
 				D66E559424EE785200529F61 /* KJDuiZhang.m in Sources */,
+				D6765129258AEF8F00E81823 /* DES3EncryptUtil.m in Sources */,
 				D66AA65B24EF671E00B97426 /* KJTuiHuoViewController.m in Sources */,
 				D66B803A24F39092000943C1 /* KJZuDanSearchView.m in Sources */,
 				D6A9A97C24E5748F0073E932 /* KJLongTextScrollView.m in Sources */,
@@ -1854,6 +1865,7 @@
 				D668D7CB24B1CA4000AE36BB /* UIWindow+LBXHierarchy.m in Sources */,
 				D66AA3CA24F911FA00839DF0 /* KJDingDanDetail.m in Sources */,
 				D654F7322498DF7C002F66A3 /* KJHttpTool.m in Sources */,
+				D676512A258AEF8F00E81823 /* MyBase64.m in Sources */,
 				D6B9E90324EB7BA800686E42 /* KJDaokuan.m in Sources */,
 				D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */,
 				D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */,
@@ -2066,7 +2078,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2092,7 +2104,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";

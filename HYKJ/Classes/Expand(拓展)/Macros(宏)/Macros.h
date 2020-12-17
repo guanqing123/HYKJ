@@ -75,6 +75,8 @@
 //鸿雁客家
 #define KJURL @"http://dev.sge.cn/rest"
 
+//知识库
+#define LNURL @"http://kms.sge.cn?mobile=%@"
 //H5基础路径
 #define H5URL @"http://dev.sge.cn/hykj"
 //待审核
@@ -117,6 +119,8 @@
 //售后反馈
 #define ShouhouService @"/gserviceList/gserviceList.html"
 //投诉建议
-#define ToushuService @"/gproposal/gproposal.html"
+//#define ToushuService @"/gproposal/gproposal.html"
+#define ToushuService @"/gproposal/gproposalList.html"
+
 
 #endif /* Macros_h */

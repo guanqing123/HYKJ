@@ -50,7 +50,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.text = @"第三方登录";
+        _titleLabel.text = @"鸿雁客家";
         _titleLabel.font = PFR10Font;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textColor = RGB(177, 177, 177);
