@@ -67,7 +67,8 @@
     [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     _webView = webView;
                            
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/ghome/ghome.html"]]];
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dev.sge.cn/hykj/ghome/ghome.html"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/ghome/ghome.html", H5URL]]]];
     [self.view addSubview:webView];
     [self.view addSubview:self.myProgressView];
     

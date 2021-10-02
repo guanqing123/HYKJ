@@ -8,6 +8,9 @@
 
 #import "KJCategroyViewController.h"
 
+// alipay
+#import <AlipaySDK/AlipaySDK.h>
+
 // webview/js bridge
 #import <WebKit/WebKit.h>
 #import "WKWebViewJavascriptBridge.h"
@@ -192,6 +195,45 @@
         [self.webView goBack];
     }
 }
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    //新版本的H5拦截支付对老版本的获取订单串和订单支付接口进行合并，推荐使用该接口
+    __weak KJCategroyViewController* wself = self;
+    BOOL isIntercepted = [[AlipaySDK defaultService] payInterceptorWithUrl:[navigationAction.request.URL absoluteString] fromScheme:@"hykj" callback:^(NSDictionary *resultDic) {
+        // 处理支付结果
+        NSLog(@"%@", resultDic);
+        // isProcessUrlPay 代表 支付宝已经处理该URL
+        if ([resultDic[@"isProcessUrlPay"] boolValue]) {
+            // returnUrl 代表 第三方App需要跳转的成功页URL
+            NSString* urlStr = resultDic[@"returnUrl"];
+            [wself loadWithUrlStr:urlStr];
+        }
+    }];
+    
+    if (isIntercepted) {
+        decisionHandler(WKNavigationActionPolicyCancel);
+        [self.myProgressView setProgress:1.0 animated:YES];
+        [UIView animateWithDuration:0.3f delay:0.3f options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.myProgressView.alpha = 0.0f;
+         } completion:^(BOOL finished) {
+            [self.myProgressView setProgress:0 animated:NO];
+        }];
+        return;
+    }
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+- (void)loadWithUrlStr:(NSString*)urlStr {
+    if (urlStr.length > 0) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSURLRequest *webRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]
+                                                        cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                                    timeoutInterval:30];
+            [self.webView loadRequest:webRequest];
+        });
+    }
+}
+
 
 #pragma mark - 屏幕横竖屏设置
 - (BOOL)shouldAutorotate {

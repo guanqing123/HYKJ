@@ -144,7 +144,7 @@
     return _decodedImage;
 }
 
-+ (void)dc_SetUpAlterWithView:(UIViewController *)vc Message:(NSString *)message Sure:(void(^)())sureBlock Cancel:(void(^)())cancelBlock
++ (void)dc_SetUpAlterWithView:(UIViewController *)vc Message:(NSString *)message Sure:(void(^)(void))sureBlock Cancel:(void(^)(void))cancelBlock
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:message preferredStyle:UIAlertControllerStyleAlert];
     //取消

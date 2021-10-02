@@ -24,6 +24,7 @@
 #import "DCCenterItemCell.h"
 #import "DCCenterServiceCell.h"
 #import "TDCenterServiceCell.h"
+#import "FHCenterServiceCell.h"
 
 //我的数据
 #import "DCGridItem.h"
@@ -33,10 +34,13 @@
 //商务
 #import "TDGridItem.h"
 
+//物流
+#import "FHGridItem.h"
+
 //到款
 #import "KJDaoKuanViewController.h"
 
-@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate,DCCenterServiceCellDelegate,TDCenterServiceCellDelegate>
+@interface KJMeViewController ()<UITableViewDelegate,UITableViewDataSource,KJCenterTopToolViewDelegate,DCCenterItemCellDelegate,DCCenterServiceCellDelegate,TDCenterServiceCellDelegate,FHCenterServiceCellDelegate>
 
 @property (nonatomic, strong)  SPPersonCenterHeaderView *headerView;
 /** 头部背景图片 */
@@ -53,12 +57,15 @@
 @property (strong , nonatomic)NSMutableArray<DCGridItem *> *serviceItem;
 /* 商务 */
 @property (nonatomic, strong)  NSMutableArray<TDGridItem *> *tdServiceItem;
+/* 物流 */
+@property (nonatomic, strong)  NSMutableArray<FHGridItem *> *fhServiceItem;
 
 @end
 
 static NSString *const DCCenterItemCellID = @"DCCenterItemCell";
 static NSString *const DCCenterServiceCellID = @"DCCenterServiceCell";
 static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
+static NSString *const FHCenterServiceCellID = @"FHCenterServiceCell";
 
 @implementation KJMeViewController
 
@@ -76,6 +83,7 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
         [_tableView registerClass:[DCCenterItemCell class] forCellReuseIdentifier:DCCenterItemCellID];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([DCCenterServiceCell class]) bundle:nil] forCellReuseIdentifier:DCCenterServiceCellID];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TDCenterServiceCell class]) bundle:nil] forCellReuseIdentifier:TDCenterServiceCellID];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FHCenterServiceCell class]) bundle:nil] forCellReuseIdentifier:FHCenterServiceCellID];
     }
     return _tableView;
 }
@@ -181,6 +189,7 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
 - (void)setUpData {
     _serviceItem = [DCGridItem mj_objectArrayWithFilename:@"service.plist"];//MyServiceFlow.plist
     _tdServiceItem = [TDGridItem mj_objectArrayWithFilename:@"business.plist"];
+    _fhServiceItem = [FHGridItem mj_objectArrayWithFilename:@"sdelivery.plist"];
 }
 
 #pragma mark - initialize
@@ -199,7 +208,7 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -223,6 +232,11 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
         cell.serviceItemArray = [NSMutableArray arrayWithArray:_tdServiceItem];
         cell.delegate = self;
         cusCell = cell;
+    } else if (indexPath.section == 3) {
+        FHCenterServiceCell *cell = [tableView dequeueReusableCellWithIdentifier:FHCenterServiceCellID forIndexPath:indexPath];
+        cell.serviceItemArray = [NSMutableArray arrayWithArray:_fhServiceItem];
+        cell.delegate = self;
+        cusCell = cell;
     }
     
     return cusCell;
@@ -234,9 +248,25 @@ static NSString *const TDCenterServiceCellID = @"TDCenterServiceCell";
     } else if (indexPath.section == 1) {
         return 130;
     } else if (indexPath.section == 2) {
-        return 260;
+        return 270;
+    } else if (indexPath.section == 3) {
+        return 110;
     }
     return 0;
+}
+
+#pragma mark - FHCenterServiceCellDelegate
+- (void)fhcenterServiceCell:(FHCenterServiceCell *)serviceCell didClickCollectionViewItem:(FHGridItem *)gridItem {
+    switch (gridItem.serviceType) {
+        case FHHuidanService:   //回单确认
+            [self browseHTML:[H5URL stringByAppendingString:Hdlr]];
+            break;
+        case FHLishiService:    //历史查询
+            [self browseHTML:[H5URL stringByAppendingString:Lscx]];
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - TDCenterServiceCellDelegate

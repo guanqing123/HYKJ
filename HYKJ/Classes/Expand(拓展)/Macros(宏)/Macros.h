@@ -74,11 +74,13 @@
 #define XKURL @"http://218.75.78.166:9101/app/api"
 //鸿雁客家
 #define KJURL @"http://dev.sge.cn/rest"
+//#define KJURL @"https://hykj.hongyan.com.cn/rest"
 
 //知识库
 #define LNURL @"http://kms.sge.cn?mobile=%@"
 //H5基础路径
 #define H5URL @"http://dev.sge.cn/hykj"
+//#define H5URL @"https://hykj.hongyan.com.cn/hykj"
 //待审核
 #define WaitSubmit @"/gdshorder/gdshorder.html"
 //待发货
@@ -108,6 +110,12 @@
 //商务
 //到款录入
 #define Dklr @"/gpayment/gpaymentLists.html"
+
+//物流
+//回单确认
+#define Hdlr @"/ghdorder/ghdorder.html"
+//历史查询
+#define Lscx @"/ghdorder/ghdhistory.html"
 
 
 //服务

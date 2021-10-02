@@ -62,8 +62,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-setWebView"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
@@ -196,7 +196,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D760E78E-E0B9-4191-BDC7-B9AE28DFE62F - 8c266d1b57de3786"
+                  uuid = "D760E78E-E0B9-4191-BDC7-B9AE28DFE62F - fcd82101f53f1f25"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -211,7 +211,7 @@
                   offsetFromSymbolStart = "75">
                </Location>
                <Location
-                  uuid = "D760E78E-E0B9-4191-BDC7-B9AE28DFE62F - 9ce43c2267e57854"
+                  uuid = "D760E78E-E0B9-4191-BDC7-B9AE28DFE62F - ec1a7038c50450f7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -366,8 +366,8 @@
             filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/Controller/KJMeViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "315"
-            endingLineNumber = "315"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "-centerItemCell:didClickCollectionViewItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -386,22 +386,6 @@
             endingLineNumber = "123"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52F18F82-A326-415D-947B-B4D20EDAEC4E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HYKJ/Classes/Expand(&#x62d3;&#x5c55;)/Macros(&#x5b8f;)/Macros.h"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "unknown"
-            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -612,7 +596,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "C527F5C1-EA43-4263-B8BA-088B2CF643C6 - fe7f9b28ab247959"
+                  uuid = "C527F5C1-EA43-4263-B8BA-088B2CF643C6 - 16dc8684536e0890"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -627,7 +611,7 @@
                   offsetFromSymbolStart = "386">
                </Location>
                <Location
-                  uuid = "C527F5C1-EA43-4263-B8BA-088B2CF643C6 - 497d5c778aed35d2"
+                  uuid = "C527F5C1-EA43-4263-B8BA-088B2CF643C6 - a1de41db72a7441b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -676,7 +660,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1F7515C8-5FDA-490F-8F87-AC77226814F2 - fe7f9b28ab247959"
+                  uuid = "1F7515C8-5FDA-490F-8F87-AC77226814F2 - 16dc8684536e08f3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -691,7 +675,7 @@
                   offsetFromSymbolStart = "209">
                </Location>
                <Location
-                  uuid = "1F7515C8-5FDA-490F-8F87-AC77226814F2 - 497d5c778aed35d2"
+                  uuid = "1F7515C8-5FDA-490F-8F87-AC77226814F2 - a1de41db72a74478"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -836,7 +820,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - 3f00f1080d02ab"
+                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - afc0d444985d3fb3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -851,7 +835,7 @@
                   offsetFromSymbolStart = "227">
                </Location>
                <Location
-                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - bb93ab833e184149"
+                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - 146c7f36ae487c51"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -866,7 +850,7 @@
                   offsetFromSymbolStart = "106">
                </Location>
                <Location
-                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - ea4aa7da9fde59b6"
+                  uuid = "982BA9F1-C611-4C1A-834B-583138559D34 - 45b5736f0f8e64ae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1027,7 +1011,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "89075C8F-D889-4065-950B-23DA9CA137B7 - afcaa41d1a08a3e3"
+                  uuid = "89075C8F-D889-4065-950B-23DA9CA137B7 - 6aa501c69d93cb7f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1042,7 +1026,7 @@
                   offsetFromSymbolStart = "37">
                </Location>
                <Location
-                  uuid = "89075C8F-D889-4065-950B-23DA9CA137B7 - 48e39b78f2e5bf14"
+                  uuid = "89075C8F-D889-4065-950B-23DA9CA137B7 - 8d8c3ea3757ed657"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1155,7 +1139,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - f5d061a00fca11b6"
+                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - 79574341599c48bc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1170,7 +1154,7 @@
                   offsetFromSymbolStart = "511">
                </Location>
                <Location
-                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - 541dcc5d7223190f"
+                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - d89aeebc24754005"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1185,7 +1169,7 @@
                   offsetFromSymbolStart = "15">
                </Location>
                <Location
-                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - 3914727598e91616"
+                  uuid = "16A66B03-1ED7-499E-92DE-B1E2F655661E - b5935094cebf4f1c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1410,7 +1394,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - 2c30725300da9d6b"
+                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - d2264d8379bd8196"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1425,7 +1409,7 @@
                   offsetFromSymbolStart = "37">
                </Location>
                <Location
-                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - b96b15e66fac7ce2"
+                  uuid = "43A0B68C-9ECE-4183-88CA-9AB232C7DB70 - 477d2a3616cb6040"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1506,7 +1490,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - 22326a0a04a5492a"
+                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - 99c94bbfacc711a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1521,7 +1505,7 @@
                   offsetFromSymbolStart = "214">
                </Location>
                <Location
-                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - da6f87215ed375b8"
+                  uuid = "19995A22-70F2-4F8D-9A22-19D6BE0E0476 - 6194a694f6b12d3b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1650,7 +1634,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - a7001869a74231ae"
+                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - c946a34c7aeb1ed1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1665,7 +1649,7 @@
                   offsetFromSymbolStart = "659">
                </Location>
                <Location
-                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - 582e44bdc10e517"
+                  uuid = "4CC0E183-1D5A-424E-A7AE-436636C12707 - 6bc45f6e01b9ca47"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1730,7 +1714,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - e7cf126c71743ff2"
+                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - 3ea9398e07b1815e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1745,7 +1729,7 @@
                   offsetFromSymbolStart = "214">
                </Location>
                <Location
-                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - 764f39c389c9c97e"
+                  uuid = "216658C2-55A8-4E4F-B69B-213D135E32A2 - af291221ff0c77d2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1778,7 +1762,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - e7cf126c71743ff2"
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - 3ea9398e07b19ebb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1793,7 +1777,7 @@
                   offsetFromSymbolStart = "356">
                </Location>
                <Location
-                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - 764f39c389c9c97e"
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - af291221ff0c6837"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1808,7 +1792,7 @@
                   offsetFromSymbolStart = "117">
                </Location>
                <Location
-                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - dddd6b959a4333e5"
+                  uuid = "ACED19AB-F411-4B75-BF2F-882E788DD476 - 4bb4077ec8692ac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2017,7 +2001,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D1BD7E80-D446-4B06-9063-0B9641767BB9 - 91f8e3dcb9b27b2d"
+                  uuid = "D1BD7E80-D446-4B06-9063-0B9641767BB9 - 5f88abfca83dfbab"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2032,7 +2016,7 @@
                   offsetFromSymbolStart = "721">
                </Location>
                <Location
-                  uuid = "D1BD7E80-D446-4B06-9063-0B9641767BB9 - 353668b3376960b8"
+                  uuid = "D1BD7E80-D446-4B06-9063-0B9641767BB9 - fb46209326e6e05f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2065,7 +2049,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "735AD9B5-7608-4265-B11B-69F440FB5C80 - a48d5a522a6e3775"
+                  uuid = "735AD9B5-7608-4265-B11B-69F440FB5C80 - d1b3918c5e4641"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2080,7 +2064,7 @@
                   offsetFromSymbolStart = "214">
                </Location>
                <Location
-                  uuid = "735AD9B5-7608-4265-B11B-69F440FB5C80 - 522076800a7d122f"
+                  uuid = "735AD9B5-7608-4265-B11B-69F440FB5C80 - f67c9f43ac4d631b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2251,8 +2235,8 @@
             filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-setWebView"
             landmarkType = "7">
          </BreakpointContent>
@@ -2555,8 +2539,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "-initCloudPush"
             landmarkType = "7">
          </BreakpointContent>
@@ -2571,8 +2555,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
             landmarkName = "-application:didReceiveRemoteNotification:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2587,8 +2571,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "-handleiOS10Notification:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2603,8 +2587,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "-userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2619,8 +2603,8 @@
             filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "-userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2670,6 +2654,310 @@
             startingLineNumber = "136"
             endingLineNumber = "136"
             landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB35BC08-2AB2-4991-BC58-F90D6C1DFB12"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-webView:didFinishNavigation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5D76D4D-0632-4EFB-B7E2-87A3B5EA13E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Home(&#x9996;&#x9875;)/KJIndexViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-setWebView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB669805-6D7A-489C-AFED-8A11664BA5A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Category(&#x5206;&#x7c7b;)/KJCategroyViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30B280F0-5411-4AD4-A3D9-7523A8822015"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB131B6B-8CDC-4D63-B043-656392F77082"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Category(&#x5206;&#x7c7b;)/KJCategroyViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C5B8839-17EB-41BC-B083-8A41DA1163B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1606B85-E89D-42CC-99E1-3C236D539540"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4D3A211-C662-41AF-9040-A3CF04BEEA6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Category(&#x5206;&#x7c7b;)/KJCategroyViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F40142F0-B661-401F-8A9A-C4C9E132FF68"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/Tool/KJHYTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "+showAlertVc"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2380D69-7A43-4360-89A5-0FF439CF17C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Category(&#x5206;&#x7c7b;)/KJCategroyViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBFBB6C1-F302-4961-9EA4-B7547A68D5F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Category(&#x5206;&#x7c7b;)/KJCategroyViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDFBBE86-B0E3-42E4-B66B-BB9709D4B575"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDFBBE86-B0E3-42E4-B66B-BB9709D4B575 - ef6ba7714da49279"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate application:openURL:options:]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/Other(%E5%85%B6%E5%AE%83)/AppDelegate.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "315"
+                  endingLineNumber = "315"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "DDFBBE86-B0E3-42E4-B66B-BB9709D4B575 - c90b2b73bc39faad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[AppDelegate application:openURL:options:]_block_invoke"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/Other(%E5%85%B6%E5%AE%83)/AppDelegate.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2ECA24DB-7E03-4F6F-942D-EBF350808FDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2ECA24DB-7E03-4F6F-942D-EBF350808FDC - ef6ba7714da4929c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate application:openURL:options:]"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/Other(%E5%85%B6%E5%AE%83)/AppDelegate.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "320"
+                  endingLineNumber = "320"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "2ECA24DB-7E03-4F6F-942D-EBF350808FDC - 1a663f62f596a561"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[AppDelegate application:openURL:options:]_block_invoke_2"
+                  moduleName = "&#x9e3f;&#x96c1;&#x5ba2;&#x5bb6;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/information/Desktop/guanqing/%E9%A1%B9%E7%9B%AE/HYKJ/HYKJ/Classes/Other(%E5%85%B6%E5%AE%83)/AppDelegate.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7759D18F-F4EA-441F-BC0C-760505818144"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/Other(&#x5176;&#x5b83;)/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "-application:openURL:options:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68E5622D-9F30-425C-9B16-1F539955823D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HYKJ/Classes/PersonalCenter(&#x4e2a;&#x4eba;&#x4e2d;&#x5fc3;)/WebView(&#x7f51;&#x9875;)/Controller/KJBrowseViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "-webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

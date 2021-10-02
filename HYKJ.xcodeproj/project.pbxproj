@@ -28,6 +28,11 @@
 		D65C542124E2C36A00001C9E /* TDGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C541A24E2C36A00001C9E /* TDGoodsGridCell.m */; };
 		D65C542224E2C36A00001C9E /* TDCenterServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65C541E24E2C36A00001C9E /* TDCenterServiceCell.xib */; };
 		D65C542324E2C36A00001C9E /* TDCenterServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C541F24E2C36A00001C9E /* TDCenterServiceCell.m */; };
+		D665C2C92708432600E19506 /* FHCenterServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D665C2C32708432600E19506 /* FHCenterServiceCell.m */; };
+		D665C2CA2708432600E19506 /* FHGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D665C2C42708432600E19506 /* FHGoodsGridCell.m */; };
+		D665C2CB2708432600E19506 /* FHCenterServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D665C2C62708432600E19506 /* FHCenterServiceCell.xib */; };
+		D665C2CC2708432600E19506 /* FHGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D665C2C72708432600E19506 /* FHGridItem.m */; };
+		D665C2F8270849BB00E19506 /* sdelivery.plist in Resources */ = {isa = PBXBuildFile; fileRef = D665C2F7270849BB00E19506 /* sdelivery.plist */; };
 		D668D7B424B1C15400AE36BB /* KJCenterTopToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7B324B1C15400AE36BB /* KJCenterTopToolView.m */; };
 		D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7B924B1C7E600AE36BB /* KJScanViewController.m */; };
 		D668D7C924B1CA4000AE36BB /* LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D668D7BC24B1CA3F00AE36BB /* LBXAlertAction.m */; };
@@ -143,6 +148,19 @@
 		D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559624EE796500529F61 /* KJDuiZhangTool.m */; };
 		D66E559B24EE7D1600529F61 /* KJDuiZhangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */; };
 		D66E559C24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */; };
+		D66E819F25A324B9009E233B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E819E25A324B9009E233B /* libc++.tbd */; };
+		D66E81A125A324C7009E233B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81A025A324C7009E233B /* libz.tbd */; };
+		D66E81A325A324D9009E233B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81A225A324D9009E233B /* SystemConfiguration.framework */; };
+		D66E81A525A324E9009E233B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81A425A324E9009E233B /* CoreTelephony.framework */; };
+		D66E81A725A324FF009E233B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81A625A324FF009E233B /* QuartzCore.framework */; };
+		D66E81A925A3250B009E233B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81A825A3250B009E233B /* CoreText.framework */; };
+		D66E81AB25A3251A009E233B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81AA25A3251A009E233B /* CoreGraphics.framework */; };
+		D66E81AD25A32529009E233B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81AC25A32529009E233B /* UIKit.framework */; };
+		D66E81AF25A3253D009E233B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81AE25A3253C009E233B /* Foundation.framework */; };
+		D66E81B125A32546009E233B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81B025A32545009E233B /* CFNetwork.framework */; };
+		D66E81B325A32552009E233B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81B225A32552009E233B /* CoreMotion.framework */; };
+		D66E81BB25A34543009E233B /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D66E81B925A34543009E233B /* AlipaySDK.bundle */; };
+		D66E81BC25A34543009E233B /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E81BA25A34543009E233B /* AlipaySDK.framework */; };
 		D66E8FAE252318C2000C7FD9 /* KJStyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FAD252318C2000C7FD9 /* KJStyleDIY.m */; };
 		D66E8FB225232A7D000C7FD9 /* StyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FB125232A7D000C7FD9 /* StyleDIY.m */; };
 		D66E8FB525232C87000C7FD9 /* LBXScanBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E8FB425232C87000C7FD9 /* LBXScanBaseViewController.m */; };
@@ -233,6 +251,14 @@
 		D65C541D24E2C36A00001C9E /* TDCenterServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDCenterServiceCell.h; sourceTree = "<group>"; };
 		D65C541E24E2C36A00001C9E /* TDCenterServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDCenterServiceCell.xib; sourceTree = "<group>"; };
 		D65C541F24E2C36A00001C9E /* TDCenterServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCenterServiceCell.m; sourceTree = "<group>"; };
+		D665C2C22708432600E19506 /* FHGridItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHGridItem.h; sourceTree = "<group>"; };
+		D665C2C32708432600E19506 /* FHCenterServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHCenterServiceCell.m; sourceTree = "<group>"; };
+		D665C2C42708432600E19506 /* FHGoodsGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHGoodsGridCell.m; sourceTree = "<group>"; };
+		D665C2C52708432600E19506 /* FHGoodsGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHGoodsGridCell.h; sourceTree = "<group>"; };
+		D665C2C62708432600E19506 /* FHCenterServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHCenterServiceCell.xib; sourceTree = "<group>"; };
+		D665C2C72708432600E19506 /* FHGridItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHGridItem.m; sourceTree = "<group>"; };
+		D665C2C82708432600E19506 /* FHCenterServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHCenterServiceCell.h; sourceTree = "<group>"; };
+		D665C2F7270849BB00E19506 /* sdelivery.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sdelivery.plist; sourceTree = "<group>"; };
 		D668D7B224B1C15400AE36BB /* KJCenterTopToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCenterTopToolView.h; sourceTree = "<group>"; };
 		D668D7B324B1C15400AE36BB /* KJCenterTopToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCenterTopToolView.m; sourceTree = "<group>"; };
 		D668D7B824B1C7E600AE36BB /* KJScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJScanViewController.h; sourceTree = "<group>"; };
@@ -436,6 +462,19 @@
 		D66E559824EE7D1600529F61 /* KJDuiZhangTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDuiZhangTableViewCell.h; sourceTree = "<group>"; };
 		D66E559924EE7D1600529F61 /* KJDuiZhangTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJDuiZhangTableViewCell.m; sourceTree = "<group>"; };
 		D66E559A24EE7D1600529F61 /* KJDuiZhangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJDuiZhangTableViewCell.xib; sourceTree = "<group>"; };
+		D66E819E25A324B9009E233B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D66E81A025A324C7009E233B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D66E81A225A324D9009E233B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D66E81A425A324E9009E233B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D66E81A625A324FF009E233B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D66E81A825A3250B009E233B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D66E81AA25A3251A009E233B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D66E81AC25A32529009E233B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D66E81AE25A3253C009E233B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D66E81B025A32545009E233B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D66E81B225A32552009E233B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D66E81B925A34543009E233B /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		D66E81BA25A34543009E233B /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		D66E8FAC252318C2000C7FD9 /* KJStyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJStyleDIY.h; sourceTree = "<group>"; };
 		D66E8FAD252318C2000C7FD9 /* KJStyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJStyleDIY.m; sourceTree = "<group>"; };
 		D66E8FB025232A7D000C7FD9 /* StyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleDIY.h; sourceTree = "<group>"; };
@@ -535,6 +574,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66E819F25A324B9009E233B /* libc++.tbd in Frameworks */,
+				D66E81A125A324C7009E233B /* libz.tbd in Frameworks */,
+				D66E81A325A324D9009E233B /* SystemConfiguration.framework in Frameworks */,
+				D66E81A525A324E9009E233B /* CoreTelephony.framework in Frameworks */,
+				D66E81A725A324FF009E233B /* QuartzCore.framework in Frameworks */,
+				D66E81A925A3250B009E233B /* CoreText.framework in Frameworks */,
+				D66E81AB25A3251A009E233B /* CoreGraphics.framework in Frameworks */,
+				D66E81AD25A32529009E233B /* UIKit.framework in Frameworks */,
+				D66E81AF25A3253D009E233B /* Foundation.framework in Frameworks */,
+				D66E81B125A32546009E233B /* CFNetwork.framework in Frameworks */,
+				D66E81BC25A34543009E233B /* AlipaySDK.framework in Frameworks */,
+				D66E81B325A32552009E233B /* CoreMotion.framework in Frameworks */,
 				01EB766E268C79E528565D2F /* Pods_HYKJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,6 +673,7 @@
 		D654F7292498DE29002F66A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D66E81B425A341D3009E233B /* lib */,
 				D66A3F552499B69D00AF10F5 /* Main(主要) */,
 				D654F72A2498DE96002F66A3 /* Home(首页) */,
 				D654F72B2498DE96002F66A3 /* Category(分类) */,
@@ -742,6 +794,20 @@
 				D65C541924E2C36A00001C9E /* TDGridItem.m */,
 			);
 			path = ThirdSection;
+			sourceTree = "<group>";
+		};
+		D665C2C1270842B400E19506 /* FourthSection */ = {
+			isa = PBXGroup;
+			children = (
+				D665C2C82708432600E19506 /* FHCenterServiceCell.h */,
+				D665C2C32708432600E19506 /* FHCenterServiceCell.m */,
+				D665C2C62708432600E19506 /* FHCenterServiceCell.xib */,
+				D665C2C52708432600E19506 /* FHGoodsGridCell.h */,
+				D665C2C42708432600E19506 /* FHGoodsGridCell.m */,
+				D665C2C22708432600E19506 /* FHGridItem.h */,
+				D665C2C72708432600E19506 /* FHGridItem.m */,
+			);
+			path = FourthSection;
 			sourceTree = "<group>";
 		};
 		D668D7AD24B1BD1A00AE36BB /* View */ = {
@@ -879,8 +945,8 @@
 		D668D7F224B1D7C000AE36BB /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
-				D668D7F324B1D7C000AE36BB /* SPSpeedy.m */,
 				D668D7F424B1D7C000AE36BB /* SPSpeedy.h */,
+				D668D7F324B1D7C000AE36BB /* SPSpeedy.m */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -902,6 +968,7 @@
 				D668D85424B2071A00AE36BB /* FirstSection */,
 				D668D81924B1FD6200AE36BB /* SecondSection */,
 				D65C540024E2C27E00001C9E /* ThirdSection */,
+				D665C2C1270842B400E19506 /* FourthSection */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -1233,6 +1300,7 @@
 		D66CCB2D24B2F4A70038CCE7 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				D665C2F7270849BB00E19506 /* sdelivery.plist */,
 				D67712E124F6550C005379AA /* services.plist */,
 				D637693624B478BB00A23672 /* order.plist */,
 				D637693824B47AC300A23672 /* service.plist */,
@@ -1326,6 +1394,15 @@
 				D66E559624EE796500529F61 /* KJDuiZhangTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		D66E81B425A341D3009E233B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D66E81B925A34543009E233B /* AlipaySDK.bundle */,
+				D66E81BA25A34543009E233B /* AlipaySDK.framework */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		D66E8FAF2523279B000C7FD9 /* DIYScanViewController */ = {
@@ -1623,6 +1700,17 @@
 		FFE593C9DE5567C6DF685808 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D66E81B225A32552009E233B /* CoreMotion.framework */,
+				D66E81B025A32545009E233B /* CFNetwork.framework */,
+				D66E81AE25A3253C009E233B /* Foundation.framework */,
+				D66E81AC25A32529009E233B /* UIKit.framework */,
+				D66E81AA25A3251A009E233B /* CoreGraphics.framework */,
+				D66E81A825A3250B009E233B /* CoreText.framework */,
+				D66E81A625A324FF009E233B /* QuartzCore.framework */,
+				D66E81A425A324E9009E233B /* CoreTelephony.framework */,
+				D66E81A225A324D9009E233B /* SystemConfiguration.framework */,
+				D66E81A025A324C7009E233B /* libz.tbd */,
+				D66E819E25A324B9009E233B /* libc++.tbd */,
 				F77620CDDA0D65D619E04FC8 /* Pods_HYKJ.framework */,
 			);
 			name = Frameworks;
@@ -1712,10 +1800,12 @@
 				D66B803C24F390B0000943C1 /* KJZuDanSearchView.xib in Resources */,
 				D6BD035A255A2D78009D78F2 /* AliyunEmasServices-Info.plist in Resources */,
 				D66B802F24F37FF0000943C1 /* KJTuiHuoDetailTableViewCell.xib in Resources */,
+				D665C2F8270849BB00E19506 /* sdelivery.plist in Resources */,
 				D6B9E92124EBDAE400686E42 /* KJKuCunSearchView.xib in Resources */,
 				D6B9E91F24EBD5E600686E42 /* KJKuCunTableHeaderView.xib in Resources */,
 				D66B802A24F37DA9000943C1 /* KJTuiHuoDetailTableHeaderView.xib in Resources */,
 				D66BE8D224F4E501008EAB5A /* KJZuDanDetailTableViewCell.xib in Resources */,
+				D665C2CB2708432600E19506 /* FHCenterServiceCell.xib in Resources */,
 				D66BE8CD24F4DFDC008EAB5A /* KJZuDanDetailTableHeaderView.xib in Resources */,
 				D66AA66B24EFAC6100B97426 /* KJTuiHuoTableHeaderView.xib in Resources */,
 				D66B805224F3BC2E000943C1 /* KJZuDanTableViewCell.xib in Resources */,
@@ -1730,6 +1820,7 @@
 				D65C45542498860A0042E42E /* Main.storyboard in Resources */,
 				D637693724B478BC00A23672 /* order.plist in Resources */,
 				D668D7E724B1D42900AE36BB /* SPSettingTableViewCell.xib in Resources */,
+				D66E81BB25A34543009E233B /* AlipaySDK.bundle in Resources */,
 				D66D95DE24F7B94500ABC31F /* KJDingDanTableHeaderView.xib in Resources */,
 				D66E369C24E385D300EEE2C7 /* business.plist in Resources */,
 				D668D85C24B2073D00AE36BB /* DCStateItemCell.xib in Resources */,
@@ -1869,6 +1960,7 @@
 				D6B9E90324EB7BA800686E42 /* KJDaokuan.m in Sources */,
 				D66EF57B24E669C800E4CC3E /* KJDaoKuanTableHeaderView.m in Sources */,
 				D668D7BA24B1C7E600AE36BB /* KJScanViewController.m in Sources */,
+				D665C2CA2708432600E19506 /* FHGoodsGridCell.m in Sources */,
 				D668D7FF24B1E1C100AE36BB /* TZTestCell.m in Sources */,
 				D668D7EB24B1D53C00AE36BB /* UIView+SPExtension.m in Sources */,
 				D6BAF52024A763C8004B24AA /* KJLoginTool.m in Sources */,
@@ -1894,12 +1986,14 @@
 				D6B9E90E24EBCE8B00686E42 /* KJKuCunSearchView.m in Sources */,
 				D66BE8CB24F4DFC7008EAB5A /* KJZuDanDetailTableHeaderView.m in Sources */,
 				D6B9E90024EB7AD900686E42 /* KJDaokuanResult.m in Sources */,
+				D665C2C92708432600E19506 /* FHCenterServiceCell.m in Sources */,
 				D66E559724EE796500529F61 /* KJDuiZhangTool.m in Sources */,
 				D668D83024B1FF2200AE36BB /* UIColor+DCColorChange.m in Sources */,
 				D668D81424B1F8B800AE36BB /* DCStateItem.m in Sources */,
 				D668D82D24B1FEE600AE36BB /* UIView+DCRolling.m in Sources */,
 				D66DEDDA24EA0F29009D8C96 /* KJCyResult.m in Sources */,
 				D66B802824F37D8A000943C1 /* KJTuiHuoDetailTableHeaderView.m in Sources */,
+				D665C2CC2708432600E19506 /* FHGridItem.m in Sources */,
 				D6B9E8FA24EB6EEA00686E42 /* KJDaokuanParam.m in Sources */,
 				D66DEDDD24EA2F1A009D8C96 /* KJDataPickerView.m in Sources */,
 				D66AA67124EFC6FA00B97426 /* KJTuiHuoZDResult.m in Sources */,
@@ -2070,6 +2164,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYKJ/Classes/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
@@ -2078,7 +2176,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2096,6 +2194,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y6S2469TB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYKJ/Classes/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/information/Desktop/guanqing/项目/HYKJ/HYKJ/Supporting Files/HYKJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HYKJ/Supporting Files/Info.plist";
@@ -2104,7 +2206,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongyan.HYKJ;
 				PRODUCT_NAME = "鸿雁客家";
 				PROVISIONING_PROFILE_SPECIFIER = "";
